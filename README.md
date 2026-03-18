@@ -51,3 +51,8 @@ The next development phase should focus on final philological maintenance:
 - extending ambiguity coverage
 - expanding manual paradigm coverage where pedagogically necessary
 - adding further classroom-based validation from authentic school texts
+
+
+## RC4 note
+
+This release restores Recognition and Conjugation by fixing a startup-breaking missing DOM container for the conjugation spot-check panel.
