@@ -26,7 +26,6 @@
   const NUMBER_LABELS={sg:'ενικός',du:'δυϊκός',pl:'πληθυντικός'};
   const PERSON_LABELS={ '1sg':'α΄ ενικό','2sg':'β΄ ενικό','3sg':'γ΄ ενικό','1du':'α΄ δυϊκό','2du':'β΄ δυϊκό','3du':'γ΄ δυϊκό','1pl':'α΄ πληθυντικό','2pl':'β΄ πληθυντικό','3pl':'γ΄ πληθυντικό' };
   const PERSON_ORDER=['1sg','2sg','3sg','1du','2du','3du','1pl','2pl','3pl'];
-
   const verbs=(window.VERB_DATA||[]);
   const lemmaForms=window.LEMMA_FORMS||{};
   const externalSources=(window.EXTERNAL_SOURCES||[]);
@@ -53,7 +52,6 @@
     "καλειτε": multipleAnalysisNotes["καλειτε"] || {display:"καλεῖτε", alternatives:["ενεστώτας ενεργητική οριστική β΄ πληθυντικό","ενεστώτας ενεργητική προστακτική β΄ πληθυντικό"], note:"Συνηρημένος τύπος με σχολικά ουσιώδη αμφισημία."},
     "βοηθειτε": multipleAnalysisNotes["βοηθειτε"] || {display:"βοηθεῖτε", alternatives:["ενεστώτας ενεργητική οριστική β΄ πληθυντικό","ενεστώτας ενεργητική προστακτική β΄ πληθυντικό"], note:"Συνηρημένος τύπος με κοινή αμφισημία στη σχολική χρήση."}
   });
-
   function $(sel){ return document.querySelector(sel); }
   function normalizeGreek(s){ return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ς/g,'σ').toLowerCase().trim(); }
   function stripLengthMarks(s){ return (s||'').normalize('NFD').replace(/[\u0304\u0306]/g,'').normalize('NFC'); }
@@ -82,7 +80,6 @@
     return aSet.some(x=>bSet.includes(x)) || normalizeGreek(displayLemma(a))===normalizeGreek(displayLemma(b));
   }
   function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])); }
-
   function familyLabel(v){ return (philologyData.familyLabels||{})[v?.family] || v?.family || '—'; }
   function hardeningInfo(lemma){ return hardeningLemmaMap[normalizeGreek(lemma||'')] || null; }
   function manualCurationInfo(lemma){ return manualCurationMap[normalizeGreek(lemma||'')] || null; }
@@ -98,12 +95,10 @@
   }
   function hasManualParadigm(lemma){ return Boolean(manualParadigmNormMap[normalizeGreek(lemma||'')]); }
   function slotValidationInfo(lemma){ return slotValidationMap[normalizeGreek(lemma||'')] || null; }
-
   function preferredLemmaKey(lemma){
     const norm=normalizeGreek(lemma||'');
     return manualParadigmNormMap[norm] || conjugableByNorm[norm] || lemma;
   }
-
   function lemmaRecord(lemma){
     const norm=normalizeGreek(lemma);
     return verbs.find(v=>normalizeGreek(v.lemma)===norm) || {lemma};
@@ -111,7 +106,6 @@
   function uniqBy(arr,keyFn){ const seen=new Set(); return arr.filter(x=>{ const k=keyFn(x); if(seen.has(k)) return false; seen.add(k); return true; }); }
   function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
   function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
-
   function contractType(lemma){
     const s=stripLengthMarks(lemma);
     if(/άω$|αω$/.test(s)) return 'alpha';
@@ -119,14 +113,12 @@
     if(/όω$|οω$/.test(s)) return 'omicron';
     return null;
   }
-
   function displayLemma(lemma){
     const s=stripLengthMarks(lemma);
     const t=contractType(s);
     if(t) return s.replace(/άω$|αω$|έω$|εω$|όω$|οω$/,'ῶ');
     return s;
   }
-
   function contractAlphaForm(s){
     return s
       .replace(/άουσιν$/,'ῶσιν').replace(/άουσι$/,'ῶσι').replace(/αουσιν$/,'ῶσιν').replace(/αουσι$/,'ῶσι')
@@ -152,7 +144,6 @@
       .replace(/αομέν/,'ωμέν').replace(/αομεν/,'ωμεν')
       .replace(/άω$/,'ῶ').replace(/αω$/,'ῶ');
   }
-
   function contractEpsilonForm(s){
     return s
       .replace(/έουσιν$/,'οῦσιν').replace(/έουσι$/,'οῦσι').replace(/εουσιν$/,'οῦσιν').replace(/εουσι$/,'οῦσι')
@@ -175,7 +166,6 @@
       .replace(/εομέν/,'ουμέν').replace(/εομεν/,'ουμεν')
       .replace(/έω$/,'ῶ').replace(/εω$/,'ῶ');
   }
-
   function contractOmicronForm(s){
     return s
       .replace(/όουσιν$/,'οῦσιν').replace(/όουσι$/,'οῦσι').replace(/οουσιν$/,'οῦσιν').replace(/οουσι$/,'οῦσι')
@@ -197,7 +187,6 @@
       .replace(/οομέν/,'ουμέν').replace(/οομεν/,'ουμεν')
       .replace(/όω$/,'ῶ').replace(/οω$/,'ῶ');
   }
-
   function displayForm(entry){
     const base=stripLengthMarks(entry.form||'');
     const t=contractType(entry.lemma||'');
@@ -207,14 +196,11 @@
     if(t==='omicron') return contractOmicronForm(base);
     return base;
   }
-
   const conjugableLemmas=Object.keys(lemmaForms).sort((a,b)=>a.localeCompare(b,'el'));
   const conjugableByNorm=Object.fromEntries(conjugableLemmas.map(l=>[normalizeGreek(l),l]));
   const conjugableNormSet=new Set(conjugableLemmas.map(normalizeGreek));
-  
   let flatForms=null;
   let formIndex=null;
-
   function buildRuntimeIndexes(){
     if(flatForms && formIndex) return;
     flatForms=[];
@@ -238,7 +224,6 @@
       formIndex[k]=uniqBy(formIndex[k],x=>JSON.stringify(x));
     });
   }
-
   function buildHeroStats(){
     const cards=[
       {title:'Αναγνώριση τύπων', text:'Άμεση μορφολογική ανάλυση ρηματικών τύπων.'},
@@ -248,22 +233,28 @@
     ];
     $('#hero-stats').innerHTML=cards.map(s=>`<div class="stat-card"><strong>${s.title}</strong><span>${s.text}</span></div>`).join('');
   }
-
   function activateTabs(){
+    const loadedTabs = new Set(['analyze','conjugate']);
     document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
       document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
       document.querySelectorAll('.tab-panel').forEach(x=>x.classList.remove('active'));
       btn.classList.add('active');
       document.querySelector(`#tab-${btn.dataset.tab}`).classList.add('active');
-      if(btn.dataset.tab==='quiz') newQuiz();
-      if(btn.dataset.tab==='classroom') runClassroomTests();
+      if(!loadedTabs.has(btn.dataset.tab)){
+        if(btn.dataset.tab==='quiz') newQuiz();
+        if(btn.dataset.tab==='classroom') runClassroomTests();
+        if(btn.dataset.tab==='library') renderLibrary();
+        if(btn.dataset.tab==='sources') renderSources();
+        loadedTabs.add(btn.dataset.tab);
+      } else {
+        if(btn.dataset.tab==='quiz') newQuiz();
+        if(btn.dataset.tab==='classroom') runClassroomTests();
+      }
     }));
   }
-
   function ambiguityNoteFor(form){
     return multipleAnalysisNotes[normalizeGreek(form||'')] || null;
   }
-
   function renderAnalysisResults(results){
     const box=$('#analyze-results');
     const note = ambiguityNoteFor($('#analyze-input').value);
@@ -285,25 +276,21 @@
       return `<div class="result-card"><div class="badges"><span class="badge full">${escapeHtml(displayLemma(r.lemma))}</span><span class="badge supplemental">πλήρης κλιτική εγγραφή</span></div><h3>${escapeHtml(displayForm(r))}</h3><div class="definition-list">${meta.join('')}</div></div>`;
     }).join('');
   }
-
   function analyze(){
     buildRuntimeIndexes();
     const q=normalizeGreek($('#analyze-input').value);
     renderAnalysisResults((formIndex[q]||[]).slice(0,20));
   }
-
   function populateVerbSelect(){
     const sel=$('#verb-select');
     sel.innerHTML=conjugableLemmas.map(l=>`<option value="${escapeHtml(l)}">${escapeHtml(displayLemma(l))}</option>`).join('');
   }
-
   function formsForLemma(lemma){
     const norm=normalizeGreek(lemma);
     if(manualParadigmNormMap[norm]) return (manualParadigms[manualParadigmNormMap[norm]]||[]).slice();
     const resolved=conjugableByNorm[norm] || lemma;
     return (lemmaForms[resolved]||[]).slice();
   }
-
   function renderConjugation(){
     const lemma=$('#verb-select').value;
     const mode=$('#view-select').value;
@@ -313,7 +300,7 @@
     const summary=[];
     summary.push(`<strong>${escapeHtml(displayLemma(lemma))}</strong>`);
     if(hasManualParadigm(lemma)) summary.push('χειροκίνητα επιμελημένο paradigm');
-    if(metaVerb?.gloss) summary.push(`σημασία: ${escapeHtml(metaVerb.gloss)}`);
+    if(metaVerb?.gloss && metaVerb.gloss !== 'Συμπληρωματικό λήμμα') summary.push(`νεοελληνική μετάφραση: ${escapeHtml(metaVerb.gloss)}`);
     if(metaVerb?.principalParts) summary.push(`κύρια μέρη: ${escapeHtml(metaVerb.principalParts)}`);
     const hard=hardeningInfo(lemma);
     const curated=manualCurationInfo(lemma);
@@ -324,7 +311,6 @@
     if(spot) summary.push(`spot-check: ${escapeHtml(spot.summary)}`);
     if(slotValidation) summary.push(`slot-by-slot validation: ${escapeHtml(slotValidation.summary)}`);
     $('#conjugation-summary').innerHTML=summary.join(' · ');
-
     const spotBox=$('#conjugation-spotcheck');
     const spotHtml = spot ? (()=>{
       const validated=(spot.validated||[]).map(x=>`<span class="badge canonical">${escapeHtml(x)}</span>`).join(' ');
@@ -350,7 +336,7 @@
         const [tense,voice,mood]=k.split('|');
         const entries=groups[k].slice().sort((a,b)=>PERSON_ORDER.indexOf(canonicalPerson(a)||'')-PERSON_ORDER.indexOf(canonicalPerson(b)||''));
         return `<div class="table-block"><h3>${label(TENSE_LABELS,tense)} • ${label(VOICE_LABELS,voice)} • ${label(MOOD_LABELS,mood)}</h3><div class="grid-six">${entries.map(e=>`<div class="cell"><div class="label">${personLabel(e)}</div><div class="form">${escapeHtml(displayForm(e))}</div></div>`).join('')}</div></div>`;
-      }).join('') || '<div class="result-card"><p>Δεν υπάρχουν διαθέσιμοι πεπερασμένοι τύποι για το λήμμα.</p></div>';
+      }).join('') || '<div class="result-card"><p>Δεν υπάρχουν διαθέσιμοι ρηματικοί τύποι για το λήμμα.</p></div>';
     } else if(mode==='infinitive'){
       const filtered=forms.filter(x=>x.kind==='infinitive');
       out.innerHTML=`<div class="results-grid">${filtered.map(f=>`<div class="result-card"><div class="badges"><span class="badge full">${label(TENSE_LABELS,f.tense)}</span><span class="badge">${label(VOICE_LABELS,f.voice)}</span></div><h3>${escapeHtml(displayForm(f))}</h3></div>`).join('')}</div>` || '<div class="result-card"><p>Δεν υπάρχουν διαθέσιμα απαρέμφατα.</p></div>';
@@ -359,15 +345,16 @@
       out.innerHTML=`<div class="results-grid">${filtered.map(f=>`<div class="result-card"><div class="badges"><span class="badge full">${label(TENSE_LABELS,f.tense)}</span><span class="badge">${label(VOICE_LABELS,f.voice)}</span></div><h3>${escapeHtml(displayForm(f))}</h3><p class="muted">${label(GENDER_LABELS,f.gender)} • ${label(CASE_LABELS,f.case)} • ${label(NUMBER_LABELS,f.number)}</p></div>`).join('')}</div>` || '<div class="result-card"><p>Δεν υπάρχουν διαθέσιμες μετοχές.</p></div>';
     }
   }
-
+  const quizPoolCache = {};
   function poolForLevel(level){
     buildRuntimeIndexes();
+    if(quizPoolCache[level]) return quizPoolCache[level];
     let pool=flatForms;
     if(level==='easy') pool=pool.filter(x=>x.kind==='finite' && x.mood==='indicative' && ['present','imperfect','future','aorist'].includes(x.tense));
     if(level==='advanced') pool=pool.filter(x=>x.kind!=='finite' || !['present','imperfect','future','aorist'].includes(x.tense) || x.mood!=='indicative');
+    quizPoolCache[level]=pool;
     return pool;
   }
-
   let quizState={score:0,attempts:0,current:null};
   function formatChoice(x){
     let s=`${displayLemma(x.lemma)} — ${label(TENSE_LABELS,x.tense)} • ${label(VOICE_LABELS,x.voice)} • ${label(MOOD_LABELS,x.mood)}`;
@@ -392,7 +379,6 @@
     const answer=randomItem(pool);
     const sameLemmaPool = pool.filter(x=>sameLemma(x.lemma, answer.lemma) && formatChoice(x)!==formatChoice(answer));
     let distractors = uniqBy(shuffle(sameLemmaPool), x=>formatChoice(x)).slice(0,3);
-
     if(distractors.length<3){
       const sameFamilyPool = pool.filter(x=>{
         const xr=lemmaRecord(x.lemma), ar=lemmaRecord(answer.lemma);
@@ -403,7 +389,6 @@
         if(!distractors.some(d=>formatChoice(d)===formatChoice(item))) distractors.push(item);
       }
     }
-
     if(distractors.length<3){
       const fallback=uniqBy(shuffle(pool.filter(x=>formatChoice(x)!==formatChoice(answer))), x=>formatChoice(x));
       for(const item of fallback){
@@ -411,7 +396,6 @@
         if(!distractors.some(d=>formatChoice(d)===formatChoice(item))) distractors.push(item);
       }
     }
-
     const choices=shuffle([answer,...distractors]).slice(0,4);
     quizState.current={answer,choices};
     $('#quiz-box').textContent=displayForm(answer);
@@ -431,14 +415,12 @@
     const manualNote = hasManualParadigm(quizState.current.answer.lemma) ? ' Η ερώτηση προήλθε από χειροκίνητα επιμελημένο paradigm.' : '';
     $('#quiz-feedback').innerHTML=ok?`Σωστό.${manualNote}`:`Λάθος. Σωστή απάντηση: ${escapeHtml(formatChoice(quizState.current.answer))}.${manualNote}`;
   }
-
   function coverageBucket(v){
     if(hasManualParadigm(v.lemma)) return 'full-core';
     const canonicalLemma=conjugableByNorm[normalizeGreek(v.lemma)];
     if(!canonicalLemma) return 'catalog';
     return v.source==='greek-conjugator-js' ? 'full-imported' : 'full-core';
   }
-
   function renderLibrary(){
     const q=normalizeGreek($('#library-search').value);
     const coverage=$('#coverage-filter').value;
@@ -466,7 +448,6 @@
       return `<div class="verb-card"><div class="badges">${hasForms?'<span class="badge full">κλίση διαθέσιμη</span>':'<span class="badge catalog">μόνο λημματολόγιο</span>'}<span class="badge ${rel.className}">${escapeHtml(rel.label)}</span><span class="badge">${escapeHtml(v.source||'core')}</span>${canonicalLemmaSet.has(normalizeGreek(v.lemma))?'<span class="badge canonical">canonical</span>':''}${hard?'<span class="badge manual">targeted hardening</span>':''}${curated?'<span class="badge reviewed">χειροκίνητη επιμέλεια</span>':''}${spot?'<span class="badge canonical">spot-check</span>':''}${slotValidationInfo(v.lemma)?'<span class="badge manual">slot validation</span>':''}${hasManualParadigm(v.lemma)?'<span class="badge full">manual paradigm</span>':''}</div><h3>${title}</h3><p class="muted">${escapeHtml(v.gloss||'—')}</p><p class="family-line"><strong>Οικογένεια:</strong> ${escapeHtml(curated?.family || familyLabel(v))}</p>${hard?`<p><strong>Hardening ομάδα:</strong> ${escapeHtml(hard.group)}</p><p class="notes-compact">${escapeHtml(hard.note||'')}</p>`:''}${curated?`<p><strong>Επίπεδο επιμέλειας:</strong> χειροκίνητη λημματοκεντρική επιμέλεια</p><p class="notes-compact">${escapeHtml(curated.schoolNote||'')}</p><p class="notes-compact"><strong>Προσοχή:</strong> ${escapeHtml(curated.caution||'')}</p><p class="notes-compact"><strong>Διδακτική χρήση:</strong> ${escapeHtml(curated.recommendation||'')}</p>`:''}${spot?`<p><strong>Spot-check:</strong> επιβεβαιωμένο λημματικό πέρασμα</p><p class="notes-compact">${escapeHtml(spot.summary||'')}</p><p class="notes-compact"><strong>Σημείο προσοχής:</strong> ${escapeHtml(spot.caution||'')}</p>`:''}${slotValidationInfo(v.lemma)?`<p><strong>Slot validation:</strong> χειροκίνητα ελεγμένα βασικά κλιτικά slots</p><p class="notes-compact">${escapeHtml(slotValidationInfo(v.lemma).summary||'')}</p>`:''}${hasForms?`<p><strong>Τύποι:</strong> ${formsCount}</p>`:''}${v.principalParts?`<p><strong>Κύρια μέρη:</strong> ${escapeHtml(v.principalParts)}</p>`:''}${v.notes?`<p class="notes-compact">${escapeHtml(v.notes)}</p>`:''}</div>`;
     }).join('') + (rows.length>500?`<div class="verb-card"><p>Εμφανίζονται τα πρώτα 500 αποτελέσματα. Χρησιμοποίησε αναζήτηση για ακριβέστερο φιλτράρισμα.</p></div>`:'');
   }
-
   function renderSources(){
     $('#source-results').innerHTML=externalSources.map(s=>{
       const adapter=(window.SOURCE_ADAPTERS||{})[s.id];
@@ -475,8 +456,6 @@
       return `<div class="verb-card"><div class="badges"><span class="badge ${badgeClass}">${escapeHtml(s.status)}</span>${adapter&&adapter.uiLinked?'<span class="badge">ui-linked</span>':''}</div><h3>${escapeHtml(s.name)}</h3><p><strong>Ρόλος:</strong> ${escapeHtml(s.role)}</p><p><strong>Έκταση:</strong> ${escapeHtml(s.scope)}</p><p><strong>Τρέχουσα ενσωμάτωση:</strong> ${escapeHtml(s.integration)}</p><p><strong>License / status:</strong> ${escapeHtml(s.license)}</p>${adapterLine}<p class="muted">${escapeHtml(s.notes)}</p></div>`;
     }).join('');
   }
-
-
   function entryMatchesExpected(entry, test){
     if(!sameLemma(entry.lemma, test.lemma)) return false;
     if((test.tense||'') && (entry.tense||'')!==test.tense) return false;
@@ -488,7 +467,6 @@
     if((test.number||'') && (entry.number||'') && (entry.number||'')!==test.number) return false;
     return true;
   }
-
   function runClassroomTests(){
     buildRuntimeIndexes();
     const tests=(classroomTestsData.tests||[]);
@@ -502,7 +480,6 @@
     });
     renderClassroomTests(results);
   }
-
   function renderClassroomTests(results){
     const box=$('#classroom-results');
     const pillBox=$('#classroom-summary-pills');
@@ -520,8 +497,6 @@
       return `<div class="result-card"><div class="badges"><span class="badge ${statusClass}">${statusLabel}</span>${r.ambiguity?'<span class="badge canonical">πολλαπλή ανάλυση</span>':''}</div><h3>${escapeHtml(r.form)}</h3><p><strong>Στόχος ελέγχου:</strong> ${escapeHtml(r.label||'σχολικός τύπος')}</p><p><strong>Αναμενόμενη ανάλυση:</strong> ${escapeHtml(expected)}</p>${hitsHtml}${ambiguityHtml}</div>`;
     }).join('');
   }
-
-
   function buildWorksheet(){
     buildRuntimeIndexes();
     const count=Math.max(4,Math.min(40,Number($('#worksheet-count').value)||12));
@@ -535,7 +510,6 @@
       box.innerHTML=`<h3>Φύλλο εργασίας: Σχηματισμός τύπων</h3>` + pool.map((p,i)=>`<div class="worksheet-item"><strong>${i+1}.</strong> Να σχηματίσετε τον τύπο του ρήματος <strong>${escapeHtml(displayLemma(p.lemma))}</strong>: ${label(TENSE_LABELS,p.tense)} • ${label(VOICE_LABELS,p.voice)} • ${label(MOOD_LABELS,p.mood)}${p.person?` • ${personLabel(p)}`:''}${p.gender?` • ${label(GENDER_LABELS,p.gender)} • ${label(CASE_LABELS,p.case)} • ${label(NUMBER_LABELS,p.number)}`:''}</div>`).join('');
     }
   }
-
   function wireEvents(){
     $('#analyze-btn').addEventListener('click', analyze);
     $('#analyze-input').addEventListener('keydown', e=>{ if(e.key==='Enter') analyze(); });
@@ -553,15 +527,10 @@
     const classroomBtn=$('#run-classroom-tests'); if(classroomBtn) classroomBtn.addEventListener('click', runClassroomTests);
     $('#print-worksheet').addEventListener('click', ()=>window.print());
   }
-
   const activeCountPill=document.getElementById('active-count-pill'); if(activeCountPill) activeCountPill.textContent='Σχολικός πυρήνας και επιμελημένα paradigms';
   buildHeroStats();
   activateTabs();
   populateVerbSelect();
   renderConjugation();
-  renderLibrary();
-  renderSources();
-  runClassroomTests();
-  newQuiz();
   wireEvents();
 })();
