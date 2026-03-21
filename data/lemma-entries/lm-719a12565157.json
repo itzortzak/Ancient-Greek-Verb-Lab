@@ -1,1 +1,814 @@
-[{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκω","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκω","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεις","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκει","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκει","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκετον","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκετον","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκετον","kind":"finite","tense":"present","voice":"active","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκομεν","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκετε","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκετε","kind":"finite","tense":"present","voice":"active","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκουσῐ","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκουσῐν","kind":"finite","tense":"present","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκῃς","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκῃ","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκῃ","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκῃ","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκητον","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκητον","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκωμεν","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκητε","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκωσῐ","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκωσῐν","kind":"finite","tense":"present","voice":"active","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιμῐ","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοις","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοι","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιτον","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκοίτην","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιμεν","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιτε","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιεν","kind":"finite","tense":"present","voice":"active","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱ́λῐσκε","kind":"finite","tense":"present","voice":"active","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκέτω","kind":"finite","tense":"present","voice":"active","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκέτων","kind":"finite","tense":"present","voice":"active","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκόντων","kind":"finite","tense":"present","voice":"active","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκομαι","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεται","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεσθον","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεσθον","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεσθον","kind":"finite","tense":"present","voice":"middle/passive","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκόμεθᾰ","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεσθε","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεσθε","kind":"finite","tense":"present","voice":"middle/passive","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκονται","kind":"finite","tense":"present","voice":"middle/passive","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκωμαι","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκηται","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκησθον","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκησθον","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκώμεθᾰ","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκησθε","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκωνται","kind":"finite","tense":"present","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκοίμην","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιο","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιτο","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοισθον","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκοίσθην","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκοίμεθᾰ","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοισθε","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκοιντο","kind":"finite","tense":"present","voice":"middle/passive","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκου","kind":"finite","tense":"present","voice":"middle/passive","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκέσθω","kind":"finite","tense":"present","voice":"middle/passive","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκέσθων","kind":"finite","tense":"present","voice":"middle/passive","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκέσθων","kind":"finite","tense":"present","voice":"middle/passive","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκειν","kind":"infinitive","tense":"present","voice":"active","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκεσθαι","kind":"infinitive","tense":"present","voice":"middle/passive","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκων","kind":"participle","tense":"present","voice":"active","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκόμενος","kind":"participle","tense":"present","voice":"middle/passive","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκουσᾰ","kind":"participle","tense":"present","voice":"active","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκομένη","kind":"participle","tense":"present","voice":"middle/passive","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐ́σκον","kind":"participle","tense":"present","voice":"active","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῐσκόμενον","kind":"participle","tense":"present","voice":"middle/passive","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλῐσκον","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλῐσκον","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλῐσκες","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλῐσκε","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλῐσκεν","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκετον","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐσκέτην","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκομεν","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκετε","kind":"finite","tense":"imperfect","voice":"active","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐσκόμην","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκου","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκετο","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκεσθον","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐσκέσθην","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐσκόμεθᾰ","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκεσθε","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῐ́σκοντο","kind":"finite","tense":"imperfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσω","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσω","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσεις","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσει","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσει","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσετον","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσετον","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσομεν","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσετε","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσουσῐ","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσουσῐν","kind":"finite","tense":"future","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιμῐ","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοις","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοι","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιτον","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσοίτην","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιμεν","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιτε","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιεν","kind":"finite","tense":"future","voice":"active","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσομαι","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσῃ","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσῃ","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσῃ","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσεται","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσεσθον","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσεσθον","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσόμεθᾰ","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσεσθε","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσονται","kind":"finite","tense":"future","voice":"middle","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσοίμην","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιο","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιτο","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοισθον","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσοίσθην","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσοίμεθᾰ","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοισθε","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσοιντο","kind":"finite","tense":"future","voice":"middle","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσομαι","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσῃ","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσεται","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσεσθον","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσεσθον","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησόμεθᾰ","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσεσθε","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσονται","kind":"finite","tense":"future","voice":"passive","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησοίμην","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσοιο","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσοιτο","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσοισθον","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησοίσθην","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησοίμεθᾰ","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσοισθε","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσοιντο","kind":"finite","tense":"future","voice":"passive","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσειν","kind":"infinitive","tense":"future","voice":"active","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσεσθαι","kind":"infinitive","tense":"future","voice":"middle","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήσεσθαι","kind":"infinitive","tense":"future","voice":"passive","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσων","kind":"participle","tense":"future","voice":"active","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσόμενος","kind":"participle","tense":"future","voice":"middle","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησόμενος","kind":"participle","tense":"future","voice":"passive","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσουσᾰ","kind":"participle","tense":"future","voice":"active","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσομένη","kind":"participle","tense":"future","voice":"middle","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησομένη","kind":"participle","tense":"future","voice":"passive","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῶσον","kind":"participle","tense":"future","voice":"active","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσόμενον","kind":"participle","tense":"future","voice":"middle","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθησόμενον","kind":"participle","tense":"future","voice":"passive","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσᾰ","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσᾰς","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσε","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσεν","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰτον","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωσᾰ́την","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰμεν","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰτε","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσᾰν","kind":"finite","tense":"aorist","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσῃς","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσητον","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσητον","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσωμεν","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσητε","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσωσῐ","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσωσῐν","kind":"finite","tense":"aorist","voice":"active","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιμῐ","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσειᾰς","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαις","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσειε","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσειεν","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαι","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιτον","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσαίτην","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιμεν","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιτε","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσειᾰν","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιεν","kind":"finite","tense":"aorist","voice":"active","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱ́λωσον","kind":"finite","tense":"aorist","voice":"active","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́τω","kind":"finite","tense":"aorist","voice":"active","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾰτον","kind":"finite","tense":"aorist","voice":"active","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́των","kind":"finite","tense":"aorist","voice":"active","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾰτε","kind":"finite","tense":"aorist","voice":"active","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́ντων","kind":"finite","tense":"aorist","voice":"active","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωσᾰ́μην","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσω","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰτο","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰσθον","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωσᾰ́σθην","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωσᾰ́μεθᾰ","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰσθε","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσᾰντο","kind":"finite","tense":"aorist","voice":"middle","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσωμαι","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσηται","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσησθον","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσησθον","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσώμεθᾰ","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσησθε","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσωνται","kind":"finite","tense":"aorist","voice":"middle","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσαίμην","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιο","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιτο","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαισθον","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσαίσθην","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσαίμεθᾰ","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαισθε","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσαιντο","kind":"finite","tense":"aorist","voice":"middle","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱ́λωσαι","kind":"finite","tense":"aorist","voice":"middle","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́σθω","kind":"finite","tense":"aorist","voice":"middle","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾰσθον","kind":"finite","tense":"aorist","voice":"middle","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́σθων","kind":"finite","tense":"aorist","voice":"middle","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́σθων","kind":"finite","tense":"aorist","voice":"middle","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾰσθε","kind":"finite","tense":"aorist","voice":"middle","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθην","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθης","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθη","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθητον","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωθήτην","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθημεν","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθητε","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώθησᾰν","kind":"finite","tense":"aorist","voice":"passive","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῶ","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῇς","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῇ","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῆτον","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῆτον","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῶμεν","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῆτε","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῶσῐ","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῶσῐν","kind":"finite","tense":"aorist","voice":"passive","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείην","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείης","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείη","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθεῖτον","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείητον","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείτην","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθειήτην","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθεῖμεν","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείημεν","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθεῖτε","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείητε","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθεῖεν","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείησᾰν","kind":"finite","tense":"aorist","voice":"passive","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώθητῐ","kind":"finite","tense":"aorist","voice":"passive","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήτω","kind":"finite","tense":"aorist","voice":"passive","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώθητον","kind":"finite","tense":"aorist","voice":"passive","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθήτων","kind":"finite","tense":"aorist","voice":"passive","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώθητε","kind":"finite","tense":"aorist","voice":"passive","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθέντων","kind":"finite","tense":"aorist","voice":"passive","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῶσαι","kind":"infinitive","tense":"aorist","voice":"active","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾰσθαι","kind":"infinitive","tense":"aorist","voice":"middle","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθῆναι","kind":"infinitive","tense":"aorist","voice":"passive","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾱς","kind":"participle","tense":"aorist","voice":"active","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́μενος","kind":"participle","tense":"aorist","voice":"middle","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθείς","kind":"participle","tense":"aorist","voice":"passive","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλώσᾱσᾰ","kind":"participle","tense":"aorist","voice":"active","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰμένη","kind":"participle","tense":"aorist","voice":"middle","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθεῖσᾰ","kind":"participle","tense":"aorist","voice":"passive","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλῶσᾰν","kind":"participle","tense":"aorist","voice":"active","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωσᾰ́μενον","kind":"participle","tense":"aorist","voice":"middle","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νᾱλωθέν","kind":"participle","tense":"aorist","voice":"passive","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωκᾰ","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωκᾰς","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωκε","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωκε","kind":"finite","tense":"perfect","voice":"active","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωκεν","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκᾰτον","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκᾰτον","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκᾰμεν","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκᾰτε","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκᾱσῐ","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκᾱσῐν","kind":"finite","tense":"perfect","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκω","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκῃς","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκῃ","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκητον","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκητον","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκωμεν","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκητε","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκωσῐ","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκωσῐν","kind":"finite","tense":"perfect","voice":"active","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοιμῐ","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκοίην","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοις","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκοίης","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοι","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκοίη","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοιτον","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκοίτην","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοιμεν","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοιτε","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκοιεν","kind":"finite","tense":"perfect","voice":"active","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκέτω","kind":"finite","tense":"perfect","voice":"active","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκετον","kind":"finite","tense":"perfect","voice":"active","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκετον","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκέτων","kind":"finite","tense":"perfect","voice":"active","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκετε","kind":"finite","tense":"perfect","voice":"active","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκετε","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκόντων","kind":"finite","tense":"perfect","voice":"active","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωμαι","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσαι","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωται","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"imperative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθον","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώμεθᾰ","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώμεθᾰ","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθε","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθε","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"imperative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσθε","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωνται","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος ὦ","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος ᾖς","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος ᾖ","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένω ἦτον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένω ἦτον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι ὦμεν","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι ἦτε","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι ὦσῐ","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι ὦσῐν","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"subjunctive","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος εἴην","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος εἴης","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος εἴη","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἴητον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἶτον","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"du","person":"2du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένω εἰήτην","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένω εἴτην","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἴημεν","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἶμεν","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἴητε","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἶτε","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"pl","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἴησᾰν","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένοι εἶεν","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"optative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσο","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"imperative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωσο","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσθω","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"imperative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσθων","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"imperative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσθων","kind":"finite","tense":"perfect","voice":"middle/passive","mood":"imperative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκέναι","kind":"infinitive","tense":"perfect","voice":"active","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλῶσθαι","kind":"infinitive","tense":"perfect","voice":"middle/passive","mood":"infinitive"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκώς","kind":"participle","tense":"perfect","voice":"active","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένος","kind":"participle","tense":"perfect","voice":"middle/passive","mood":"participle","gender":"masc"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκυῖᾰ","kind":"participle","tense":"perfect","voice":"active","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένη","kind":"participle","tense":"perfect","voice":"middle/passive","mood":"participle","gender":"fem"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκός","kind":"participle","tense":"perfect","voice":"active","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωμένον","kind":"participle","tense":"perfect","voice":"middle/passive","mood":"participle","gender":"neut"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκειν","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκειν","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκη","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκεις","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκης","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"sg","person":"2sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκει","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλωκέτην","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκεμεν","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"pl","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώκεσᾰν","kind":"finite","tense":"pluperfect","voice":"active","mood":"indicative","number":"pl","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώμην","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"1sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωτο","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"sg","person":"3sg"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νηλώσθην","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"du","person":"3du"},{"lemma":"ἀναλίσκω","form":"ᾰ̓νήλωντο","kind":"finite","tense":"pluperfect","voice":"middle/passive","mood":"indicative","number":"pl","person":"3sg"}]
+[
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκεις",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκει",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκομεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκετε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκουσι(ν)",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλισκον",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλισκες",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλισκε(ν)",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλίσκομεν",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλίσκετε",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλισκον",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσω",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσεις",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσει",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσομεν",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσετε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσουσι(ν)",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλωσα",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλωσας",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλωσε(ν)",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώσαμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώσατε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλωσαν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλωκα",
+    "kind": "finite",
+    "tense": "perfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκομαι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκῃ",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκεται",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλισκόμεθα",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκεσθε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκονται",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλισκόμην",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλίσκου",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλίσκετο",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλισκόμεθα",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλίσκεσθε",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλίσκοντο",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθήσομαι",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθήσῃ",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθήσεται",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθησόμεθα",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθήσεσθε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθήσονται",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώθην",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώθης",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώθη",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώθημεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώθητε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλώθησαν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνήλωμαι",
+    "kind": "finite",
+    "tense": "perfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκειν",
+    "kind": "infinitive",
+    "tense": "present",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκεσθαι",
+    "kind": "infinitive",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλῶσαι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθῆναι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωκέναι",
+    "kind": "infinitive",
+    "tense": "perfect",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλῶσθαι",
+    "kind": "infinitive",
+    "tense": "perfect",
+    "voice": "middle/passive",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκων",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκουσα",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλίσκον",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλισκόμενος",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλισκομένη",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλισκόμενον",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσων",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσουσα",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλῶσον",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθησόμενος",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθησομένη",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθησόμενον",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσας",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλώσασα",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλῶσαν",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθείς",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθεῖσα",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀναλωθέν",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωκώς",
+    "kind": "participle",
+    "tense": "perfect",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωκυῖα",
+    "kind": "participle",
+    "tense": "perfect",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωκός",
+    "kind": "participle",
+    "tense": "perfect",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωμένος",
+    "kind": "participle",
+    "tense": "perfect",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "masc",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωμένη",
+    "kind": "participle",
+    "tense": "perfect",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "fem",
+    "case": "nom",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἀναλίσκω",
+    "form": "ἀνηλωμένον",
+    "kind": "participle",
+    "tense": "perfect",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "neut",
+    "case": "nom",
+    "number": "sg"
+  }
+]

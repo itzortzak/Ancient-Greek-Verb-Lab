@@ -1,3 +1,8 @@
+## v1.5.20
+- Νέο doc-review tranche για **ἀναλίσκω** και **ἀποκρίνομαι** με ενισχυμένη αναλυτική κλίση, απαρέμφατα και μετοχές.
+- Νέα slot validations, strict-audit εγγραφές και form-index patches για τα δύο λήμματα.
+- Ενημερωμένα per-lemma αρχεία για γρηγορότερη και ακριβέστερη προβολή στην ενότητα «Κλίση».
+
 ## Ancient Greek Verb Lab
 
 Current build: v1.5.19

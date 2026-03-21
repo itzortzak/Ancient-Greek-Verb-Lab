@@ -875,7 +875,48 @@
   }
 
   async function renderConjugation(){
+    const lemma=$('#verb-select').value;
+    const mode=$('#view-select').value;
+    const out=$('#conjugation-output');
+    const summaryBox=$('#conjugation-summary');
+    const spotBox=$('#conjugation-spotcheck');
 
+    out.innerHTML='<div class="result-card"><p>Φορτώνεται το επιλεγμένο λήμμα…</p></div>';
+    summaryBox.innerHTML='';
+    spotBox.innerHTML='';
+
+    try {
+      const forms=await formsForLemma(lemma);
+      const metaVerb=verbs.find(v=>normalizeGreek(v.lemma)===normalizeGreek(lemma));
+      const finite=forms.filter(x=>x.kind==='finite');
+      const summary=[];
+      summary.push(`<strong>${escapeHtml(displayLemma(lemma))}</strong>`);
+      if(hasManualParadigm(lemma)) summary.push('χειροκίνητα επιμελημένο paradigm');
+      if(metaVerb?.gloss && metaVerb.gloss !== 'Συμπληρωματικό λήμμα') summary.push(`νεοελληνική μετάφραση: ${escapeHtml(metaVerb.gloss)}`);
+      if(metaVerb?.principalParts) summary.push(`κύρια μέρη: ${escapeHtml(metaVerb.principalParts)}`);
+      if(Array.isArray(metaVerb?.derivatives) && metaVerb.derivatives.length) summary.push(`νεοελληνικά/λεξιλογικά παράγωγα: ${escapeHtml(metaVerb.derivatives.join(', '))}`);
+      if(metaVerb?.sourceNotes) summary.push(`πηγές επιμέλειας: ${escapeHtml(metaVerb.sourceNotes)}`);
+      const auditInfo=strictAuditInfo(lemma);
+      if(auditInfo){ summary.push(`strict audit: ${escapeHtml(auditInfo.status)} · manual forms ${auditInfo.manualForms} · slot checks ${auditInfo.slotChecks}`); }
+      const hard=hardeningInfo(lemma);
+      const curated=manualCurationInfo(lemma);
+      const spot=spotCheckInfo(lemma);
+      const slotValidation=slotValidationInfo(lemma);
+      if(hard) summary.push(`philology hardening: ${escapeHtml(hard.group)}`);
+      if(curated) summary.push(`χειροκίνητη λημματοκεντρική επιμέλεια: ${escapeHtml(curated.family)}`);
+      if(spot) summary.push(`spot-check: ${escapeHtml(spot.summary)}`);
+      if(slotValidation) summary.push(`slot-by-slot validation: ${escapeHtml(slotValidation.summary)}`);
+      if(mode==='participle') summary.push('οι πίνακες μετοχών προβάλλονται με ενισχυμένη φιλολογική επιμέλεια, λημματοκεντρική αναπλήρωση ελλειπόντων γενών, ειδική κάλυψη για ανώμαλους τύπους, αυστηρότερο σχολικό φιλτράρισμα των σπανιότερων εναλλακτικών και απολύτως χειροκίνητη σχολική κλίση για εἰμί, οἶδα, φημί, δίδωμι, τίθημι, ἵστημι, λέγω, φέρω, ὁράω και ἔχω');
+      summaryBox.innerHTML=summary.join(' · ');
+      const spotHtml = spot ? (()=>{
+        const validated=(spot.validated||[]).map(x=>`<span class="badge canonical">${escapeHtml(x)}</span>`).join(' ');
+        return `<div class="result-card"><h3>Spot-check λήμματος</h3><p>${escapeHtml(spot.summary||'')}</p><p><strong>Επιβεβαιωμένοι βασικοί τύποι:</strong></p><div class="badges">${validated}</div><p class="notes-compact"><strong>Σημείο προσοχής:</strong> ${escapeHtml(spot.caution||'')}</p><p class="notes-compact"><strong>Επόμενο βήμα:</strong> ${escapeHtml(spot.nextStep||'')}</p></div>`;
+      })() : '';
+      const slotHtml = slotValidation ? (()=>{
+        const slots=(slotValidation.slots||[]).map(s=>`<div class="cell"><div class="label">${escapeHtml(s.label||s.slot||'')}</div><div class="form">${escapeHtml(s.form||'')}</div><div class="notes-compact">${escapeHtml(s.note||'')}</div></div>`).join('');
+        return `<div class="result-card"><h3>Slot-by-slot validation</h3><p>${escapeHtml(slotValidation.summary||'')}</p><div class="grid-six">${slots}</div></div>`;
+      })() : '';
+      spotBox.innerHTML = spotHtml + slotHtml;
   function renderParticipleDeclensionTable(entries){
     const orderN=['sg','du','pl'];
     const orderC=['nom','gen','dat','acc','voc'];
@@ -900,42 +941,6 @@
     const header=numbers.map(n=>`<th scope="col">${escapeHtml(label(NUMBER_LABELS,n))}</th>`).join('');
     return `<div class="participle-table-wrap"><table class="participle-table"><thead><tr><th scope="col">Πτώση</th>${header}</tr></thead><tbody>${rows}</tbody></table></div>`;
   }
-    const lemma=$('#verb-select').value;
-    const mode=$('#view-select').value;
-    const out=$('#conjugation-output');
-    out.innerHTML='<div class="result-card"><p>Φορτώνεται το επιλεγμένο λήμμα…</p></div>';
-    const forms=await formsForLemma(lemma);
-    const metaVerb=verbs.find(v=>normalizeGreek(v.lemma)===normalizeGreek(lemma));
-    const finite=forms.filter(x=>x.kind==='finite');
-    const summary=[];
-    summary.push(`<strong>${escapeHtml(displayLemma(lemma))}</strong>`);
-    if(hasManualParadigm(lemma)) summary.push('χειροκίνητα επιμελημένο paradigm');
-    if(metaVerb?.gloss && metaVerb.gloss !== 'Συμπληρωματικό λήμμα') summary.push(`νεοελληνική μετάφραση: ${escapeHtml(metaVerb.gloss)}`);
-    if(metaVerb?.principalParts) summary.push(`κύρια μέρη: ${escapeHtml(metaVerb.principalParts)}`);
-    if(Array.isArray(metaVerb?.derivatives) && metaVerb.derivatives.length) summary.push(`νεοελληνικά/λεξιλογικά παράγωγα: ${escapeHtml(metaVerb.derivatives.join(', '))}`);
-    if(metaVerb?.sourceNotes) summary.push(`πηγές επιμέλειας: ${escapeHtml(metaVerb.sourceNotes)}`);
-    const auditInfo=strictAuditInfo(lemma);
-    if(auditInfo){ summary.push(`strict audit: ${escapeHtml(auditInfo.status)} · manual forms ${auditInfo.manualForms} · slot checks ${auditInfo.slotChecks}`); }
-    const hard=hardeningInfo(lemma);
-    const curated=manualCurationInfo(lemma);
-    const spot=spotCheckInfo(lemma);
-    const slotValidation=slotValidationInfo(lemma);
-    if(hard) summary.push(`philology hardening: ${escapeHtml(hard.group)}`);
-    if(curated) summary.push(`χειροκίνητη λημματοκεντρική επιμέλεια: ${escapeHtml(curated.family)}`);
-    if(spot) summary.push(`spot-check: ${escapeHtml(spot.summary)}`);
-    if(slotValidation) summary.push(`slot-by-slot validation: ${escapeHtml(slotValidation.summary)}`);
-    if(mode==='participle') summary.push('οι πίνακες μετοχών προβάλλονται με ενισχυμένη φιλολογική επιμέλεια, λημματοκεντρική αναπλήρωση ελλειπόντων γενών, ειδική κάλυψη για ανώμαλους τύπους, αυστηρότερο σχολικό φιλτράρισμα των σπανιότερων εναλλακτικών και απολύτως χειροκίνητη σχολική κλίση για εἰμί, οἶδα, φημί, δίδωμι, τίθημι, ἵστημι, λέγω, φέρω, ὁράω και ἔχω');
-    $('#conjugation-summary').innerHTML=summary.join(' · ');
-    const spotBox=$('#conjugation-spotcheck');
-    const spotHtml = spot ? (()=>{
-      const validated=(spot.validated||[]).map(x=>`<span class="badge canonical">${escapeHtml(x)}</span>`).join(' ');
-      return `<div class="result-card"><h3>Spot-check λήμματος</h3><p>${escapeHtml(spot.summary||'')}</p><p><strong>Επιβεβαιωμένοι βασικοί τύποι:</strong></p><div class="badges">${validated}</div><p class="notes-compact"><strong>Σημείο προσοχής:</strong> ${escapeHtml(spot.caution||'')}</p><p class="notes-compact"><strong>Επόμενο βήμα:</strong> ${escapeHtml(spot.nextStep||'')}</p></div>`;
-    })() : '';
-    const slotHtml = slotValidation ? (()=>{
-      const slots=(slotValidation.slots||[]).map(s=>`<div class="cell"><div class="label">${escapeHtml(s.label||s.slot||'')}</div><div class="form">${escapeHtml(s.form||'')}</div><div class="notes-compact">${escapeHtml(s.note||'')}</div></div>`).join('');
-      return `<div class="result-card"><h3>Slot-by-slot validation</h3><p>${escapeHtml(slotValidation.summary||'')}</p><div class="grid-six">${slots}</div></div>`;
-    })() : '';
-    spotBox.innerHTML = spotHtml + slotHtml;
     if(mode==='finite'){
       const groups={};
       finite.forEach(f=>{ const k=`${f.tense}|${f.voice}|${f.mood}`; (groups[k]=groups[k]||[]).push(f); });
@@ -989,7 +994,13 @@
         return `<div class="table-block"><h3>${label(TENSE_LABELS,tense)} • ${label(VOICE_LABELS,voice)} • ${label(GENDER_LABELS,gender)}</h3>${renderParticipleDeclensionTable(entries)}</div>`;
       }).join('') || '<div class="result-card"><p>Δεν υπάρχουν διαθέσιμες μετοχές.</p></div>';
     }
+  } catch(err) {
+    console.error('renderConjugation failed:', err);
+    summaryBox.innerHTML = `<span class="muted">Αποτυχία φόρτωσης για το λήμμα ${escapeHtml(displayLemma(lemma))}.</span>`;
+    spotBox.innerHTML = '';
+    out.innerHTML = `<div class="result-card"><p>Αποτυχία φόρτωσης του επιλεγμένου λήμματος.</p><p class="muted">${escapeHtml(err?.message || String(err))}</p></div>`;
   }
+}
   const quizPoolCache = {};
   const questionPoolCache = {};
   function isDualEntry(x){
