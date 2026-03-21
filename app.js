@@ -36,6 +36,7 @@
   const extraVerbs=lexiconAugment.extraVerbs||[];
   const verbs=[...baseVerbs.map(v=>Object.assign({}, v, verbMetaAugment[v.lemma]||{})), ...extraVerbs];
   let lemmaForms=window.LEMMA_FORMS||{};
+  let lemmaFormFileMap=window.LEMMA_FORM_FILE_MAP||{};
   const bibliographyEntries=[
     {
       citation:'Ασωνίτης, Ν.Σ. and Αναγνωστόπουλος, Β.Δ. (n.d.) <em>Λεξικόν των βασικών ρημάτων ανωμάλων και ομαλών της Αρχαίας Ελληνικής γλώσσας και κυρίως της αττικής διαλέκτου</em>. Αθήνα: Εκδόσεις Χρυσάφη Πανέση.',
@@ -236,17 +237,22 @@
   let conjugableLemmas=[];
   let conjugableByNorm={};
   let conjugableNormSet=new Set();
-  let formIndex=window.FORM_INDEX||{};
+  let formIndex={};
   let quizPools={};
   const scriptLoadPromises={};
-  const loadedFormIndexShards=new Set();
-  const loadedLemmaFormShards=new Set();
-  const loadedQuizLevels=new Set();
+  const loadedFormIndexBuckets=new Set();
+  const loadedLemmaFormEntries=new Set();
+  const quizManifestCache={};
+  const loadedQuizChunks={ easy:new Set(), mixed:new Set(), advanced:new Set() };
   let lemmaFormsManifestLoaded=Array.isArray(window.LEMMA_FORM_LEMMAS);
-  function shardIdFor(value){
+  let lemmaFormFileMapLoaded=Object.keys(lemmaFormFileMap).length>0;
+  function formBucketIdFor(value){
     const norm=normalizeGreek(value||'');
-    const ch=norm.charAt(0);
-    return ch && ch >= 'α' && ch <= 'ω' ? ch : 'other';
+    const ch1=norm.charAt(0);
+    const ch2=norm.charAt(1);
+    const b1=(ch1 && ch1 >= 'α' && ch1 <= 'ω') ? ch1 : 'other';
+    const b2=(ch2 && ch2 >= 'α' && ch2 <= 'ω') ? ch2 : '_';
+    return `${b1}-${b2}`;
   }
   function rebuildConjugationLookup(){
     const manifestLemmas=Array.isArray(window.LEMMA_FORM_LEMMAS) ? window.LEMMA_FORM_LEMMAS : [];
@@ -268,34 +274,56 @@
     return scriptLoadPromises[src];
   }
   async function ensureLemmaManifestLoaded(){
-    if(lemmaFormsManifestLoaded) return;
-    await loadScript('data/lemmaForms.manifest.js');
-    lemmaFormsManifestLoaded=true;
+    if(!lemmaFormsManifestLoaded) {
+      await loadScript('data/lemmaForms.manifest.js');
+      lemmaFormsManifestLoaded=true;
+    }
+    if(!lemmaFormFileMapLoaded) {
+      await loadScript('data/lemmaForms.filemap.js');
+      lemmaFormFileMap=window.LEMMA_FORM_FILE_MAP||{};
+      lemmaFormFileMapLoaded=true;
+    }
     rebuildConjugationLookup();
   }
-  async function ensureLemmaShardLoaded(lemma){
-    const shard=shardIdFor(lemma);
-    if(loadedLemmaFormShards.has(shard)) return;
-    await loadScript(`data/lemmaForms-shards/${shard}.js`);
-    lemmaForms=window.LEMMA_FORMS||{};
-    loadedLemmaFormShards.add(shard);
+  async function ensureLemmaEntryLoaded(lemma){
+    await ensureLemmaManifestLoaded();
+    const resolved=conjugableByNorm[normalizeGreek(lemma)] || lemma;
+    if(lemmaForms[resolved] || loadedLemmaFormEntries.has(resolved)) return;
+    const file=lemmaFormFileMap[resolved];
+    if(!file) {
+      loadedLemmaFormEntries.add(resolved);
+      return;
+    }
+    const response=await fetch(`data/lemma-entries/${file}`);
+    if(!response.ok) throw new Error(`Failed to load lemma entry for ${resolved}`);
+    lemmaForms[resolved]=await response.json();
+    loadedLemmaFormEntries.add(resolved);
   }
   async function ensureLemmaFormsLoaded(){
     await ensureLemmaManifestLoaded();
-    const pending=(window.LEMMA_FORM_LEMMAS||[]).map(lemma=>ensureLemmaShardLoaded(lemma));
-    await Promise.all(pending);
-    rebuildConjugationLookup();
+    return;
   }
-  async function ensureFormIndexShardLoaded(query){
-    const shard=shardIdFor(query);
-    if(loadedFormIndexShards.has(shard)) return;
-    await loadScript(`data/formIndex-shards/${shard}.js`);
-    formIndex=window.FORM_INDEX||{};
-    loadedFormIndexShards.add(shard);
+  async function ensureFormIndexBucketLoaded(query){
+    const bucket=formBucketIdFor(query);
+    if(loadedFormIndexBuckets.has(bucket)) return;
+    const response=await fetch(`data/formIndex-buckets/${bucket}.json`);
+    if(!response.ok) throw new Error(`Failed to load form-index bucket ${bucket}`);
+    const payload=await response.json();
+    formIndex=Object.assign(formIndex,payload||{});
+    loadedFormIndexBuckets.add(bucket);
   }
   async function ensureFormIndexLoaded(){
-    const greekShards='αβγδεζηθικλμνξοπρστυφχψω'.split('');
-    await Promise.all([...greekShards,'other'].map(sh=>ensureFormIndexShardLoaded(sh)));
+    const manifestResponse=await fetch('data/formIndex-buckets/manifest.json');
+    if(!manifestResponse.ok) throw new Error('Failed to load form-index manifest');
+    const manifest=await manifestResponse.json();
+    for(const row of (manifest||[])){
+      if(loadedFormIndexBuckets.has(row.bucket)) continue;
+      const response=await fetch(`data/formIndex-buckets/${row.file}`);
+      if(!response.ok) throw new Error(`Failed to load form-index bucket ${row.bucket}`);
+      const payload=await response.json();
+      formIndex=Object.assign(formIndex,payload||{});
+      loadedFormIndexBuckets.add(row.bucket);
+    }
   }
   function indexEntriesFor(query, rawForm=''){
     const norm=normalizeGreek(query||'');
@@ -310,12 +338,33 @@
     if(number) entry.number=number;
     return entry;
   }
-  async function ensureQuizPoolBuilt(level='mixed'){
-    if(loadedQuizLevels.has(level) && quizPools[level]) return;
-    const varName=`QUIZ_POOL_${String(level||'mixed').toUpperCase()}`;
-    await loadScript(`data/quiz/${level}.js`);
-    quizPools[level]=(window[varName]||[]).map(unpackQuizEntry);
-    loadedQuizLevels.add(level);
+  async function ensureQuizManifestLoaded(level='mixed'){
+    if(quizManifestCache[level]) return quizManifestCache[level];
+    const response=await fetch(`data/quiz-chunks/${level}/manifest.json`);
+    if(!response.ok) throw new Error(`Failed to load quiz manifest for ${level}`);
+    const manifest=await response.json();
+    quizManifestCache[level]=manifest;
+    if(!quizPools[level]) quizPools[level]=[];
+    return manifest;
+  }
+  async function ensureQuizChunkLoaded(level='mixed', file){
+    if(loadedQuizChunks[level]?.has(file)) return;
+    const response=await fetch(`data/quiz-chunks/${level}/${file}`);
+    if(!response.ok) throw new Error(`Failed to load quiz chunk ${file} for ${level}`);
+    const rows=await response.json();
+    const unpacked=(rows||[]).map(unpackQuizEntry);
+    quizPools[level]=(quizPools[level]||[]).concat(unpacked);
+    loadedQuizChunks[level].add(file);
+  }
+  async function ensureQuizPoolBuilt(level='mixed', minimum=700){
+    const manifest=await ensureQuizManifestLoaded(level);
+    if((quizPools[level]||[]).length>=minimum) return;
+    const remaining=(manifest.chunks||[]).map(x=>x.file).filter(file=>!loadedQuizChunks[level].has(file));
+    if(!remaining.length) return;
+    const targetLoads=Math.max(1, Math.ceil((minimum-(quizPools[level]||[]).length)/Math.max(1,(manifest.chunks?.[0]?.count||500))));
+    for(const file of shuffle(remaining).slice(0,targetLoads)){
+      await ensureQuizChunkLoaded(level,file);
+    }
   }
   function buildHeroStats(){
     const cards=[
@@ -383,7 +432,7 @@
       return;
     }
     box.innerHTML='<div class="result-card"><p>Φορτώνεται ο δείκτης αναγνώρισης…</p></div>';
-    await ensureFormIndexShardLoaded(raw);
+    await ensureFormIndexBucketLoaded(raw);
     renderAnalysisResults(indexEntriesFor(raw, raw).slice(0,20));
   }
   function populateVerbSelect(){
@@ -398,7 +447,7 @@
     if(generatedParadigmNormMap[norm]) return (generatedParadigms[generatedParadigmNormMap[norm]]||[]).slice();
     await ensureLemmaManifestLoaded();
     const resolved=conjugableByNorm[norm] || lemma;
-    await ensureLemmaShardLoaded(resolved);
+    await ensureLemmaEntryLoaded(resolved);
     return (lemmaForms[resolved]||[]).slice();
   }
 
@@ -854,7 +903,7 @@
     const lemma=$('#verb-select').value;
     const mode=$('#view-select').value;
     const out=$('#conjugation-output');
-    out.innerHTML='<div class="result-card"><p>Φορτώνονται τα δεδομένα κλίσης…</p></div>';
+    out.innerHTML='<div class="result-card"><p>Φορτώνεται το επιλεγμένο λήμμα…</p></div>';
     const forms=await formsForLemma(lemma);
     const metaVerb=verbs.find(v=>normalizeGreek(v.lemma)===normalizeGreek(lemma));
     const finite=forms.filter(x=>x.kind==='finite');
@@ -946,12 +995,10 @@
   function isDualEntry(x){
     return x?.number==='du' || /du$/.test(canonicalPerson(x)||'');
   }
-  async function poolForLevel(level){
-    await ensureQuizPoolBuilt(level);
-    if(quizPoolCache[level]) return quizPoolCache[level];
-    const pool=(quizPools[level]||[]).slice();
-    quizPoolCache[level]=pool;
-    return pool;
+  async function poolForLevel(level, minimum=700){
+    await ensureQuizPoolBuilt(level, minimum);
+    quizPoolCache[level]=(quizPools[level]||[]).slice();
+    return quizPoolCache[level];
   }
   let quizState={score:0,attempts:0,current:null};
   function formatChoice(x){
@@ -971,7 +1018,7 @@
     $('#quiz-box').innerHTML='<div class="muted">Ετοιμάζεται το pool του παιχνιδιού…</div>';
     let pool=questionPoolCache[filterKey];
     if(!pool){
-      pool=await poolForLevel(level);
+      pool=await poolForLevel(level, level==='easy' ? 500 : 700);
       pool=pool.filter(x=>!ambiguityNoteFor(x.form));
       if(!finiteOn) pool=pool.filter(x=>x.kind!=='finite');
       if(!nonFiniteOn) pool=pool.filter(x=>x.kind==='finite');
@@ -982,6 +1029,15 @@
       $('#quiz-box').textContent='Δεν υπάρχει διαθέσιμο pool για τις τρέχουσες επιλογές.';
       $('#quiz-choices').innerHTML='';
       return;
+    }
+    if(pool.length<120){
+      questionPoolCache[filterKey]=null;
+      pool=await poolForLevel(level, level==='easy' ? 1000 : 1400);
+      pool=pool.filter(x=>!ambiguityNoteFor(x.form));
+      if(!finiteOn) pool=pool.filter(x=>x.kind!=='finite');
+      if(!nonFiniteOn) pool=pool.filter(x=>x.kind==='finite');
+      pool=uniqBy(pool, x=>`${normalizeGreek(displayForm(x))}|${formatChoice(x)}`);
+      questionPoolCache[filterKey]=pool;
     }
     const answer=randomItem(pool);
     const sameLemmaPool = pool.filter(x=>sameLemma(x.lemma, answer.lemma) && formatChoice(x)!==formatChoice(answer));
@@ -1113,7 +1169,7 @@
     const count=Math.max(4,Math.min(40,Number($('#worksheet-count').value)||12));
     const mode=$('#worksheet-mode').value;
     const level=$('#worksheet-level').value;
-    const pool=shuffle(poolForLevel(level)).slice(0,count);
+    const pool=shuffle(await poolForLevel(level, level==='easy' ? 500 : 700)).slice(0,count);
     const box=$('#worksheet-output');
     if(mode==='recognition'){
       box.innerHTML=`<h3>Φύλλο εργασίας: Αναγνώριση τύπων</h3>` + pool.map((p,i)=>`<div class="worksheet-item"><strong>${i+1}.</strong> ${escapeHtml(p.form)}<br><small class="muted">Να αναγνωριστεί το λήμμα, ο χρόνος, η φωνή και η έγκλιση${p.kind==='finite'?', καθώς και το πρόσωπο':''}${p.kind==='participle'?', καθώς και γένος, πτώση, αριθμός':''}.</small></div>`).join('');

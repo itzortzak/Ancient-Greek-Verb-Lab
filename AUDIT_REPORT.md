@@ -1,3 +1,12 @@
+# Audit addendum v1.5.19
+
+Performance refactor: two-character form-index buckets and chunked quiz pools.
+
+## v1.5.18
+- Νέο tranche τεκμηριωτικού ελέγχου και συμπλήρωσης για τα αἰσθάνομαι και ἀμύνω.
+- Το αἰσθάνομαι περνά σε manual+slots status με deponent core paradigm και νέο non-finite layer.
+- Το ἀμύνω περνά σε manual+slots status με expanded active / middle layer και νέο form-index patch.
+
 ## v1.5.12
 - Performance refactor: lazy loading για form index και lemma forms, bundled startup payload, deferred conjugation initialization, cached quiz pools.
 

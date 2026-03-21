@@ -1,3 +1,16 @@
+## Ancient Greek Verb Lab
+
+Current build: v1.5.19
+
+- Fine-grained form-index buckets for faster Recognition loading.
+- Chunked quiz pools for lighter first load in Game.
+- Per-lemma loading for Conjugation retained.
+
+## v1.5.18
+- Νέο document-review tranche για τα αἰσθάνομαι και ἀμύνω.
+- Το αἰσθάνομαι αποκτά χειροκίνητο deponent paradigm με present/imperfect, future middle, β΄ aorist middle, singleton perfect/pluperfect, απαρέμφατα και μετοχές.
+- Το ἀμύνω αποκτά expanded active / middle-passive manual paradigm με contracted future active, μέση σειρά, νέα απαρέμφατα και μετοχές.
+
 ## v1.5.15
 
 - sharded loading για `formIndex` ανά αρχικό γράμμα
