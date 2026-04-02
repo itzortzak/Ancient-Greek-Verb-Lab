@@ -1,0 +1,27 @@
+{
+  "version": "v1.5.52-tranche47",
+  "lemma": "ῥέω",
+  "sources": [
+    {
+      "type": "uploaded-pdf",
+      "title": "05.1 ΓΡΑΜΜΑΤΙΚΗ.pdf",
+      "evidence": "Δίνει ρητό πίνακα για το ῥέω: οριστική, υποτακτική, ευκτική, προστακτική, απαρέμφατο, μετοχή και παρατατικό."
+    },
+    {
+      "type": "uploaded-pdf",
+      "title": "05.2 Αρχικοί Χρόνοι.pdf",
+      "evidence": "Δίνει ρητά: ῥέω, ἔρρεον, ῥυήσομαι / ῥεύσομαι / ῥευσοῦμαι, ἔρρευσα / ἐρρύην, ἐρρύηκα, ἐρρυήκειν."
+    },
+    {
+      "type": "uploaded-pdf",
+      "title": "oikonomou.pdf",
+      "evidence": "Επιβεβαιώνει το present/imperfect profile και τον principal-parts άξονα με μέσον μέλλοντα ῥυήσομαι, αόριστο ἐρρύην, παρακείμενο ἐρρύηκα και υπερσυντέλικο ἐρρυήκειν."
+    }
+  ],
+  "notes": "Το pass αναβαθμίζει το ῥέω σε source-backed manual lemma: πλήρες present active system και πλήρης παρατατικός από τον πίνακα του 05.1, μαζί με συντηρητικούς principal-parts anchors για future, aorist, perfect και pluperfect. Ο form-index bucket ξαναγράφεται ώστε οι νέοι τύποι να λειτουργούν και στην Αναγνώριση.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche47.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche47.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche47.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche47.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche47.js"
+}
