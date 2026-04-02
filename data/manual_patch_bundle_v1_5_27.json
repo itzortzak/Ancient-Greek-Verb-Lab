@@ -1,0 +1,1877 @@
+{
+  "version": "v1.5.27",
+  "tranche": "22",
+  "lemmas": [
+    {
+      "meta": {
+        "lemma": "ἐπίσταμαι",
+        "gloss": "γνωρίζω καλά, κατέχω",
+        "coverage": "manual",
+        "source": "05.1-grammar-pp268-269",
+        "family": "knowledge-deponent",
+        "id": "x052",
+        "principalParts": "ἐπίσταμαι, ἠπιστάμην, ἐπιστήσομαι, ἠπιστήθην",
+        "derivatives": [
+          "ἐπιστήμη",
+          "ἐπιστάτης"
+        ],
+        "sourceNotes": "Το tranche 22 βασίζεται ρητά στον πίνακα των σελ. 268-269 του 05.1 ΓΡΑΜΜΑΤΙΚΗ. Εντάσσονται οι μονολεκτικοί finite τύποι του present system, ο future middle, ο passive aorist, τα απαρέμφατα και οι ονομαστικές μετοχές.",
+        "notes": "Tranche 22: new source-backed knowledge/deponent paradigm."
+      },
+      "forms": [
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίσταμαι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστασαι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίσταται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστάμεθα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστασθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστανται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστωμαι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστῃ",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστηται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστώμεθα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστησθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστωνται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπισταίμην",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίσταιο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίσταιτο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπισταίμεθα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίσταισθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίσταιντο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστω",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστασο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστάσθω",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστασθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστάσθων",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστάμην",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπίστω",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπίστασο",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπίστατο",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστάμεθα",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπίστασθε",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπίσταντο",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσομαι",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσει",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσῃ",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσεται",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστησόμεθα",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσεσθε",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσονται",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστησοίμην",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσοιο",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσοιτο",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστησοίμεθα",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσοισθε",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσοιντο",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστήθην",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστήθης",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστήθη",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστήθημεν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστήθητε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἠπιστήθησαν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῶ",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "subjunctive",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῇς",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "subjunctive",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῇ",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "subjunctive",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῶμεν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "subjunctive",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῆτε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "subjunctive",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῶσι(ν)",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "subjunctive",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείην",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείης",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείη",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείημεν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείητε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείησαν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθεῖμεν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθεῖτε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθεῖεν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "optative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήθητι",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "imperative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθήτω",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "imperative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήθητε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "imperative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθέντων",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "imperative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθέτωσαν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "imperative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπίστασθαι",
+          "kind": "infinitive",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστήσεσθαι",
+          "kind": "infinitive",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθῆναι",
+          "kind": "infinitive",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστάμενος",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπισταμένη",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστάμενον",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστησόμενος",
+          "kind": "participle",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστησομένη",
+          "kind": "participle",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστησόμενον",
+          "kind": "participle",
+          "tense": "future",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθείς",
+          "kind": "participle",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθεῖσα",
+          "kind": "participle",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "ἐπίσταμαι",
+          "form": "ἐπιστηθέν",
+          "kind": "participle",
+          "tense": "aorist",
+          "voice": "passive",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "present|middle/passive|indicative|1sg",
+          "label": "ενεστώτας • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "ἐπίσταμαι",
+          "note": "05.1 πίνακας, σελ. 268"
+        },
+        {
+          "slot": "present|middle/passive|subjunctive|3sg",
+          "label": "ενεστώτας • μέση/παθητική • υποτακτική • γ΄ ενικό",
+          "form": "ἐπίστηται",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "present|middle/passive|optative|2sg",
+          "label": "ενεστώτας • μέση/παθητική • ευκτική • β΄ ενικό",
+          "form": "ἐπίσταιο",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "imperfect|middle/passive|indicative|2sg",
+          "label": "παρατατικός • μέση/παθητική • οριστική • β΄ ενικό",
+          "form": "ἠπίστασο",
+          "note": "05.1 δίνει και ἠπίστω· κρατούνται και οι δύο τύποι"
+        },
+        {
+          "slot": "future|middle/passive|indicative|1sg",
+          "label": "μέλλοντας • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "ἐπιστήσομαι",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "future|middle/passive|optative|3pl",
+          "label": "μέλλοντας • μέση/παθητική • ευκτική • γ΄ πληθυντικό",
+          "form": "ἐπιστήσοιντο",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "aorist|passive|indicative|1sg",
+          "label": "παθητικός αόριστος • οριστική • α΄ ενικό",
+          "form": "ἠπιστήθην",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "aorist|passive|imperative|2sg",
+          "label": "παθητικός αόριστος • προστακτική • β΄ ενικό",
+          "form": "ἐπιστήθητι",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "present|middle/passive|infinitive",
+          "label": "ενεστώτας • μέση/παθητική • απαρέμφατο",
+          "form": "ἐπίστασθαι",
+          "note": "05.1 σελ. 269"
+        },
+        {
+          "slot": "future|middle/passive|infinitive",
+          "label": "μέλλοντας • μέση/παθητική • απαρέμφατο",
+          "form": "ἐπιστήσεσθαι",
+          "note": "05.1 σελ. 269"
+        },
+        {
+          "slot": "aorist|passive|infinitive",
+          "label": "παθητικός αόριστος • απαρέμφατο",
+          "form": "ἐπιστηθῆναι",
+          "note": "05.1 σελ. 269"
+        },
+        {
+          "slot": "present|middle/passive|participle|masc.nom.sg",
+          "label": "ενεστώτας • μέση/παθητική • μετοχή • αρσενικό ον. εν.",
+          "form": "ἐπιστάμενος",
+          "note": "05.1 σελ. 269"
+        },
+        {
+          "slot": "aorist|passive|participle|masc.nom.sg",
+          "label": "παθητικός αόριστος • μετοχή • αρσενικό ον. εν.",
+          "form": "ἐπιστηθείς",
+          "note": "05.1 σελ. 269"
+        }
+      ],
+      "strict": {
+        "status": "manual+slots",
+        "readiness": "advanced-source-backed",
+        "curated": true,
+        "needsAudit": false
+      }
+    },
+    {
+      "meta": {
+        "lemma": "μέμνημαι",
+        "gloss": "θυμάμαι",
+        "coverage": "manual",
+        "source": "05.1-grammar-p271",
+        "family": "perfect-present-memory",
+        "id": "x053",
+        "principalParts": "μέμνημαι (παρακείμενος με σημασία ενεστώτα)· αναπλήρωση λοιπών χρόνων από μιμνῄσκομαι / γιγνώσκω όπου χρειάζεται",
+        "derivatives": [
+          "μνήμη",
+          "μνημονεύω"
+        ],
+        "sourceNotes": "Το tranche 22 ακολουθεί τον πίνακα της σελ. 271 του 05.1 ΓΡΑΜΜΑΤΙΚΗ. Κρατούνται μόνο οι μονολεκτικοί τύποι της υποτακτικής και της ευκτικής· οι περιφραστικοί σχηματισμοί μεμνημένος ὦ / εἴην δεν εντάσσονται στο form index για να παραμείνει μονολεκτική η αναγνώριση.",
+        "notes": "Tranche 22: new source-backed perfect-present memory paradigm with explicit exclusion of periphrastic slots."
+      },
+      "forms": [
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνημαι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνησαι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνηται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνήμεθα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνησθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνηνται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῶμαι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῇ",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῆται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνώμεθα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῆσθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῶνται",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "subjunctive",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῴμην",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῷο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῷτο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῴμεθα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῷσθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῷντο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "optative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνησο",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνήσθω",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μέμνησθε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνήσθων",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνήσθωσαν",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "imperative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνῆσθαι",
+          "kind": "infinitive",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνημένος",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνημένη",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "μέμνημαι",
+          "form": "μεμνημένον",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "middle/passive",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "present|middle/passive|indicative|1sg",
+          "label": "παρακείμενος με σημασία ενεστώτα • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "μέμνημαι",
+          "note": "05.1 σελ. 271"
+        },
+        {
+          "slot": "present|middle/passive|indicative|3pl",
+          "label": "παρακείμενος με σημασία ενεστώτα • μέση/παθητική • οριστική • γ΄ πληθυντικό",
+          "form": "μέμνηνται",
+          "note": "05.1 σελ. 271"
+        },
+        {
+          "slot": "present|middle/passive|subjunctive|1sg",
+          "label": "υποτακτική • μονολεκτικός τύπος • α΄ ενικό",
+          "form": "μεμνῶμαι",
+          "note": "05.1, μονολεκτικός τύπος με κατάληξη -ῶμαι"
+        },
+        {
+          "slot": "present|middle/passive|optative|1sg",
+          "label": "ευκτική • μονολεκτικός τύπος • α΄ ενικό",
+          "form": "μεμνῴμην",
+          "note": "05.1, μονολεκτικός τύπος με κατάληξη -ῴμην"
+        },
+        {
+          "slot": "present|middle/passive|imperative|2sg",
+          "label": "προστακτική • β΄ ενικό",
+          "form": "μέμνησο",
+          "note": "05.1 σελ. 271"
+        },
+        {
+          "slot": "present|middle/passive|imperative|3pl",
+          "label": "προστακτική • γ΄ πληθυντικό",
+          "form": "μεμνήσθωσαν",
+          "note": "05.1 δίνει και μεμνήσθων"
+        },
+        {
+          "slot": "present|middle/passive|infinitive",
+          "label": "απαρέμφατο",
+          "form": "μεμνῆσθαι",
+          "note": "05.1 σελ. 271"
+        },
+        {
+          "slot": "present|middle/passive|participle|masc.nom.sg",
+          "label": "μετοχή • αρσενικό ον. εν.",
+          "form": "μεμνημένος",
+          "note": "05.1 σελ. 271"
+        }
+      ],
+      "strict": {
+        "status": "manual+slots",
+        "readiness": "advanced-source-backed",
+        "curated": true,
+        "needsAudit": false
+      }
+    },
+    {
+      "meta": {
+        "lemma": "δέδοικα",
+        "gloss": "φοβούμαι",
+        "coverage": "manual",
+        "source": "05.1-grammar-p275+principal-parts",
+        "family": "perfect-present-fear",
+        "id": "x054",
+        "principalParts": "δέδοικα / δέδια, ἐδεδοίκειν, δείσομαι, ἔδεισα",
+        "derivatives": [
+          "δέος",
+          "δειλία"
+        ],
+        "sourceNotes": "Το tranche 22 στηρίζεται στον πίνακα της σελ. 275 του 05.1 ΓΡΑΜΜΑΤΙΚΗ. Το λήμμα μοντελοποιείται ως dual perfect-present system (δέδοικα / δέδια) με ρητή καταγραφή των ελλειπτικών υποτακτικών/προστακτικών τύπων και με συντηρητική ανάπτυξη του future middle και του aorist active από τους αρχικούς χρόνους που δίνει η ίδια σελίδα.",
+        "notes": "Tranche 22: new source-backed fear-perfect paradigm with dual-present allomorphs."
+      },
+      "forms": [
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδοικα",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδοικας",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδοικε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοίκαμεν",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοίκατε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοίκασι(ν)",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδια",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδιας",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδιε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδίμεν",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδίτε",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδίασι(ν)",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδίῃ",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "subjunctive",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδίωσι(ν)",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "subjunctive",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δέδιθι",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "imperative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδίτω",
+          "kind": "finite",
+          "tense": "present",
+          "voice": "active",
+          "mood": "imperative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδεδοίκειν",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδεδοίκεις",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδεδοίκει",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδεδοίκεμεν",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδεδοίκετε",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδεδοίκεσαν",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδέδισαν",
+          "kind": "finite",
+          "tense": "imperfect",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσομαι",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσῃ",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσεται",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεισόμεθα",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσεσθε",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσονται",
+          "kind": "finite",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἔδεισα",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἔδεισας",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἔδεισε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3sg",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδείσαμεν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "1pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἐδείσατε",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "2pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "ἔδεισαν",
+          "kind": "finite",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "indicative",
+          "person": "3pl",
+          "number": "pl"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοικέναι",
+          "kind": "infinitive",
+          "tense": "present",
+          "voice": "active",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδιέναι",
+          "kind": "infinitive",
+          "tense": "present",
+          "voice": "active",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσεσθαι",
+          "kind": "infinitive",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεῖσαι",
+          "kind": "infinitive",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "infinitive"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοικώς",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοικυῖα",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδοικός",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδιώς",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδιυῖα",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεδιός",
+          "kind": "participle",
+          "tense": "present",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεισόμενος",
+          "kind": "participle",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεισομένη",
+          "kind": "participle",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεισόμενον",
+          "kind": "participle",
+          "tense": "future",
+          "voice": "middle",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσας",
+          "kind": "participle",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "masc",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δείσασα",
+          "kind": "participle",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "fem",
+          "case": "nom",
+          "number": "sg"
+        },
+        {
+          "lemma": "δέδοικα",
+          "form": "δεῖσαν",
+          "kind": "participle",
+          "tense": "aorist",
+          "voice": "active",
+          "mood": "participle",
+          "gender": "neut",
+          "case": "nom",
+          "number": "sg"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "παρακείμενος με σημασία ενεστώτα • ενεργητική • οριστική • α΄ ενικό",
+          "form": "δέδοικα",
+          "note": "05.1 σελ. 275· παράλληλος τύπος: δέδια"
+        },
+        {
+          "slot": "present|active|indicative|3pl",
+          "label": "παρακείμενος με σημασία ενεστώτα • ενεργητική • οριστική • γ΄ πληθυντικό",
+          "form": "δεδοίκασι(ν)",
+          "note": "05.1 σελ. 275· παράλληλος τύπος: δεδίασι(ν)"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "υποτακτική • ενεργητική • γ΄ ενικό",
+          "form": "δεδίῃ",
+          "note": "05.1 καταγράφει μόνο ελλειπτικό set"
+        },
+        {
+          "slot": "present|active|imperative|2sg",
+          "label": "προστακτική • ενεργητική • β΄ ενικό",
+          "form": "δέδιθι",
+          "note": "05.1 σε παρένθεση"
+        },
+        {
+          "slot": "imperfect|active|indicative|1sg",
+          "label": "ὑπερσυντέλικος με σημασία παρατατικού • ενεργητική • α΄ ενικό",
+          "form": "ἐδεδοίκειν",
+          "note": "05.1 σελ. 275"
+        },
+        {
+          "slot": "future|middle|indicative|1sg",
+          "label": "μέλλοντας • μέση • οριστική • α΄ ενικό",
+          "form": "δείσομαι",
+          "note": "05.1 αρχικοί χρόνοι"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος/φοβικός αόριστος • ενεργητική • α΄ ενικό",
+          "form": "ἔδεισα",
+          "note": "05.1 αρχικοί χρόνοι"
+        },
+        {
+          "slot": "present|active|infinitive",
+          "label": "απαρέμφατο perfect-present",
+          "form": "δεδοικέναι",
+          "note": "05.1 σελ. 275· παράλληλος τύπος δεδιέναι"
+        },
+        {
+          "slot": "future|middle|infinitive",
+          "label": "μέλλοντας • μέση • απαρέμφατο",
+          "form": "δείσεσθαι",
+          "note": "συντηρητική ανάπτυξη από τους αρχικούς χρόνους"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος • ενεργητική • απαρέμφατο",
+          "form": "δεῖσαι",
+          "note": "συντηρητική ανάπτυξη από τον αόριστο ἔδεισα"
+        },
+        {
+          "slot": "present|active|participle|masc.nom.sg",
+          "label": "μετοχή perfect-present • αρσενικό ον. εν.",
+          "form": "δεδοικώς",
+          "note": "05.1 σελ. 275· παράλληλος τύπος δεδιώς"
+        }
+      ],
+      "strict": {
+        "status": "manual+slots",
+        "readiness": "advanced-source-backed",
+        "curated": true,
+        "needsAudit": false
+      }
+    }
+  ]
+}

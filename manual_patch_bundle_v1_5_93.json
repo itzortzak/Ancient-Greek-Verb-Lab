@@ -1,0 +1,24 @@
+{
+  "version": "1.5.93",
+  "tranche": 88,
+  "lemma": "ὑβρίζω",
+  "type": "package-sync",
+  "summary": "Synchronized static per-lemma payload, lemma filemap/manifest, and comprehensive audit metadata with the active tranche-16 curated runtime layer for ὑβρίζω.",
+  "counts": {
+    "total": 52,
+    "finite": 36,
+    "infinitives": 4,
+    "participles": 12
+  },
+  "files_touched": [
+    "VERSION",
+    "README.md",
+    "AUDIT_REPORT.md",
+    "COMPREHENSIVE_AUDIT.json",
+    "COMPREHENSIVE_AUDIT.md",
+    "data/lemmaForms.filemap.js",
+    "data/lemmaForms.manifest.js",
+    "data/lemma-entries/lm-566b844987f2.json",
+    "index.html"
+  ]
+}

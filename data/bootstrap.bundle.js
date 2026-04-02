@@ -84350,3 +84350,2578 @@ window.STRICT_AUDIT = {
 
 });
 })();
+
+
+/* final completion patch for ἥκω and σβέννυμι */
+(function(){
+  window.MANUAL_PARADIGMS = window.MANUAL_PARADIGMS || {};
+  window.STRICT_AUDIT = window.STRICT_AUDIT || { lemmas: {} };
+  window.MANUAL_PARADIGMS['ἥκω'] = [
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκεις",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκει",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκομεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκετε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκουσι(ν)",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκῃς",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκῃ",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκωμεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκητε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκωσι(ν)",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκοιμι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκοις",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκοι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκοιμεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκοιτε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκοιεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧκε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἡκέτω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκετε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἡκόντων",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκειν",
+    "kind": "infinitive",
+    "tense": "present",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκων",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκουσα",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧκον",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧκον",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧκες",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧκε(ν)",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκομεν",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥκετε",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧκον",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξω",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξεις",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξει",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξομεν",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξετε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξουσι(ν)",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξοιμι",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξοις",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξοι",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξοιμεν",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξοιτε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξοιεν",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξειν",
+    "kind": "infinitive",
+    "tense": "future",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξων",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξουσα",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξον",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξα",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξας",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξε(ν)",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξατε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξαν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξῃς",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξῃ",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξωμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξητε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξωσι(ν)",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαιμι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαις",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαιμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαιτε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξαιεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξον",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἡξάτω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξατε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἡξάντων",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξαι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξας",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἥξασα",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "ἥκω",
+    "form": "ἧξαν",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  }
+];
+  window.MANUAL_PARADIGMS['σβέννυμι'] = [
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυμι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυς",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυσι(ν)",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυμεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυτε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύασι(ν)",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύῃς",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύῃ",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύωμεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύητε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύωσι(ν)",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιμι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοις",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιμεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιτε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιεν",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυ",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύτω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυτε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύντων",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύναι",
+    "kind": "infinitive",
+    "tense": "present",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύς",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννῦσα",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύν",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυν",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυς",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυ",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυμεν",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυτε",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυσαν",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυμαι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυσαι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυται",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύμεθα",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυσθε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυνται",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύωμαι",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύῃ",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύηται",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννυώμεθα",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύησθε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύωνται",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννυοίμην",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιο",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιτο",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννυοίμεθα",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοισθε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύοιντο",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυσο",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύσθω",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυσθε",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύσθων",
+    "kind": "finite",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέννυσθαι",
+    "kind": "infinitive",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύμενος",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννυμένη",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεννύμενον",
+    "kind": "participle",
+    "tense": "present",
+    "voice": "middle/passive",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβεννύμην",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυσο",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυτο",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβεννύμεθα",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυσθε",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέννυντο",
+    "kind": "finite",
+    "tense": "imperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσω",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσεις",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσει",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσομεν",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσετε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσουσι(ν)",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσειν",
+    "kind": "infinitive",
+    "tense": "future",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσων",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσουσα",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσον",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβήσομαι",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβήσῃ",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβήσεται",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβησόμεθα",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβήσεσθε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβήσονται",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβήσεσθαι",
+    "kind": "infinitive",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβησόμενος",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβησομένη",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβησόμενον",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "middle",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήσομαι",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήσῃ",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήσεται",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθησόμεθα",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήσεσθε",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήσονται",
+    "kind": "finite",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήσεσθαι",
+    "kind": "infinitive",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθησόμενος",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθησομένη",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθησόμενον",
+    "kind": "participle",
+    "tense": "future",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβεσα",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβεσας",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβεσε(ν)",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσαμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσατε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβεσαν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσῃς",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσῃ",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσωμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσητε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσωσι(ν)",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιμι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαις",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιτε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσον",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσάτω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσατε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσάντων",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσας",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσασα",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαν",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβεσάμην",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσατο",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβεσάμεθα",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσασθε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσαντο",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσωμαι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσῃ",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσηται",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσώμεθα",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσησθε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσωνται",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσαίμην",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιο",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιτο",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσαίμεθα",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαισθε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαιντο",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσαι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσάσθω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσασθε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσάσθων",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσασθαι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσάμενος",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσαμένη",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσάμενον",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "middle",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσθην",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσθης",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσθη",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσθημεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσθητε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσθησαν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "indicative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῶ",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "subjunctive",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῇς",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "subjunctive",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῇ",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "subjunctive",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῶμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "subjunctive",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῆτε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "subjunctive",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῶσι(ν)",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "subjunctive",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθείην",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "optative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθείης",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "optative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθείη",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "optative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθεῖμεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "optative",
+    "person": "1pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθεῖτε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "optative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθεῖεν",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "optative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσθητι",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "imperative",
+    "person": "2sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθήτω",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "imperative",
+    "person": "3sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβέσθητε",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "imperative",
+    "person": "2pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθέντων",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "imperative",
+    "person": "3pl",
+    "number": "pl"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθῆναι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθείς",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθεῖσα",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβεσθέν",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "passive",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβην",
+    "kind": "finite",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβῆναι",
+    "kind": "infinitive",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "infinitive"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβὰς",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "masc",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβᾶσα",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "fem",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "σβὰν",
+    "kind": "participle",
+    "tense": "aorist",
+    "voice": "active",
+    "mood": "participle",
+    "gender": "neut",
+    "number": "sg",
+    "case": "nom"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβηκα",
+    "kind": "finite",
+    "tense": "perfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβήκειν",
+    "kind": "finite",
+    "tense": "pluperfect",
+    "voice": "active",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἔσβεσμαι",
+    "kind": "finite",
+    "tense": "perfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  },
+  {
+    "lemma": "σβέννυμι",
+    "form": "ἐσβέσμην",
+    "kind": "finite",
+    "tense": "pluperfect",
+    "voice": "middle/passive",
+    "mood": "indicative",
+    "person": "1sg",
+    "number": "sg"
+  }
+];
+  window.STRICT_AUDIT.lemmas['ἥκω'] = {lemma:'ἥκω',status:'manual',readiness:'advanced-conservative',manualForms:74,finite:62,infinitives:3,participles:9,slotChecks:0,curated:true,needsAudit:false,summary:'manual conservative active paradigm · forms 74 · slot checks 0'};
+  window.STRICT_AUDIT.lemmas['σβέννυμι'] = {lemma:'σβέννυμι',status:'manual',readiness:'advanced-conservative',manualForms:181,finite:145,infinitives:9,participles:27,slotChecks:0,curated:true,needsAudit:false,summary:'manual conservative paradigm · forms 181 · slot checks 0'};
+})();

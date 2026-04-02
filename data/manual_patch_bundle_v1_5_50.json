@@ -1,0 +1,32 @@
+{
+  "version": "v1.5.50-tranche45",
+  "lemma": "οἴχομαι",
+  "sources": [
+    {
+      "type": "uploaded-pdf",
+      "title": "05.2 Αρχικοί Χρόνοι.pdf",
+      "evidence": "Δίνει ρητά Εν. οἴχομαι, Πρτ ᾠχόμην, Μέλλ οἰχήσομαι, Πρκ οἴχημαι / οἴχωκα / ᾢχηκα, Υπερ ᾠχήμην / οἰχώκειν / ᾠχήκειν."
+    },
+    {
+      "type": "uploaded-pdf",
+      "title": "tzartzanos.pdf",
+      "evidence": "Ορίζει το οἴχομαι ως αποθετικό με ενεστώτα σημασίας παρακειμένου, παρατατικό με σημασία αορίστου και μέλλοντα οἰχήσομαι."
+    },
+    {
+      "type": "uploaded-pdf",
+      "title": "oikonomou.pdf",
+      "evidence": "Επαναλαμβάνει τη σημασιολογική ιδιορρυθμία των χρόνων και δίνει ως παράγωγο το οἰχητέον."
+    },
+    {
+      "type": "uploaded-pdf",
+      "title": "Λύω.pdf",
+      "evidence": "Χρησιμοποιήθηκε μόνο ως σχολικό υπόδειγμα για την ανάπτυξη της μέσης φωνής στον ενεστώτα, στον μέλλοντα και στις εγκλίσεις τους."
+    }
+  ],
+  "notes": "Το pass επαναδομεί το οἴχομαι ως defective αποθετικό: πλήρες present/imperfect/future middle layer, με υποτακτική, ευκτική και προστακτική από ασφαλή σχολική αναλογία, και με perfect/pluperfect περιορισμένα μόνο στους ρητά βεβαιωμένους principal-part τύπους.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche45.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche45.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche45.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche45.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche45.js"
+}
