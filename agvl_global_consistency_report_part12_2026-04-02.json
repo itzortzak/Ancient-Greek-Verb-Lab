@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "totalExtraLemmas": 98,
+    "fullyAudited": 98,
+    "partialOrPending": 0,
+    "manualParadigmLemmas": 98,
+    "slotValidatedLemmas": 98
+  },
+  "patchstats": {
+    "lemmasChecked": 98,
+    "missingAuditBefore": 23,
+    "missingSlotsBefore": 9,
+    "mismatchedAuditCountsBefore": 74,
+    "needsAuditFlagsBefore": 1,
+    "createdAuditEntries": 23,
+    "createdSlotValidationEntries": 9,
+    "syncedAuditEntries": 75,
+    "clearedNeedsAuditFlags": 1,
+    "fullyAuditedAfter": 98,
+    "slotValidatedLemmasAfter": 98
+  },
+  "createdAudit": [
+    "αἰσθάνομαι",
+    "ἁλίσκομαι",
+    "ἀμύνω",
+    "ἀποθνῄσκω",
+    "βάσκω",
+    "γιγνώσκω",
+    "εἰμί",
+    "εἶμι",
+    "ἔοικα",
+    "ἔχω",
+    "ζητέω",
+    "ἵημι",
+    "ἵστημι",
+    "κεράννυμι",
+    "λέγω",
+    "μάχομαι",
+    "μένω",
+    "μεταφωνέω",
+    "μίγνυμι",
+    "οἶδα",
+    "τίθημι",
+    "φέρω",
+    "φημί"
+  ],
+  "createdSlots": [
+    "ἀγωνίζομαι",
+    "ἀκούω",
+    "ἁλίσκομαι",
+    "εἰμί",
+    "εἶμι",
+    "ἥκω",
+    "κεράννυμι",
+    "μεταφωνέω",
+    "σβέννυμι"
+  ]
+}

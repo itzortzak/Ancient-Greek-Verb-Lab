@@ -8,11 +8,12 @@
     infinitive: 'Απαρέμφατο',
     participle: 'Μετοχή'
   };
-  const TENSE_ORDER = ['present', 'imperfect', 'future', 'aorist', 'perfect', 'pluperfect'];
+  const TENSE_ORDER = ['present', 'imperfect', 'future', 'future perfect', 'aorist', 'perfect', 'pluperfect'];
   const TENSE_LABELS = {
     present: 'Ενεστώτας',
     imperfect: 'Παρατατικός',
     future: 'Μέλλοντας',
+    'future perfect': 'Συντελεσμένος μέλλοντας',
     aorist: 'Αόριστος',
     perfect: 'Παρακείμενος',
     pluperfect: 'Υπερσυντέλικος'
@@ -28,8 +29,6 @@
     ['sg','1sg','α΄ ενικό'],
     ['sg','2sg','β΄ ενικό'],
     ['sg','3sg','γ΄ ενικό'],
-    ['du','2du','β΄ δυϊκό'],
-    ['du','3du','γ΄ δυϊκό'],
     ['pl','1pl','α΄ πληθυντικό'],
     ['pl','2pl','β΄ πληθυντικό'],
     ['pl','3pl','γ΄ πληθυντικό']
@@ -38,21 +37,45 @@
   const CASE_LABELS = { nom: 'Ονομαστική', gen: 'Γενική', dat: 'Δοτική', acc: 'Αιτιατική', voc: 'Κλητική' };
   const GENDER_ORDER = ['masc', 'fem', 'neut'];
   const GENDER_LABELS = { masc: 'Αρσενικό', fem: 'Θηλυκό', neut: 'Ουδέτερο' };
-  const NUMBER_LABELS = { sg: 'εν.', du: 'δυ.', pl: 'πλ.' };
+  const NUMBER_LABELS = { sg: 'εν.', pl: 'πλ.' };
 
-  const lexicon = window.LEXICON_AUGMENT || {};
-  const paradigms = window.MANUAL_PARADIGMS || {};
+  const lexiconRoot = window.LEXICON_AUGMENT || {};
+  const verbMeta = lexiconRoot.verbMeta || lexiconRoot || {};
+  const manualParadigms = window.MANUAL_PARADIGMS || {};
+  const generatedParadigms = window.GENERATED_PARADIGMS || {};
+  const strictAudit = (window.STRICT_AUDIT && window.STRICT_AUDIT.lemmas) || {};
   const lemmaSelect = document.getElementById('lemmaSelect');
   const lemmaSearch = document.getElementById('lemmaSearch');
   const lemmaMeta = document.getElementById('lemmaMeta');
   const finiteSection = document.getElementById('finiteSection');
   const nonFiniteSection = document.getElementById('nonFiniteSection');
 
-  const lemmaList = Object.keys(paradigms).sort((a,b)=>a.localeCompare(b,'el'));
+  function getParadigmSource(lemma) {
+    if (manualParadigms[lemma]) return 'manual';
+    if (generatedParadigms[lemma]) return 'generated';
+    return 'missing';
+  }
+
+  function getParadigmEntries(lemma) {
+    return manualParadigms[lemma] || generatedParadigms[lemma] || [];
+  }
+
+  function getDisplayLemma(lemma) {
+    const meta = verbMeta[lemma] || {};
+    if (meta.displayLemma && meta.displayLemma !== lemma) return `${lemma} · ${meta.displayLemma}`;
+    return lemma;
+  }
+
+  const lemmaList = [...new Set([
+    ...Object.keys(manualParadigms),
+    ...Object.keys(generatedParadigms)
+  ])].sort((a,b)=>a.localeCompare(b,'el'));
+
   for (const lemma of lemmaList) {
     const opt = document.createElement('option');
     opt.value = lemma;
-    opt.textContent = lemma;
+    opt.textContent = getDisplayLemma(lemma);
+    opt.dataset.coverage = getParadigmSource(lemma);
     lemmaSelect.appendChild(opt);
   }
 
@@ -74,11 +97,11 @@
   }
 
   function getFiniteForms(lemma) {
-    return dedupeForms((paradigms[lemma] || []).filter(x => x.kind === 'finite'));
+    return dedupeForms(getParadigmEntries(lemma).filter(x => x.kind === 'finite'));
   }
 
   function getNonFiniteForms(lemma) {
-    return dedupeForms((paradigms[lemma] || []).filter(x => x.kind !== 'finite'));
+    return dedupeForms(getParadigmEntries(lemma).filter(x => x.kind !== 'finite'));
   }
 
   function collectCellForms(forms, number, person) {
@@ -169,18 +192,26 @@
       const [tense, voice] = key.split('|');
       const forms = participles.filter(f => `${f.tense}|${f.voice}` === key);
       let body = '';
+      let note = '';
       for (const gender of GENDER_ORDER) {
-        for (const number of ['sg','du','pl']) {
+        for (const number of ['sg','pl']) {
           for (const kase of CASE_ORDER) {
-            const hits = forms.filter(f => f.gender === gender && f.number === number && f.case === kase).map(f => f.form);
+            const hits = forms
+              .filter(f => f.gender === gender && (f.number || 'sg') === number && (f.case || 'nom') === kase)
+              .map(f => f.form);
             if (!hits.length) continue;
             body += `<tr><th scope="row">${GENDER_LABELS[gender]} ${NUMBER_LABELS[number]} · ${CASE_LABELS[kase]}</th><td>${[...new Set(hits)].join(' · ')}</td></tr>`;
           }
         }
       }
+      const hasExplicitDeclension = forms.some(f => f.case && f.number && (f.case !== 'nom' || f.number !== 'sg'));
+      if (!hasExplicitDeclension) {
+        note = '<p class="minor-note">Στις διαθέσιμες πηγές / runtime data για αυτόν τον τύπο έχουν αποθηκευτεί μόνο οι βασικές ονομαστικές του ενικού. Οι υπόλοιπες πτώσεις και αριθμοί δεν έχουν ακόμη ενσωματωθεί χειροκίνητα.</p>';
+      }
       blocks.push(`
         <div class="voice-card">
           <h4>${TENSE_LABELS[tense]} · ${VOICE_LABELS[voice] || voice}</h4>
+          ${note}
           <div class="table-wrap"><table class="data-table"><tbody>${body || '<tr><td class="empty">—</td></tr>'}</tbody></table></div>
         </div>
       `);
@@ -205,12 +236,29 @@
   }
 
   function updateLemmaMeta(lemma) {
-    const meta = lexicon[lemma] || {};
+    const meta = verbMeta[lemma] || {};
+    const audit = strictAudit[lemma] || null;
+    const sourceKind = getParadigmSource(lemma);
     const bits = [];
+
+    const coverageLabel = sourceKind === 'manual'
+      ? 'χειροκίνητο / επιμελημένο'
+      : sourceKind === 'generated'
+        ? 'γενετικό / μη πλήρως επιμελημένο'
+        : 'χωρίς διαθέσιμο paradigm';
+
+    bits.push(`<span class="badge">κάλυψη: ${coverageLabel}</span>`);
     if (meta.gloss) bits.push(`<span class="badge">σημασία: ${meta.gloss}</span>`);
     if (meta.principalParts) bits.push(`<span class="badge">αρχικοί χρόνοι: ${meta.principalParts}</span>`);
     if (meta.family) bits.push(`<span class="badge">κατηγορία: ${meta.family}</span>`);
+    if (audit && audit.summary) bits.push(`<span class="badge">audit: ${audit.summary}</span>`);
+    if (meta.source) bits.push(`<span class="badge">πηγή layer: ${meta.source}</span>`);
+
+    if (sourceKind === 'generated') {
+      bits.push('<div class="minor-note">Το λήμμα προβάλλεται από βασικό generated paradigm. Η κλίση είναι χρήσιμη ως πρόχειρος οδηγός, αλλά δεν έχει ακόμη περάσει πλήρες χειροκίνητο φιλολογικό audit slot-by-slot.</div>');
+    }
     if (meta.notes) bits.push(`<div>${meta.notes}</div>`);
+    if (meta.sourceNotes) bits.push(`<div class="minor-note">${meta.sourceNotes}</div>`);
     lemmaMeta.innerHTML = bits.join(' ');
   }
 
@@ -223,13 +271,15 @@
   lemmaSelect.addEventListener('change', () => renderLemma(lemmaSelect.value));
   lemmaSearch.addEventListener('input', () => {
     const q = lemmaSearch.value.trim().toLowerCase();
-    const match = lemmaList.find(l => l.toLowerCase().includes(q));
+    const match = lemmaList.find(l => l.toLowerCase().includes(q) || getDisplayLemma(l).toLowerCase().includes(q));
     if (match) {
       lemmaSelect.value = match;
       renderLemma(match);
     }
   });
 
-  lemmaSelect.value = lemmaList[0];
-  renderLemma(lemmaList[0]);
+  if (lemmaList.length) {
+    lemmaSelect.value = lemmaList[0];
+    renderLemma(lemmaList[0]);
+  }
 })();

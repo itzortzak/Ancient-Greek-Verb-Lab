@@ -142,3 +142,11 @@ select, input[type="search"] {
 @media (max-width: 760px) {
   .controls-row { grid-template-columns: 1fr; }
 }
+
+.minor-note {
+  margin: 0;
+  padding: 0.7rem 0.8rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
