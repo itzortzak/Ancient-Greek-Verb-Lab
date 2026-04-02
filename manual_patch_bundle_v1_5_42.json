@@ -1,0 +1,17 @@
+{
+  "version": "v1.5.42-tranche37",
+  "lemma": "βάσκω",
+  "sources": [
+    {
+      "type": "uploaded-pdf",
+      "title": "Greek Verbs, Irregular and Defective Their Forms, Meaning, and Quantity.pdf",
+      "evidence": "Συντηρητική διατήρηση του ομηρικού/λεξικογραφικού imperative-core και του infinitive βάσκειν· το pass είναι κυρίως corrective ως προς τα person-tags."
+    }
+  ],
+  "notes": "Το pass δεν ανοίγει εικαστικά νέο σύστημα χρόνων. Αντικαθιστά το υπάρχον manual layer του βάσκω με tag-corrected έκδοση, ώστε τα plural imperative slots να αποδίδονται σωστά στην Αναγνώριση και στην Κλίση.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche37.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche37.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche37.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche37.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche37.js"
+}
