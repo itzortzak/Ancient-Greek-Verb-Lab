@@ -1,0 +1,16 @@
+{
+  "version": "v1.5.61-tranche56",
+  "lemma": "σκεδάννυμι",
+  "sources": [
+    "05.1 ΓΡΑΜΜΑΤΙΚΗ: κατάταξη του σκεδάννυμι στα σιγμόληκτα σε -ννυμι και χρήση του δείκνυμι ως υποδείγματος present/imperfect",
+    "05.2 Αρχικοί Χρόνοι: σκεδάννυμι / σκεδαννύω, ἐσκεδάννυν / ἐσκεδάννυον, σκεδῶ / σκεδάσω, ἐσκέδασα · σκεδάννυμαι, ἐσκεδαννύμην, ἐσκεδασάμην, σκεδασθήσομαι, ἐσκεδάσθην, ἐσκέδασμαι, ἐσκεδάσμην",
+    "Οικονόμου και Τζαρτζάνος: επιβεβαίωση του principal-parts profile και της ανάπτυξης present/imperfect κατά το δείκνυμι για τα συμφωνόληκτα σε -ννυμι",
+    "Index of Verb Forms in Thucydides: επιβεβαίωση των σκεδάννυσθαι και σκεδασμένος/σκεδασμένων"
+  ],
+  "notes": "Το pass δίνει στο σκεδάννυμι νέο curated school-core paradigm. Ο present/imperfect πυρήνας κλίνεται συντηρητικά κατά το δείκνυμι, ο future active αναπτύσσεται με canonical layer από το σκεδάσω και εναλλακτικό anchor το σκεδῶ, ο active και ο middle aorist από το ἐσκέδασα / ἐσκεδασάμην, ο passive future και ο passive aorist από το σκεδασθήσομαι / ἐσκεδάσθην, ενώ το perfect middle/passive κρατιέται στο ασφαλές core του ἐσκέδασμαι / ἐσκεδάσμην μαζί με source-backed participial layer σκεδασμένος. Στο form-index patch αφαιρείται το παλαιό inflated imported bucket του λήμματος και αντικαθίσταται από το νέο curated layer.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche56.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche56.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche56.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche56.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche56.js"
+}

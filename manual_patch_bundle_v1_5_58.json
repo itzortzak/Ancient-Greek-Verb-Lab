@@ -1,0 +1,16 @@
+{
+  "version": "v1.5.58",
+  "lemma": "ζώννυμι",
+  "sources": [
+    "Οικονόμου (ζώννυμι = ζώνω· θ. ζωσ- ... αόρ. ἔζωσα. Παθ. πρκμ. ἔζωσμαι ή ἔζωμαι)",
+    "Τζαρτζάνος (Ζώννυμι ... ἀόρ. ἔζωσα, παθ. παρακμ. ἔζωσμαι ἢ ἔζωμαι)",
+    "Οικονόμου §334-336 / Τζαρτζάνος §241 (τα συμφωνόληκτα σε -μι διαφέρουν από τα -ω μόνο στον ενεστώτα και στον παρατατικό και κλίνονται εκεί κατά το δείκνυμι)",
+    "05.2 Αρχικοί Χρόνοι (lemma and gloss: ζώννυμι / ζωννύω = ζώνω)"
+  ],
+  "notes": "Tranche 53 for ζώννυμι: the inflated imported layer was replaced by a conservative curated school-core paradigm. Fully developed: present/imperfect active and middle-passive by the δείκνυμι pattern, plus the source-backed aorist active from ἔζωσα. Deliberately not expanded: future, aorist middle/passive, active perfect/pluperfect. Perfect middle-passive retained only as anchors ἔζωσμαι / ἔζωμαι.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche53.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche53.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche53.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche53.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche53.js"
+}

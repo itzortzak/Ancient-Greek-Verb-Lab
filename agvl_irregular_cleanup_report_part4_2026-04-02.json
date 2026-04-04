@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "targetedLemmas": 4,
+    "duplicateVisibleSlotGroupsBefore": 268,
+    "visibleEntriesAfter": 1511,
+    "recognitionOnlyDemotions": 536,
+    "newRecognitionOnlyAdditions": 0,
+    "correctedLemmas": [
+      "μίγνυμι",
+      "ἔχω",
+      "πήγνυμι",
+      "σβέννυμι"
+    ],
+    "reviewedOnly": [],
+    "uncertain": []
+  },
+  "lemmas": {
+    "μίγνυμι": {
+      "status": "corrected+normalized",
+      "originalEntries": 464,
+      "visibleEntries": 368,
+      "duplicateGroupsBefore": 96,
+      "demotedRecognition": 192,
+      "addedRecognitionOnly": 0,
+      "sources": [
+        "05.2 Αρχικοί Χρόνοι",
+        "Binder1",
+        "Οἰκονόμου"
+      ],
+      "found": "Στο visible layer υπήρχαν διπλές σειρές για τον παθητικό μέλλοντα και τον παθητικό αόριστο, επειδή συνυπήρχαν οι α΄-τύποι μειχθήσομαι / ἐμείχθην και οι β΄-τύποι μιγήσομαι / ἐμίγην σε όλους σχεδόν τους finite, infinitive και participial slots.",
+      "fixed": "Οι δύο τεκμηριωμένοι άξονες διατηρήθηκαν ορατά, αλλά συμπιέστηκαν slot-by-slot ως μειχθήσομαι / μιγήσομαι, ἐμείχθην / ἐμίγην κτλ., ενώ τα μεμονωμένα παλιά entries πέρασαν στο recognition-only layer."
+    },
+    "ἔχω": {
+      "status": "corrected+normalized",
+      "originalEntries": 514,
+      "visibleEntries": 428,
+      "duplicateGroupsBefore": 86,
+      "demotedRecognition": 172,
+      "addedRecognitionOnly": 0,
+      "sources": [
+        "Οἰκονόμου",
+        "05.2 Αρχικοί Χρόνοι"
+      ],
+      "found": "Το visible layer έδειχνε σε ξεχωριστές γραμμές τον διπλό μέλλοντα ἕξω και σχήσω, καθώς και τον μέσο μέλλοντα ἕξομαι και σχήσομαι, με αποτέλεσμα εκτεταμένο duplicate cluster και στους future infinitives και participles.",
+      "fixed": "Κρατήθηκαν ορατά και οι δύο σοβαρά τεκμηριωμένοι άξονες, αλλά ενοποιήθηκαν ως ἕξω / σχήσω, ἕξομαι / σχήσομαι, ἕξειν / σχήσειν, ἕξων / σχήσων κτλ. Τα παλαιά χωριστά entries μεταφέρθηκαν στο recognition-only layer."
+    },
+    "πήγνυμι": {
+      "status": "corrected+normalized",
+      "originalEntries": 377,
+      "visibleEntries": 323,
+      "duplicateGroupsBefore": 54,
+      "demotedRecognition": 108,
+      "addedRecognitionOnly": 0,
+      "sources": [
+        "Οἰκονόμου",
+        "Τζαρτζάνος",
+        "Binder1"
+      ],
+      "found": "Παρέμεναν visible duplicates ανάμεσα στον β΄ παθητικό άξονα παγήσομαι / ἐπάγην και στην παράλληλη σειρά ἐπήχθην με τις αναλογικές της αναπτύξεις, καθώς και διτυπία στο 1sg του παρατατικού ἐπήγνυν / ἐπήγνυον.",
+      "fixed": "Η visible κλίση κρατήθηκε χωρίς απώλεια υλικού, αλλά συμπιέστηκε slot-by-slot: ἐπήγνυν / ἐπήγνυον και ἐπήχθην / ἐπάγην, πηχθῶ / παγῶ, πηχθῆναι / παγῆναι κτλ. Τα χωριστά legacy entries πέρασαν στο recognition-only layer."
+    },
+    "σβέννυμι": {
+      "status": "corrected+normalized",
+      "originalEntries": 424,
+      "visibleEntries": 392,
+      "duplicateGroupsBefore": 32,
+      "demotedRecognition": 64,
+      "addedRecognitionOnly": 0,
+      "sources": [
+        "Τζαρτζάνος",
+        "05.2 Αρχικοί Χρόνοι"
+      ],
+      "found": "Στο visible layer συνυπήρχε ο α΄ αόριστος ἔσβεσα με τον β΄ ἔσβην, μαζί με διπλές infinitive και participial σειρές σβέσαι / σβῆναι και σβέσας / σβὰς κτλ.",
+      "fixed": "Δεν αφαιρέθηκε κανένας τεκμηριωμένος τύπος. Ο ορατός άξονας ενοποιήθηκε ως ἔσβεσα / ἔσβην, σβέσαι / σβῆναι, σβέσας / σβὰς κτλ., ενώ τα παλαιά χωριστά entries διατηρήθηκαν για recognition-only χρήση."
+    }
+  }
+}

@@ -1,0 +1,2326 @@
+{
+  "version": "v1.5.36",
+  "tranche": 31,
+  "lemmas": {
+    "μένω": [
+      {
+        "lemma": "μένω",
+        "form": "μένω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένεις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένει",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένομεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένουσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμενον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμενες",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμενε(ν)",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἐμένομεν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἐμένετε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμενον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένῃς",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένωμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένητε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένωσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένοιμι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένοις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένοι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένοιμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένοιτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένοιεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενέτω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενόντων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενέτωσαν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενῶ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενεῖς",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενεῖ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενοῦμεν",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενεῖτε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενοῦσι(ν)",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμεινα",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμεινας",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμεινε(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἐμείναμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἐμείνατε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "ἔμειναν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνῃς",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνῃ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνωμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνητε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνωσι(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείναιμι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείναις",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖναι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖναιμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖναιτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖναιεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖνον",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεινάτω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνατε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεινάντων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεινάτωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένειν",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενεῖν",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖναι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένων",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένουσα",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μένον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενῶν",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενοῦσα",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μενοῦν",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνας",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μείνασα",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "μένω",
+        "form": "μεῖναν",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ],
+    "γιγνώσκω": [
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκεις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκει",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκομεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκουσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἐγίγνωσκον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἐγίγνωσκες",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἐγίγνωσκε(ν)",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἐγιγνώσκομεν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἐγιγνώσκετε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἐγίγνωσκον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκῃς",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκωμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκητε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκωσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκοιμι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκοις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκοι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκοιμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκοιτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκοιεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γίγνωσκε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνωσκέτω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνωσκόντων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνωσκέτωσαν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώσομαι",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώσῃ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώσεται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνωσόμεθα",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώσεσθε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώσονται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἔγνων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἔγνως",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἔγνω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἔγνωμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἔγνωτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "ἔγνωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῷς",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῷ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶσι(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοίην",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοίης",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοίη",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοῖμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοῖτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοῖεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶθι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώτω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνόντων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώτωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκειν",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνώσεσθαι",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνῶναι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκων",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκουσα",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γιγνώσκον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνωσόμενος",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνωσομένη",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνωσόμενον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνούς",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνοῦσα",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γιγνώσκω",
+        "form": "γνόν",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ],
+    "ἀποθνῄσκω": [
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκεις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκει",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκομεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκουσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθνῃσκον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθνῃσκες",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθνῃσκε(ν)",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπεθνῄσκομεν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπεθνῄσκετε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθνῃσκον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκῃς",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκωμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκητε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκωσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκοιμι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκοις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκοι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκοιμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκοιτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκοιεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῇσκε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῃσκέτω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῃσκόντων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῃσκέτωσαν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανοῦμαι",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανῇ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανεῖται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανούμεθα",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανεῖσθε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανοῦνται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθανον",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθανες",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθανε(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπεθάνομεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπεθάνετε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπέθανον",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνῃς",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνῃ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνωμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνητε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνωσι(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνοιμι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνοις",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνοι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνοιμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνοιτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνοιεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀπόθανε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανέτω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθάνετε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανόντων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανέτωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκειν",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανεῖσθαι",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανεῖν",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκων",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκουσα",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθνῄσκον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανούμενος",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανουμένη",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανούμενον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανών",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανοῦσα",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποθνῄσκω",
+        "form": "ἀποθανόν",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ]
+  },
+  "slotValidations": {
+    "μένω": {
+      "status": "manual+slots",
+      "summary": "Tranche 31: new source-backed school-core manual paradigm για το μένω, με present system, future active μενῶ και aorist ἔμεινα, μαζί με βασικές εγκλίσεις και non-finite τύπους.",
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "ενεστώτας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "μένω",
+          "note": "school-core manual layer"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "ενεστώτας • ενεργητική • υποτακτική • γ΄ ενικό",
+          "form": "μένῃ",
+          "note": "βασική σχολική υποτακτική"
+        },
+        {
+          "slot": "future|active|indicative|1sg",
+          "label": "μέλλοντας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "μενῶ",
+          "note": "05.2 και Οικονόμου"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἔμεινα",
+          "note": "05.1/05.2"
+        },
+        {
+          "slot": "aorist|active|subjunctive|1sg",
+          "label": "αόριστος • ενεργητική • υποτακτική • α΄ ενικό",
+          "form": "μείνω",
+          "note": "school-core extension"
+        },
+        {
+          "slot": "aorist|active|imperative|2sg",
+          "label": "αόριστος • ενεργητική • προστακτική • β΄ ενικό",
+          "form": "μεῖνον",
+          "note": "χαρακτηριστική προστακτική"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος • ενεργητική • απαρέμφατο",
+          "form": "μεῖναι",
+          "note": "κύριο non-finite slot"
+        },
+        {
+          "slot": "aorist|active|participle|masc.nom.sg",
+          "label": "αόριστος • ενεργητική • μετοχή • αρσενικό ον. εν.",
+          "form": "μείνας",
+          "note": "χαρακτηριστική μετοχή"
+        }
+      ]
+    },
+    "γιγνώσκω": {
+      "status": "manual+slots",
+      "summary": "Tranche 31: new source-backed school-core manual paradigm για το γιγνώσκω, με present system, future middle γνώσομαι και aorist β΄ ἔγνων, μαζί με βασικές εγκλίσεις και non-finite τύπους.",
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "ενεστώτας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "γιγνώσκω",
+          "note": "school-core manual layer"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "ενεστώτας • ενεργητική • υποτακτική • γ΄ ενικό",
+          "form": "γιγνώσκῃ",
+          "note": "βασική σχολική υποτακτική"
+        },
+        {
+          "slot": "future|middle|indicative|1sg",
+          "label": "μέλλοντας • μέση • οριστική • α΄ ενικό",
+          "form": "γνώσομαι",
+          "note": "05.2 και Οικονόμου"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος β΄ • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἔγνων",
+          "note": "05.1/05.2"
+        },
+        {
+          "slot": "aorist|active|subjunctive|1sg",
+          "label": "αόριστος β΄ • ενεργητική • υποτακτική • α΄ ενικό",
+          "form": "γνῶ",
+          "note": "school-core extension"
+        },
+        {
+          "slot": "aorist|active|imperative|2sg",
+          "label": "αόριστος β΄ • ενεργητική • προστακτική • β΄ ενικό",
+          "form": "γνῶθι",
+          "note": "χαρακτηριστική προστακτική β΄ αορίστου"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος β΄ • ενεργητική • απαρέμφατο",
+          "form": "γνῶναι",
+          "note": "κύριο non-finite slot"
+        },
+        {
+          "slot": "aorist|active|participle|masc.nom.sg",
+          "label": "αόριστος β΄ • ενεργητική • μετοχή • αρσενικό ον. εν.",
+          "form": "γνούς",
+          "note": "χαρακτηριστική μετοχή β΄ αορίστου"
+        }
+      ]
+    },
+    "ἀποθνῄσκω": {
+      "status": "manual+slots",
+      "summary": "Tranche 31: new source-backed school-core manual paradigm για το ἀποθνῄσκω, με present system, future middle ἀποθανοῦμαι και aorist β΄ ἀπέθανον, μαζί με βασικές εγκλίσεις και non-finite τύπους.",
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "ενεστώτας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἀποθνῄσκω",
+          "note": "school-core manual layer"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "ενεστώτας • ενεργητική • υποτακτική • γ΄ ενικό",
+          "form": "ἀποθνῄσκῃ",
+          "note": "βασική σχολική υποτακτική"
+        },
+        {
+          "slot": "future|middle|indicative|1sg",
+          "label": "μέλλοντας • μέση • οριστική • α΄ ενικό",
+          "form": "ἀποθανοῦμαι",
+          "note": "Οικονόμου"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος β΄ • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἀπέθανον",
+          "note": "Οικονόμου/05.1"
+        },
+        {
+          "slot": "aorist|active|subjunctive|1sg",
+          "label": "αόριστος β΄ • ενεργητική • υποτακτική • α΄ ενικό",
+          "form": "ἀποθάνω",
+          "note": "school-core extension"
+        },
+        {
+          "slot": "aorist|active|imperative|2sg",
+          "label": "αόριστος β΄ • ενεργητική • προστακτική • β΄ ενικό",
+          "form": "ἀπόθανε",
+          "note": "χαρακτηριστική προστακτική β΄ αορίστου"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος β΄ • ενεργητική • απαρέμφατο",
+          "form": "ἀποθανεῖν",
+          "note": "κύριο non-finite slot"
+        },
+        {
+          "slot": "aorist|active|participle|masc.nom.sg",
+          "label": "αόριστος β΄ • ενεργητική • μετοχή • αρσενικό ον. εν.",
+          "form": "ἀποθανών",
+          "note": "χαρακτηριστική μετοχή β΄ αορίστου"
+        }
+      ]
+    }
+  },
+  "strictAudit": {
+    "μένω": {
+      "lemma": "μένω",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 70,
+      "finite": 58,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 8,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+    },
+    "γιγνώσκω": {
+      "lemma": "γιγνώσκω",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 70,
+      "finite": 58,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 8,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+    },
+    "ἀποθνῄσκω": {
+      "lemma": "ἀποθνῄσκω",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 70,
+      "finite": 58,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 8,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+    }
+  }
+}

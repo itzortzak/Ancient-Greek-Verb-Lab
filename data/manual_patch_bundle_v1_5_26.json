@@ -1,0 +1,1521 @@
+{
+  "version": "v1.5.26",
+  "tranche": 21,
+  "lemmas": {
+    "ἀποκρίνομαι": [
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνομαι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνεται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινόμεθα",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνεσθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνονται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρινόμην",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνου",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνετο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρινόμεθα",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνεσθε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνοντο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινοῦμαι",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινῇ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινεῖται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινούμεθα",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινεῖσθε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινοῦνται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρινάμην",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνατο",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρινάμεθα",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίνασθε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπεκρίναντο",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνου",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινέσθω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνεσθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινέσθων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπόκριναι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινάσθω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀπόκρινασθε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινάσθων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνεσθαι",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινεῖσθαι",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρίνασθαι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινόμενος",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινομένη",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινόμενον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινούμενος",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινουμένη",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινούμενον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινάμενος",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκριναμένη",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "ἀποκρίνομαι",
+        "form": "ἀποκρινάμενον",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ],
+    "πορεύομαι": [
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύομαι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύεται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευόμεθα",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύεσθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύονται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορευόμην",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύου",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύετο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορευόμεθα",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύεσθε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύοντο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσομαι",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσῃ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσεται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσόμεθα",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσεσθε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσονται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορευσάμην",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύσω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύσατο",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορευσάμεθα",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύσασθε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "ἐπορεύσαντο",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύου",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευέσθω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύεσθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευέσθων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεῦσαι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσάσθω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσασθε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσάσθων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύεσθαι",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσεσθαι",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορεύσασθαι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευόμενος",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "masc",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευομένη",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "fem",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευόμενον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "neut",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσόμενος",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "masc",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσομένη",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "fem",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσόμενον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "neut",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσάμενος",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "masc",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσαμένη",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "fem",
+        "case": "nom"
+      },
+      {
+        "lemma": "πορεύομαι",
+        "form": "πορευσάμενον",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "middle",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "neut",
+        "case": "nom"
+      }
+    ],
+    "κεῖμαι": [
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖμαι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖσαι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείμεθα",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖσθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖνται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "ἐκείμην",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "ἔκεισο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "ἔκειτο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "ἐκείμεθα",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "ἔκεισθε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "ἔκειντο",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "middle/passive",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσομαι",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσῃ",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσεται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεισόμεθα",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσεσθε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσονται",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κέηται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κέησθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κέωνται",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κέοιτο",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κέοιντο",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖσο",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσθω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖσθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσθων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεῖσθαι",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείσεσθαι",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείμενος",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "masc",
+        "case": "nom"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κειμένη",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "fem",
+        "case": "nom"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κείμενον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "middle/passive",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "neut",
+        "case": "nom"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεισόμενος",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "masc",
+        "case": "nom"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεισομένη",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "fem",
+        "case": "nom"
+      },
+      {
+        "lemma": "κεῖμαι",
+        "form": "κεισόμενον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "middle",
+        "mood": "participle",
+        "number": "sg",
+        "gender": "neut",
+        "case": "nom"
+      }
+    ]
+  },
+  "slotValidations": {
+    "ἀποκρίνομαι": {
+      "status": "manual+slots",
+      "summary": "Tranche 21: re-hardening του ἀποκρίνομαι με ενοποίηση form-index πάνω στο ήδη επιμελημένο deponent dialogue layer και ρητή στήριξη στους αρχικούς χρόνους του 05.2.",
+      "slots": [
+        {
+          "slot": "present|middle|indicative|1sg",
+          "label": "ενεστώτας • μέση • οριστική • α΄ ενικό",
+          "form": "ἀποκρίνομαι",
+          "note": "05.2 + tranche 15 manual layer"
+        },
+        {
+          "slot": "imperfect|middle|indicative|1sg",
+          "label": "παρατατικός • μέση • οριστική • α΄ ενικό",
+          "form": "ἀπεκρινόμην",
+          "note": "βασικός past deponent τύπος"
+        },
+        {
+          "slot": "future|middle|indicative|1sg",
+          "label": "μέλλοντας • μέση • οριστική • α΄ ενικό",
+          "form": "ἀποκρινοῦμαι",
+          "note": "05.2 αρχικοί χρόνοι"
+        },
+        {
+          "slot": "aorist|middle|indicative|1sg",
+          "label": "αόριστος • μέση • οριστική • α΄ ενικό",
+          "form": "ἀπεκρινάμην",
+          "note": "05.2 αρχικοί χρόνοι"
+        },
+        {
+          "slot": "present|middle|imperative|2sg",
+          "label": "ενεστώτας • μέση • προστακτική • β΄ ενικό",
+          "form": "ἀποκρίνου",
+          "note": "διάλογος / direct-response core form"
+        },
+        {
+          "slot": "aorist|middle|imperative|2sg",
+          "label": "αόριστος • μέση • προστακτική • β΄ ενικό",
+          "form": "ἀπόκριναι",
+          "note": "05.1 exercise cue + existing curated layer"
+        },
+        {
+          "slot": "present|middle|infinitive",
+          "label": "ενεστώτας • μέση • απαρέμφατο",
+          "form": "ἀποκρίνεσθαι",
+          "note": "core non-finite"
+        },
+        {
+          "slot": "future|middle|infinitive",
+          "label": "μέλλοντας • μέση • απαρέμφατο",
+          "form": "ἀποκρινεῖσθαι",
+          "note": "future deponent non-finite"
+        },
+        {
+          "slot": "aorist|middle|infinitive",
+          "label": "αόριστος • μέση • απαρέμφατο",
+          "form": "ἀποκρίνασθαι",
+          "note": "aorist deponent non-finite"
+        },
+        {
+          "slot": "present|middle|participle|masc.nom.sg",
+          "label": "ενεστώτας • μέση • μετοχή • αρσενικό ον. εν.",
+          "form": "ἀποκρινόμενος",
+          "note": "core participle"
+        },
+        {
+          "slot": "future|middle|participle|masc.nom.sg",
+          "label": "μέλλοντας • μέση • μετοχή • αρσενικό ον. εν.",
+          "form": "ἀποκρινούμενος",
+          "note": "future participle"
+        },
+        {
+          "slot": "aorist|middle|participle|masc.nom.sg",
+          "label": "αόριστος • μέση • μετοχή • αρσενικό ον. εν.",
+          "form": "ἀποκρινάμενος",
+          "note": "aorist participle"
+        }
+      ]
+    },
+    "πορεύομαι": {
+      "status": "manual+slots",
+      "summary": "Tranche 21: conservative school-core hardening για το πορεύομαι με present/imperfect/future/aorist middle, προστακτικές, απαρέμφατα και μετοχές, στηριγμένο στους αρχικούς χρόνους του 05.2 και σε παλαιότερο manual tranche.",
+      "slots": [
+        {
+          "slot": "present|middle/passive|indicative|1sg",
+          "label": "ενεστώτας • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "πορεύομαι",
+          "note": "05.2 principal part + old tranche3 core"
+        },
+        {
+          "slot": "imperfect|middle/passive|indicative|1sg",
+          "label": "παρατατικός • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "ἐπορευόμην",
+          "note": "βασικός past deponent τύπος"
+        },
+        {
+          "slot": "future|middle/passive|indicative|1sg",
+          "label": "μέλλοντας • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "πορεύσομαι",
+          "note": "05.2 principal part"
+        },
+        {
+          "slot": "aorist|middle|indicative|1sg",
+          "label": "αόριστος • μέση • οριστική • α΄ ενικό",
+          "form": "ἐπορευσάμην",
+          "note": "05.2 principal part"
+        },
+        {
+          "slot": "present|middle/passive|imperative|2sg",
+          "label": "ενεστώτας • μέση/παθητική • προστακτική • β΄ ενικό",
+          "form": "πορεύου",
+          "note": "core command form"
+        },
+        {
+          "slot": "aorist|middle|imperative|2sg",
+          "label": "αόριστος • μέση • προστακτική • β΄ ενικό",
+          "form": "πορεῦσαι",
+          "note": "conservative aorist imperative"
+        },
+        {
+          "slot": "present|middle/passive|infinitive",
+          "label": "ενεστώτας • μέση/παθητική • απαρέμφατο",
+          "form": "πορεύεσθαι",
+          "note": "core non-finite"
+        },
+        {
+          "slot": "future|middle/passive|infinitive",
+          "label": "μέλλοντας • μέση/παθητική • απαρέμφατο",
+          "form": "πορεύσεσθαι",
+          "note": "future non-finite"
+        },
+        {
+          "slot": "aorist|middle|infinitive",
+          "label": "αόριστος • μέση • απαρέμφατο",
+          "form": "πορεύσασθαι",
+          "note": "aorist non-finite"
+        },
+        {
+          "slot": "present|middle/passive|participle|masc.nom.sg",
+          "label": "ενεστώτας • μέση/παθητική • μετοχή • αρσενικό ον. εν.",
+          "form": "πορευόμενος",
+          "note": "core participle"
+        },
+        {
+          "slot": "future|middle/passive|participle|masc.nom.sg",
+          "label": "μέλλοντας • μέση/παθητική • μετοχή • αρσενικό ον. εν.",
+          "form": "πορευσόμενος",
+          "note": "future participle"
+        },
+        {
+          "slot": "aorist|middle|participle|masc.nom.sg",
+          "label": "αόριστος • μέση • μετοχή • αρσενικό ον. εν.",
+          "form": "πορευσάμενος",
+          "note": "aorist participle"
+        }
+      ]
+    },
+    "κεῖμαι": {
+      "status": "manual+slots",
+      "summary": "Tranche 21: νέο source-backed manual layer για το κεῖμαι με present/imperfect/future indicative, ρητώς καταγεγραμμένες προστακτικές, απαρέμφατα και μετοχές από 05.1 και Οικονόμου, και μόνο τα μονολεκτικά υποτακτικά/ευκτικά slots που καταγράφονται ρητά.",
+      "slots": [
+        {
+          "slot": "present|middle/passive|indicative|1sg",
+          "label": "ενεστώτας • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "κεῖμαι",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "present|middle/passive|indicative|3pl",
+          "label": "ενεστώτας • μέση/παθητική • οριστική • γ΄ πληθυντικό",
+          "form": "κεῖνται",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "imperfect|middle/passive|indicative|1sg",
+          "label": "παρατατικός • μέση/παθητική • οριστική • α΄ ενικό",
+          "form": "ἐκείμην",
+          "note": "με σημασία υπερσυντελίκου"
+        },
+        {
+          "slot": "future|middle|indicative|1sg",
+          "label": "μέλλοντας • μέση • οριστική • α΄ ενικό",
+          "form": "κείσομαι",
+          "note": "05.1 / Οικονόμου"
+        },
+        {
+          "slot": "present|middle/passive|subjunctive|3sg",
+          "label": "ενεστώτας • μέση/παθητική • υποτακτική • γ΄ ενικό",
+          "form": "κέηται",
+          "note": "μόνο ο μονολεκτικός τύπος που καταγράφεται ρητά"
+        },
+        {
+          "slot": "present|middle/passive|optative|3sg",
+          "label": "ενεστώτας • μέση/παθητική • ευκτική • γ΄ ενικό",
+          "form": "κέοιτο",
+          "note": "ρητός μονολεκτικός τύπος του πίνακα"
+        },
+        {
+          "slot": "present|middle/passive|imperative|2sg",
+          "label": "ενεστώτας • μέση/παθητική • προστακτική • β΄ ενικό",
+          "form": "κεῖσο",
+          "note": "05.1 πίνακας"
+        },
+        {
+          "slot": "present|middle/passive|infinitive",
+          "label": "ενεστώτας • μέση/παθητική • απαρέμφατο",
+          "form": "κεῖσθαι",
+          "note": "core non-finite"
+        },
+        {
+          "slot": "future|middle|infinitive",
+          "label": "μέλλοντας • μέση • απαρέμφατο",
+          "form": "κείσεσθαι",
+          "note": "05.1 parenthetical entry"
+        },
+        {
+          "slot": "present|middle/passive|participle|masc.nom.sg",
+          "label": "ενεστώτας • μέση/παθητική • μετοχή • αρσενικό ον. εν.",
+          "form": "κείμενος",
+          "note": "05.1 / Οικονόμου"
+        },
+        {
+          "slot": "future|middle|participle|masc.nom.sg",
+          "label": "μέλλοντας • μέση • μετοχή • αρσενικό ον. εν.",
+          "form": "κεισόμενος",
+          "note": "05.1 parenthetical future participle"
+        }
+      ]
+    }
+  },
+  "strictAudit": {
+    "ἀποκρίνομαι": {
+      "lemma": "ἀποκρίνομαι",
+      "status": "manual+slots",
+      "readiness": "advanced-reindexed",
+      "manualForms": 44,
+      "finite": 32,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 12,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 44 · slot checks 12"
+    },
+    "πορεύομαι": {
+      "lemma": "πορεύομαι",
+      "status": "manual+slots",
+      "readiness": "advanced-conservative",
+      "manualForms": 44,
+      "finite": 32,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 12,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 44 · slot checks 12"
+    },
+    "κεῖμαι": {
+      "lemma": "κεῖμαι",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 35,
+      "finite": 27,
+      "infinitives": 2,
+      "participles": 6,
+      "slotChecks": 11,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 35 · slot checks 11"
+    }
+  }
+}
