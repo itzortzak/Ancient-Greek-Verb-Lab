@@ -1,0 +1,58 @@
+(function(){
+  window.MANUAL_PARADIGMS = window.MANUAL_PARADIGMS || {};
+  Object.assign(window.MANUAL_PARADIGMS, {
+    "ὑβρίζω": [
+      {lemma:"ὑβρίζω", form:"ὑβρίζω", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζεις", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"sg", person:"2sg"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζει", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"sg", person:"3sg"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζομεν", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"pl", person:"1pl"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζετε", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"pl", person:"2pl"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζουσι(ν)", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"pl", person:"3pl"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζομαι", kind:"finite", tense:"present", voice:"middle/passive", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ὑβρίζω", form:"ὕβριζον", kind:"finite", tense:"imperfect", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ὑβρίζω", form:"ὑβριῶ", kind:"finite", tense:"future", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ὑβρίζω", form:"ὕβρισα", kind:"finite", tense:"aorist", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ὑβρίζω", form:"ὑβρίσθην", kind:"finite", tense:"aorist", voice:"passive", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζειν", kind:"infinitive", tense:"present", voice:"active", mood:"infinitive"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζεσθαι", kind:"infinitive", tense:"present", voice:"middle/passive", mood:"infinitive"},
+      {lemma:"ὑβρίζω", form:"ὑβρίσαι", kind:"infinitive", tense:"aorist", voice:"active", mood:"infinitive"},
+      {lemma:"ὑβρίζω", form:"ὑβρισθῆναι", kind:"infinitive", tense:"aorist", voice:"passive", mood:"infinitive"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζων", kind:"participle", tense:"present", voice:"active", mood:"participle", gender:"masc"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζουσα", kind:"participle", tense:"present", voice:"active", mood:"participle", gender:"fem"},
+      {lemma:"ὑβρίζω", form:"ὑβρίζον", kind:"participle", tense:"present", voice:"active", mood:"participle", gender:"neut"},
+      {lemma:"ὑβρίζω", form:"ὑβριζόμενος", kind:"participle", tense:"present", voice:"middle/passive", mood:"participle", gender:"masc"},
+      {lemma:"ὑβρίζω", form:"ὑβριζομένη", kind:"participle", tense:"present", voice:"middle/passive", mood:"participle", gender:"fem"},
+      {lemma:"ὑβρίζω", form:"ὑβριζόμενον", kind:"participle", tense:"present", voice:"middle/passive", mood:"participle", gender:"neut"},
+      {lemma:"ὑβρίζω", form:"ὑβρίσας", kind:"participle", tense:"aorist", voice:"active", mood:"participle", gender:"masc"},
+      {lemma:"ὑβρίζω", form:"ὑβρίσασα", kind:"participle", tense:"aorist", voice:"active", mood:"participle", gender:"fem"},
+      {lemma:"ὑβρίζω", form:"ὑβρῖσαν", kind:"participle", tense:"aorist", voice:"active", mood:"participle", gender:"neut"},
+      {lemma:"ὑβρίζω", form:"ὑβρισθείς", kind:"participle", tense:"aorist", voice:"passive", mood:"participle", gender:"masc"},
+      {lemma:"ὑβρίζω", form:"ὑβρισθεῖσα", kind:"participle", tense:"aorist", voice:"passive", mood:"participle", gender:"fem"},
+      {lemma:"ὑβρίζω", form:"ὑβρισθέν", kind:"participle", tense:"aorist", voice:"passive", mood:"participle", gender:"neut"}
+    ],
+    "ψαύω": [
+      {lemma:"ψαύω", form:"ψαύω", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ψαύω", form:"ψαύεις", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"sg", person:"2sg"},
+      {lemma:"ψαύω", form:"ψαύει", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"sg", person:"3sg"},
+      {lemma:"ψαύω", form:"ψαύομεν", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"pl", person:"1pl"},
+      {lemma:"ψαύω", form:"ψαύετε", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"pl", person:"2pl"},
+      {lemma:"ψαύω", form:"ψαύουσι(ν)", kind:"finite", tense:"present", voice:"active", mood:"indicative", number:"pl", person:"3pl"},
+      {lemma:"ψαύω", form:"ψαύομαι", kind:"finite", tense:"present", voice:"middle/passive", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ψαύω", form:"ἔψαυον", kind:"finite", tense:"imperfect", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ψαύω", form:"ψαύσω", kind:"finite", tense:"future", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ψαύω", form:"ἔψαυσα", kind:"finite", tense:"aorist", voice:"active", mood:"indicative", number:"sg", person:"1sg"},
+      {lemma:"ψαύω", form:"ψαύειν", kind:"infinitive", tense:"present", voice:"active", mood:"infinitive"},
+      {lemma:"ψαύω", form:"ψαύεσθαι", kind:"infinitive", tense:"present", voice:"middle/passive", mood:"infinitive"},
+      {lemma:"ψαύω", form:"ψαῦσαι", kind:"infinitive", tense:"aorist", voice:"active", mood:"infinitive"},
+      {lemma:"ψαύω", form:"ψαύων", kind:"participle", tense:"present", voice:"active", mood:"participle", gender:"masc"},
+      {lemma:"ψαύω", form:"ψαύουσα", kind:"participle", tense:"present", voice:"active", mood:"participle", gender:"fem"},
+      {lemma:"ψαύω", form:"ψαῦον", kind:"participle", tense:"present", voice:"active", mood:"participle", gender:"neut"},
+      {lemma:"ψαύω", form:"ψαυόμενος", kind:"participle", tense:"present", voice:"middle/passive", mood:"participle", gender:"masc"},
+      {lemma:"ψαύω", form:"ψαυομένη", kind:"participle", tense:"present", voice:"middle/passive", mood:"participle", gender:"fem"},
+      {lemma:"ψαύω", form:"ψαυόμενον", kind:"participle", tense:"present", voice:"middle/passive", mood:"participle", gender:"neut"},
+      {lemma:"ψαύω", form:"ψαύσας", kind:"participle", tense:"aorist", voice:"active", mood:"participle", gender:"masc"},
+      {lemma:"ψαύω", form:"ψαύσασα", kind:"participle", tense:"aorist", voice:"active", mood:"participle", gender:"fem"},
+      {lemma:"ψαύω", form:"ψαῦσαν", kind:"participle", tense:"aorist", voice:"active", mood:"participle", gender:"neut"}
+    ]
+  });
+})();

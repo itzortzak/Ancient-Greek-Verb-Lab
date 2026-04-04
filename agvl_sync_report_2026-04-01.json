@@ -1,0 +1,271 @@
+{
+  "restoredManualLemmas": [
+    "αὐξάνω",
+    "γράφω",
+    "εὑρίσκω",
+    "λείπω",
+    "πάρειμι",
+    "πείθω",
+    "προσεύχομαι",
+    "πυνθάνομαι",
+    "σβέννυμι",
+    "στρώννυμι",
+    "ἀκούω",
+    "ἥκω",
+    "ὑγιαίνω",
+    "ὑπόκειμαι",
+    "ῥήγνυμι"
+  ],
+  "postPatch": {
+    "manualCount": 97,
+    "summary": {
+      "totalExtraLemmas": 75,
+      "fullyAudited": 70,
+      "partialOrPending": 5,
+      "manualParadigmLemmas": 74,
+      "slotValidatedLemmas": 61
+    },
+    "targets": {
+      "αὐξάνω": {
+        "forms": 35,
+        "strict": {
+          "lemma": "αὐξάνω",
+          "status": "manual+slots",
+          "readiness": "partial",
+          "manualForms": 35,
+          "finite": 14,
+          "infinitives": 6,
+          "participles": 15,
+          "slotChecks": 7,
+          "curated": true,
+          "needsAudit": true,
+          "summary": "manual paradigm + slot validation · forms 35 · slot checks 7"
+        }
+      },
+      "γράφω": {
+        "forms": 70,
+        "strict": {
+          "lemma": "γράφω",
+          "status": "manual+slots",
+          "readiness": "advanced-source-backed",
+          "manualForms": 70,
+          "finite": 58,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 8,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+        }
+      },
+      "εὑρίσκω": {
+        "forms": 70,
+        "strict": {
+          "lemma": "εὑρίσκω",
+          "status": "manual+slots",
+          "readiness": "advanced-source-backed",
+          "manualForms": 70,
+          "finite": 58,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 8,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+        }
+      },
+      "λείπω": {
+        "forms": 70,
+        "strict": {
+          "lemma": "λείπω",
+          "status": "manual+slots",
+          "readiness": "advanced-source-backed",
+          "manualForms": 70,
+          "finite": 58,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 8,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+        }
+      },
+      "πάρειμι": {
+        "forms": 36,
+        "strict": {
+          "lemma": "πάρειμι",
+          "status": "manual+slots",
+          "readiness": "advanced-source-backed",
+          "manualForms": 36,
+          "finite": 32,
+          "infinitives": 1,
+          "participles": 3,
+          "slotChecks": 8,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 36 · slot checks 8"
+        }
+      },
+      "πείθω": {
+        "forms": 70,
+        "strict": {
+          "lemma": "πείθω",
+          "status": "manual+slots",
+          "readiness": "advanced-source-backed",
+          "manualForms": 70,
+          "finite": 58,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 8,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+        }
+      },
+      "προσεύχομαι": {
+        "forms": 36,
+        "strict": {
+          "lemma": "προσεύχομαι",
+          "status": "manual+slots",
+          "readiness": "advanced-conservative",
+          "manualForms": 36,
+          "finite": 24,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 6,
+          "curated": true,
+          "needsAudit": true,
+          "summary": "manual paradigm + slot validation · forms 36 · slot checks 6"
+        }
+      },
+      "πυνθάνομαι": {
+        "forms": 70,
+        "strict": {
+          "lemma": "πυνθάνομαι",
+          "status": "manual+slots",
+          "readiness": "advanced-source-backed",
+          "manualForms": 70,
+          "finite": 58,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 8,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+        }
+      },
+      "σβέννυμι": {
+        "forms": 181,
+        "strict": {
+          "lemma": "σβέννυμι",
+          "status": "manual",
+          "readiness": "advanced-conservative",
+          "manualForms": 181,
+          "finite": 145,
+          "infinitives": 9,
+          "participles": 27,
+          "slotChecks": 0,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual conservative paradigm · forms 181 · slot checks 0"
+        }
+      },
+      "στρώννυμι": {
+        "forms": 35,
+        "strict": {
+          "lemma": "στρώννυμι",
+          "status": "manual+slots",
+          "readiness": "conservative-partial",
+          "manualForms": 35,
+          "finite": 16,
+          "infinitives": 4,
+          "participles": 15,
+          "slotChecks": 10,
+          "curated": true,
+          "needsAudit": true,
+          "summary": "manual multistem νυμι-layer + slot validation · forms 35 · slot checks 10"
+        }
+      },
+      "ἀκούω": {
+        "forms": 70,
+        "strict": {
+          "lemma": "ἀκούω",
+          "status": "manual+slots",
+          "readiness": "advanced-conservative",
+          "manualForms": 70,
+          "finite": 49,
+          "infinitives": 6,
+          "participles": 15,
+          "slotChecks": 20,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual active/middle-passive/passive paradigm + slot validation · forms 70 · slot checks 20"
+        }
+      },
+      "ἥκω": {
+        "forms": 74,
+        "strict": {
+          "lemma": "ἥκω",
+          "status": "manual",
+          "readiness": "advanced-conservative",
+          "manualForms": 74,
+          "finite": 62,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 0,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual conservative active paradigm · forms 74 · slot checks 0"
+        }
+      },
+      "ὑγιαίνω": {
+        "forms": 52,
+        "strict": {
+          "lemma": "ὑγιαίνω",
+          "status": "manual+slots",
+          "readiness": "advanced-conservative",
+          "manualForms": 52,
+          "finite": 40,
+          "infinitives": 3,
+          "participles": 9,
+          "slotChecks": 13,
+          "curated": true,
+          "needsAudit": false,
+          "summary": "manual paradigm + slot validation · forms 52 · slot checks 13"
+        }
+      },
+      "ὑπόκειμαι": {
+        "forms": 14,
+        "strict": {
+          "lemma": "ὑπόκειμαι",
+          "status": "manual+slots",
+          "readiness": "advanced-conservative",
+          "manualForms": 14,
+          "finite": 10,
+          "infinitives": 1,
+          "participles": 3,
+          "slotChecks": 5,
+          "curated": true,
+          "needsAudit": true,
+          "summary": "manual paradigm + slot validation · forms 14 · slot checks 5"
+        }
+      },
+      "ῥήγνυμι": {
+        "forms": 28,
+        "strict": {
+          "lemma": "ῥήγνυμι",
+          "status": "manual+slots",
+          "readiness": "partial",
+          "manualForms": 28,
+          "finite": 11,
+          "infinitives": 5,
+          "participles": 12,
+          "slotChecks": 6,
+          "curated": true,
+          "needsAudit": true,
+          "summary": "manual paradigm + slot validation · forms 28 · slot checks 6"
+        }
+      }
+    }
+  }
+}

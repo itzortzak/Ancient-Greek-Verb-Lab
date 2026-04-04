@@ -1,0 +1,2326 @@
+{
+  "version": "v1.5.38",
+  "tranche": 33,
+  "lemmas": {
+    "γράφω": [
+      {
+        "lemma": "γράφω",
+        "form": "γράφω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφεις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφει",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφομεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφουσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραφον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραφες",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραφε(ν)",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἐγράφομεν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἐγράφετε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραφον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφῃς",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφωμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφητε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφωσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψω",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψεις",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψει",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψομεν",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψετε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψουσι(ν)",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφοιμι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφοις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφοι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφοιμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφοιτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφοιεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραψα",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραψας",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραψε(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἐγράψαμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἐγράψατε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "ἔγραψαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψῃς",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψῃ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψωμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψητε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψωσι(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαιμι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαις",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαιμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαιτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαιεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γραφέτω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γραφόντων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γραφέτωσαν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψον",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γραψάτω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψατε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γραψάντων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γραψάτωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφειν",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψειν",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφων",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφουσα",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράφον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψων",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψουσα",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψας",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψασα",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "γράφω",
+        "form": "γράψαν",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ],
+    "πείθω": [
+      {
+        "lemma": "πείθω",
+        "form": "πείθω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθεις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθει",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθομεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθουσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπειθον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπειθες",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπειθε(ν)",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἐπείθομεν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἐπείθετε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπειθον",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθῃς",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθῃ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθωμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθητε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθωσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσω",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσεις",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσει",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσομεν",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσετε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσουσι(ν)",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθοιμι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθοις",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθοι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθοιμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθοιτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθοιεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπεισα",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπεισας",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπεισε(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἐπείσαμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἐπείσατε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "ἔπεισαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσῃς",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσῃ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσωμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσητε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσωσι(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσαιμι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσαις",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσαι",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσαιμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσαιτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσαιεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεῖθε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πειθέτω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθετε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πειθόντων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πειθέτωσαν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεῖσον",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεισάτω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσατε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεισάντων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεισάτωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθειν",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσειν",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεῖσαι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθων",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείθουσα",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεῖθον",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσων",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσουσα",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεῖσον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσας",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πείσασα",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "πείθω",
+        "form": "πεῖσαν",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ],
+    "δίδωμι": [
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδωμι",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδως",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδωσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδομεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδοτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδόασι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἐδίδουν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἐδίδους",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἐδίδου",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἐδίδομεν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἐδίδοτε",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἐδίδοσαν",
+        "kind": "finite",
+        "tense": "imperfect",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδῶ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδῷς",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδῷ",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδῶμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδῶτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδῶσι(ν)",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσω",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσεις",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσει",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσομεν",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσετε",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσουσι(ν)",
+        "kind": "finite",
+        "tense": "future",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοίην",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοίης",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοίη",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοῖμεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοῖτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοῖεν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἔδωκα",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἔδωκας",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἔδωκε(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἔδομεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἔδοτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "ἔδοσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "indicative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῶ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῷς",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῷ",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῶμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῶτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῶσι(ν)",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "subjunctive",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοίην",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοίης",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοίη",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοῖμεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "1pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοῖτε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοῖεν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "optative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδου",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδότω",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δίδοτε",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδόντων",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδότωσαν",
+        "kind": "finite",
+        "tense": "present",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δός",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δότω",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3sg",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δότε",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "2pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δόντων",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δότωσαν",
+        "kind": "finite",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "imperative",
+        "person": "3pl",
+        "number": "pl"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδόναι",
+        "kind": "infinitive",
+        "tense": "present",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσειν",
+        "kind": "infinitive",
+        "tense": "future",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοῦναι",
+        "kind": "infinitive",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "infinitive"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδούς",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδοῦσα",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "διδόν",
+        "kind": "participle",
+        "tense": "present",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσων",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δώσουσα",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δῶσον",
+        "kind": "participle",
+        "tense": "future",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δούς",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "masc",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δοῦσα",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "fem",
+        "case": "nom",
+        "number": "sg"
+      },
+      {
+        "lemma": "δίδωμι",
+        "form": "δόν",
+        "kind": "participle",
+        "tense": "aorist",
+        "voice": "active",
+        "mood": "participle",
+        "gender": "neut",
+        "case": "nom",
+        "number": "sg"
+      }
+    ]
+  },
+  "slotValidations": {
+    "γράφω": {
+      "status": "manual+slots",
+      "summary": "Tranche 33: new source-backed school-core manual paradigm για το γράϕω, με present system, future γράψω και aorist ἔγραψα, μαζί με βασικές εγκλίσεις και non-finite τύπους.",
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "ενεστώτας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "γράφω",
+          "note": "school-core manual layer"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "ενεστώτας • ενεργητική • υποτακτική • γ΄ ενικό",
+          "form": "γράφῃ",
+          "note": "βασική σχολική υποτακτική"
+        },
+        {
+          "slot": "future|active|indicative|1sg",
+          "label": "μέλλοντας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "γράψω",
+          "note": "05.2 και Οικονόμου"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος α΄ • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἔγραψα",
+          "note": "05.1/05.2"
+        },
+        {
+          "slot": "aorist|active|subjunctive|1sg",
+          "label": "αόριστος α΄ • ενεργητική • υποτακτική • α΄ ενικό",
+          "form": "γράψω",
+          "note": "school-core extension"
+        },
+        {
+          "slot": "aorist|active|imperative|2sg",
+          "label": "αόριστος α΄ • ενεργητική • προστακτική • β΄ ενικό",
+          "form": "γράψον",
+          "note": "χαρακτηριστική προστακτική α΄ αορίστου"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος α΄ • ενεργητική • απαρέμφατο",
+          "form": "γράψαι",
+          "note": "κύριο non-finite slot"
+        },
+        {
+          "slot": "aorist|active|participle|masc.nom.sg",
+          "label": "αόριστος α΄ • ενεργητική • μετοχή • αρσενικό ον. εν.",
+          "form": "γράψας",
+          "note": "χαρακτηριστική μετοχή α΄ αορίστου"
+        }
+      ]
+    },
+    "πείθω": {
+      "status": "manual+slots",
+      "summary": "Tranche 33: new source-backed school-core manual paradigm για το πείθω, με present system, future πείσω και aorist ἔπεισα, μαζί με βασικές εγκλίσεις και non-finite τύπους.",
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "ενεστώτας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "πείθω",
+          "note": "school-core manual layer"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "ενεστώτας • ενεργητική • υποτακτική • γ΄ ενικό",
+          "form": "πείθῃ",
+          "note": "βασική σχολική υποτακτική"
+        },
+        {
+          "slot": "future|active|indicative|1sg",
+          "label": "μέλλοντας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "πείσω",
+          "note": "05.2 και Οικονόμου"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος α΄ • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἔπεισα",
+          "note": "05.1/05.2"
+        },
+        {
+          "slot": "aorist|active|subjunctive|1sg",
+          "label": "αόριστος α΄ • ενεργητική • υποτακτική • α΄ ενικό",
+          "form": "πείσω",
+          "note": "school-core extension"
+        },
+        {
+          "slot": "aorist|active|imperative|2sg",
+          "label": "αόριστος α΄ • ενεργητική • προστακτική • β΄ ενικό",
+          "form": "πεῖσον",
+          "note": "χαρακτηριστική προστακτική α΄ αορίστου"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος α΄ • ενεργητική • απαρέμφατο",
+          "form": "πεῖσαι",
+          "note": "κύριο non-finite slot"
+        },
+        {
+          "slot": "aorist|active|participle|masc.nom.sg",
+          "label": "αόριστος α΄ • ενεργητική • μετοχή • αρσενικό ον. εν.",
+          "form": "πείσας",
+          "note": "χαρακτηριστική μετοχή α΄ αορίστου"
+        }
+      ]
+    },
+    "δίδωμι": {
+      "status": "manual+slots",
+      "summary": "Tranche 33: new source-backed school-core manual paradigm για το δίδωμι, με present μι-system, future δώσω και κ-aorist ἔδωκα / ἔδομεν, μαζί με βασικές εγκλίσεις και non-finite τύπους.",
+      "slots": [
+        {
+          "slot": "present|active|indicative|1sg",
+          "label": "ενεστώτας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "δίδωμι",
+          "note": "school-core manual layer"
+        },
+        {
+          "slot": "present|active|subjunctive|3sg",
+          "label": "ενεστώτας • ενεργητική • υποτακτική • γ΄ ενικό",
+          "form": "διδῷ",
+          "note": "βασική σχολική υποτακτική του μι-συστήματος"
+        },
+        {
+          "slot": "future|active|indicative|1sg",
+          "label": "μέλλοντας • ενεργητική • οριστική • α΄ ενικό",
+          "form": "δώσω",
+          "note": "05.2 και Οικονόμου"
+        },
+        {
+          "slot": "aorist|active|indicative|1sg",
+          "label": "αόριστος κ • ενεργητική • οριστική • α΄ ενικό",
+          "form": "ἔδωκα",
+          "note": "05.1/05.2"
+        },
+        {
+          "slot": "aorist|active|subjunctive|1sg",
+          "label": "αόριστος κ • ενεργητική • υποτακτική • α΄ ενικό",
+          "form": "δῶ",
+          "note": "school-core extension"
+        },
+        {
+          "slot": "aorist|active|imperative|2sg",
+          "label": "αόριστος κ • ενεργητική • προστακτική • β΄ ενικό",
+          "form": "δός",
+          "note": "χαρακτηριστική προστακτική του κ-αορίστου"
+        },
+        {
+          "slot": "aorist|active|infinitive",
+          "label": "αόριστος κ • ενεργητική • απαρέμφατο",
+          "form": "δοῦναι",
+          "note": "κύριο non-finite slot"
+        },
+        {
+          "slot": "aorist|active|participle|masc.nom.sg",
+          "label": "αόριστος κ • ενεργητική • μετοχή • αρσενικό ον. εν.",
+          "form": "δούς",
+          "note": "χαρακτηριστική μετοχή του κ-αορίστου"
+        }
+      ]
+    }
+  },
+  "strictAudit": {
+    "γράφω": {
+      "lemma": "γράφω",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 70,
+      "finite": 58,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 8,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+    },
+    "πείθω": {
+      "lemma": "πείθω",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 70,
+      "finite": 58,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 8,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+    },
+    "δίδωμι": {
+      "lemma": "δίδωμι",
+      "status": "manual+slots",
+      "readiness": "advanced-source-backed",
+      "manualForms": 70,
+      "finite": 58,
+      "infinitives": 3,
+      "participles": 9,
+      "slotChecks": 8,
+      "curated": true,
+      "needsAudit": false,
+      "summary": "manual paradigm + slot validation · forms 70 · slot checks 8"
+    }
+  }
+}

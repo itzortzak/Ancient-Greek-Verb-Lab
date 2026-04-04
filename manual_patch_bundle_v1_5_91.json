@@ -1,0 +1,19 @@
+{
+  "version": "1.5.91",
+  "tranche": 86,
+  "lemma": "οἴχομαι",
+  "files": [
+    "data/lexiconAugmentDocReviewTranche86.js",
+    "data/manualParadigmsDocReviewTranche86.js",
+    "data/slotValidationsDocReviewTranche86.js",
+    "data/strictAuditDocReviewTranche86.js",
+    "data/formIndexPatchDocReviewTranche86.js",
+    "index.html",
+    "README.md",
+    "VERSION",
+    "COMPREHENSIVE_AUDIT.json",
+    "COMPREHENSIVE_AUDIT.md",
+    "AUDIT_REPORT.md"
+  ],
+  "notes": "Definitive refresh of οἴχομαι with reindexed curated paradigm and corrected package-level audit metadata."
+}

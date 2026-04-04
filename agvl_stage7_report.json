@@ -1,0 +1,17 @@
+{
+  "prior_remaining_from_stage6": 3,
+  "stage7_manual_lemmas_completed": 3,
+  "manual_entries_added_total": 405,
+  "form_index_entries_added_total": 407,
+  "completed_lemmas": [
+    "βραβεύω",
+    "εἴσομαι",
+    "ξηραίνω"
+  ],
+  "remaining_missing_after_stage7": 0,
+  "notes": {
+    "βραβεύω": "manual regular completion by beta-model of βουλεύω",
+    "εἴσομαι": "exact future/aorist-only epic extraction from raw Kaikki/Wiktextract",
+    "ξηραίνω": "conservative manual school-core rebuild with attested principal parts ἐξήρανα, ἐξηράνθην"
+  }
+}

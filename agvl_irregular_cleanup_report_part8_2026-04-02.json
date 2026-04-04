@@ -1,0 +1,89 @@
+{
+  "targetLemmas": [
+    "συμπίπτω",
+    "ἄημι",
+    "νήθω",
+    "λαγχάνω",
+    "μένω",
+    "γιγνώσκω",
+    "κτείνω",
+    "ζώννυμι",
+    "σκεδάννυμι",
+    "γηράσκω"
+  ],
+  "stats": {
+    "συμπίπτω": {
+      "originalEntries": 88,
+      "visibleEntries": 87,
+      "duplicateSlotGroups": 1,
+      "collapsedSlots": 1,
+      "demotedRecognition": 1
+    },
+    "ἄημι": {
+      "originalEntries": 70,
+      "visibleEntries": 68,
+      "duplicateSlotGroups": 2,
+      "collapsedSlots": 2,
+      "demotedRecognition": 2
+    },
+    "νήθω": {
+      "originalEntries": 50,
+      "visibleEntries": 49,
+      "duplicateSlotGroups": 1,
+      "collapsedSlots": 1,
+      "demotedRecognition": 1
+    },
+    "λαγχάνω": {
+      "originalEntries": 151,
+      "visibleEntries": 149,
+      "duplicateSlotGroups": 2,
+      "collapsedSlots": 2,
+      "demotedRecognition": 2
+    },
+    "μένω": {
+      "originalEntries": 151,
+      "visibleEntries": 149,
+      "duplicateSlotGroups": 2,
+      "collapsedSlots": 2,
+      "demotedRecognition": 2
+    },
+    "γιγνώσκω": {
+      "originalEntries": 151,
+      "visibleEntries": 149,
+      "duplicateSlotGroups": 2,
+      "collapsedSlots": 2,
+      "demotedRecognition": 2
+    },
+    "κτείνω": {
+      "originalEntries": 151,
+      "visibleEntries": 149,
+      "duplicateSlotGroups": 2,
+      "collapsedSlots": 2,
+      "demotedRecognition": 2
+    },
+    "ζώννυμι": {
+      "originalEntries": 173,
+      "visibleEntries": 172,
+      "duplicateSlotGroups": 1,
+      "collapsedSlots": 1,
+      "demotedRecognition": 1
+    },
+    "σκεδάννυμι": {
+      "originalEntries": 397,
+      "visibleEntries": 395,
+      "duplicateSlotGroups": 2,
+      "collapsedSlots": 2,
+      "demotedRecognition": 2
+    },
+    "γηράσκω": {
+      "originalEntries": 187,
+      "visibleEntries": 186,
+      "duplicateSlotGroups": 1,
+      "collapsedSlots": 1,
+      "demotedRecognition": 1
+    }
+  },
+  "totalDuplicateSlotGroupsCollapsed": 16,
+  "totalVisibleEntriesAfterCleanup": 1553,
+  "totalRecognitionOnlyDemotions": 16
+}

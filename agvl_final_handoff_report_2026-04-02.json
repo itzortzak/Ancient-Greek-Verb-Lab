@@ -1,0 +1,44 @@
+{
+  "date": "2026-04-02",
+  "version": "v1.6.06",
+  "title": "AGVL final viewer and audit handoff",
+  "technicalFixes": [
+    {
+      "id": "viewer-meta-001",
+      "issue": "Η viewer.js διάβαζε το window.LEXICON_AUGMENT σαν flat λεξικό, ενώ τα μεταδεδομένα των λημμάτων βρίσκονται στο nested object verbMeta.",
+      "fix": "Η ενότητα Κλίση διαβάζει πλέον σωστά το LEXICON_AUGMENT.verbMeta και εμφανίζει ξανά σημασία, αρχικούς χρόνους, κατηγορία, notes και sourceNotes."
+    },
+    {
+      "id": "viewer-coverage-002",
+      "issue": "Η λίστα λημμάτων της Κλίσης στηριζόταν μόνο στα MANUAL_PARADIGMS, άρα τα generated-only λήμματα δεν μπορούσαν να επιλεγούν καθόλου από το dropdown.",
+      "fix": "Το dropdown και η αναζήτηση συγχωνεύουν πλέον MANUAL_PARADIGMS και GENERATED_PARADIGMS. Για generated-only λήμματα εμφανίζεται ρητή προειδοποίηση ότι το paradigm είναι βασικό και όχι πλήρως χειροκίνητα audited."
+    },
+    {
+      "id": "viewer-search-003",
+      "issue": "Η αναζήτηση έψαχνε μόνο στο raw lemma string και όχι στην display μορφή λήμματος.",
+      "fix": "Η αναζήτηση ελέγχει πλέον και το displayLemma ώστε να εντοπίζονται ευκολότερα συνηρημένες ή κανονικοποιημένες μορφές προβολής."
+    }
+  ],
+  "generatedOnly": [
+    "θεάομαι",
+    "θηράω",
+    "οἰκέω",
+    "ποιέω",
+    "τιμάω",
+    "ὑμνέω",
+    "ὑπισχνέομαι",
+    "φιλέω"
+  ],
+  "totals": {
+    "manualLemmas": 98,
+    "generatedLemmas": 18,
+    "generatedOnlyLemmas": 8,
+    "metaEntries": 188,
+    "strictAuditEntries": 98,
+    "slotValidationEntries": 105,
+    "needsAudit": 0,
+    "manualFinite": 6637,
+    "manualInfinitives": 419,
+    "manualParticiples": 11627
+  }
+}
