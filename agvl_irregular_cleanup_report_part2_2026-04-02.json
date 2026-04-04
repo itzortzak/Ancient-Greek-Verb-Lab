@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "targetedLemmas": [
+      "οἶδα",
+      "φημί",
+      "δύναμαι",
+      "ἐπίσταμαι",
+      "κεῖμαι",
+      "κάθημαι",
+      "δέδοικα"
+    ],
+    "visibleEntriesAfter": 938,
+    "recognitionOnlyDemoted": 190,
+    "duplicateGroupsBefore": 141,
+    "correctedLemmas": [
+      "οἶδα",
+      "φημί",
+      "ἐπίσταμαι",
+      "κάθημαι",
+      "δέδοικα"
+    ],
+    "reviewedNoVisibleChange": [
+      "δύναμαι",
+      "κεῖμαι"
+    ],
+    "uncertain": []
+  },
+  "lemmas": {
+    "οἶδα": {
+      "originalEntries": 104,
+      "visibleEntries": 75,
+      "duplicateGroupsBefore": 17,
+      "demotedRecognition": 43,
+      "status": "corrected+normalized",
+      "sources": [
+        "05.1 ΓΡΑΜΜΑΤΙΚΗ (school-core present/imperfect system)",
+        "05.2 Αρχικοί Χρόνοι",
+        "Οικονόμου",
+        "Τζαρτζάνος"
+      ],
+      "found": "Στο visible layer συνυπήρχαν εἴδομεν / ἴσμεν / ἴδμεν, εἴδετε / ἴστε, οἶσθα / οἶδας, πολλαπλοί υπερσυντελικοί τύποι και πολλαπλά infinitive/participle alternants.",
+      "fixed": "Κρατήθηκε σχολικός πυρήνας οἶδα, οἶσθα, οἶδε(ν), ἴσμεν, ἴστε, ἴσασι(ν)· ο υπερσυντέλικος καθαρίστηκε σε συμπιεσμένες ορατές γραμμές όπου υπάρχει σοβαρή διτυπία· τα εἴδομεν, ἴδμεν, ἴδμεναι, ἰδέμεν κτλ. μεταφέρθηκαν στο recognition-only layer."
+    },
+    "φημί": {
+      "originalEntries": 194,
+      "visibleEntries": 161,
+      "duplicateGroupsBefore": 26,
+      "demotedRecognition": 37,
+      "status": "corrected+normalized",
+      "sources": [
+        "legacy manual school-core layer",
+        "tranche 24 tag-corrected re-indexing"
+      ],
+      "found": "Το visible layer είχε συγχωνευμένους αυξημένους και μη αυξημένους παρατατικούς τύπους, διπλές υποτακτικές/ευκτικές σειρές και πολλαπλές αοριστικές optative παραλλαγές.",
+      "fixed": "Προτιμήθηκε σχολικός ορατός άξονας με φημί, φῄς, φησί(ν), φαμέν, φατέ, φασί(ν), παρατατικό ἔφην / ἔφησθα / ἔφη / ἔφαμεν / ἔφατε / ἔφασαν, καθαρό imperative φάθι και primary aorist/future spellings· οι υπόλοιπες παραλλαγές διατηρήθηκαν μόνο για αναγνώριση."
+    },
+    "δύναμαι": {
+      "originalEntries": 174,
+      "visibleEntries": 174,
+      "duplicateGroupsBefore": 0,
+      "demotedRecognition": 0,
+      "status": "reviewed-no-visible-change",
+      "sources": [
+        "legacy bootstrap + tranche 3 / tranche 23 operational re-indexing"
+      ],
+      "found": "Δεν εντοπίστηκαν ορατές διπλοεγγραφές slot-level στη χειροκίνητη κλίση.",
+      "fixed": "Έγινε μόνο επανέλεγχος· δεν χρειαζόταν νέο visible cleanup."
+    },
+    "ἐπίσταμαι": {
+      "originalEntries": 162,
+      "visibleEntries": 155,
+      "duplicateGroupsBefore": 7,
+      "demotedRecognition": 12,
+      "status": "corrected+normalized",
+      "sources": [
+        "05.1 ΓΡΑΜΜΑΤΙΚΗ, σελ. 268-269"
+      ],
+      "found": "Εντοπίστηκαν διπλά 2sg σε present imperative, imperfect indicative και future indicative, καθώς και διπλές passive optative/imperative σειρές στον αόριστο.",
+      "fixed": "Κρατήθηκε ορατά το ἐπίστασο, το ἠπίστασο, το ἐπιστήσῃ / ἐπιστήσει και συμπιεσμένες ασφαλείς διτυπίες μόνο στα plural passive optatives και στο 3pl passive imperative."
+    },
+    "κεῖμαι": {
+      "originalEntries": 102,
+      "visibleEntries": 102,
+      "duplicateGroupsBefore": 0,
+      "demotedRecognition": 0,
+      "status": "reviewed-no-visible-change",
+      "sources": [
+        "05.1 ΓΡΑΜΜΑΤΙΚΗ",
+        "Binder3",
+        "Οικονόμου"
+      ],
+      "found": "Το ήδη source-backed tranche του κεῖμαι ήταν εσωτερικά καθαρό, χωρίς νέες slot-duplicates.",
+      "fixed": "Έγινε μόνο επανέλεγχος· δεν χρειάστηκε νέο cleanup."
+    },
+    "κάθημαι": {
+      "originalEntries": 203,
+      "visibleEntries": 150,
+      "duplicateGroupsBefore": 53,
+      "demotedRecognition": 59,
+      "status": "corrected+normalized",
+      "sources": [
+        "05.1 ΓΡΑΜΜΑΤΙΚΗ",
+        "05.2 Αρχικοί Χρόνοι"
+      ],
+      "found": "Το λήμμα είχε τις περισσότερες visible συγκρούσεις: κάθησαι / κάθῃ, διπλές contracted optatives, αυξημένους και μη αυξημένους παρατατικούς, καθώς και παράλληλη future σειρά καθήσομαι / καθεδοῦμαι ακόμη και στα non-finite.",
+      "fixed": "Καθαρίστηκε ο present/imperfect πυρήνας, κρατήθηκαν ορατά μόνο οι ουσιώδεις finite διτυπίες (π.χ. κάθησαι / κάθῃ, καθήσομαι / καθεδοῦμαι), ενώ οι secondary καθεδ- non-finite τύποι μεταφέρθηκαν στο recognition-only layer για να μη φουσκώνει η Κλίση."
+    },
+    "δέδοικα": {
+      "originalEntries": 159,
+      "visibleEntries": 121,
+      "duplicateGroupsBefore": 38,
+      "demotedRecognition": 39,
+      "status": "corrected+normalized",
+      "sources": [
+        "05.1 ΓΡΑΜΜΑΤΙΚΗ, σελ. 275",
+        "05.2 Αρχικοί Χρόνοι",
+        "Binder3",
+        "Οικονόμου"
+      ],
+      "found": "Στο visible layer συνυπήρχαν σε όλα σχεδόν τα slots οι δύο σειρές δέδοικα / δέδια και δεδοικώς / δεδιώς.",
+      "fixed": "Για την ορατή κλίση προτιμήθηκε ο primary άξονας δέδοικα, δέδοικας, δέδοικε(ν), δεδοίκαμεν, δεδοίκατε, δεδοίκασι(ν), δεδοικέναι, δεδοικώς κτλ.· η σειρά δέδια / δεδιώς διατηρήθηκε ως recognition-only, όχι ως δεύτερη visible παράλληλη κλίση."
+    }
+  }
+}

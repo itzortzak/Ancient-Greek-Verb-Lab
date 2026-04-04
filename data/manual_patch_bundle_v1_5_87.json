@@ -1,0 +1,15 @@
+{
+  "version": "v1.5.87-tranche82",
+  "lemma": "λέγω",
+  "sources": [
+    "05.2 Αρχικοί Χρόνοι: λέγω, ἔλεγον, λέξω / ἐρῶ, ἔλεξα / εἶπα, εἶπον, εἴρηκα · λέγομαι, ἐλεγόμην, λεχθήσομαι / ῥηθήσομαι, ἐλέχθην / ἐρρήθην, λέλεγμαι / εἴρημαι, εἰρήμην",
+    "Οἰκονόμου: πολυστέμματος profile του λέγω, useful α΄ αοριστικοί τύποι δίπλα στο εἶπον, διπλός passive/future-passive axis και future-perfect anchor εἰρήσομαι",
+    "05.1 ΓΡΑΜΜΑΤΙΚΗ και Τζαρτζάνος: σχολική προβολή λέγω → εἶπον, ρητή προστακτική εἰπέ και επιβεβαίωση του μέλλοντα ἐρῶ / λέξω"
+  ],
+  "notes": "Το pass δίνει στο λέγω νέο expanded source-backed school-core paradigm. Ο present/imperfect ενεργητικός και ο present/imperfect middle-passive πυρήνας αναπτύσσονται πλήρως με εγκλίσεις, ο future active άξονας κρατά και τις δύο σχολικές σειρές λέξω / ἐρῶ, ο active aorist οργανώνεται γύρω από το εἶπον με χρήσιμες α΄ εναλλαγές εἶπα και parallel ἔλεξα indicative anchors, ενώ ο passive future/aorist κρατά και τα δύο ρητά axes λεχθήσομαι / ῥηθήσομαι και ἐλέχθην / ἐρρήθην. Στο form-index patch αφαιρείται το legacy generated bucket του λήμματος και αντικαθίσταται από το νέο curated layer.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche82.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche82.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche82.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche82.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche82.js"
+}

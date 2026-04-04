@@ -1,0 +1,15 @@
+{
+  "version": "v1.5.59-tranche54",
+  "lemma": "κεράννυμι",
+  "sources": [
+    "05.1 ΓΡΑΜΜΑΤΙΚΗ: κατάταξη του κεράννυμι στα σιγμόληκτα σε -ννυμι και χρήση του δείκνυμι ως υποδείγματος present/imperfect",
+    "05.2 Αρχικοί Χρόνοι: κεράννυμι / κεραννύω, ἐκεράννυν / ἐκεράννυον, κεράσω / κερῶ, ἐκέρασα, κεκέρακα · κεράννυμαι, ἐκεραννύμην, κεράσομαι, κραθήσομαι, ἐκερασάμην, ἐκράθην, κέκραμαι / κεκέρασμαι, ἐκεκράμην",
+    "Οικονόμου: επιβεβαίωση του principal-parts profile, του ἐκεράσθην ως εναλλακτικού παθητικού αορίστου και της λέξης οικογένειας κρᾶσις / κρᾶμα / κρατήρ"
+  ],
+  "notes": "Το pass δίνει στο κεράννυμι νέο curated school-core paradigm. Ο present/imperfect πυρήνας κλίνεται συντηρητικά κατά το δείκνυμι, οι future και aorist σειρές αναπτύσσονται από ρητούς principal parts, ενώ ο παρακείμενος και ο υπερσυντέλικος κρατιούνται μόνο στους ασφαλώς βεβαιωμένους anchors. Στο form-index patch αφαιρείται το παλαιό imported bucket του λήμματος και αντικαθίσταται από το νέο curated layer.",
+  "manualParadigmsFile": "data/manualParadigmsDocReviewTranche54.js",
+  "lexiconFile": "data/lexiconAugmentDocReviewTranche54.js",
+  "slotValidationFile": "data/slotValidationsDocReviewTranche54.js",
+  "strictAuditFile": "data/strictAuditDocReviewTranche54.js",
+  "formIndexPatchFile": "data/formIndexPatchDocReviewTranche54.js"
+}
