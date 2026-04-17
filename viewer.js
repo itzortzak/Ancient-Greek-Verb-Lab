@@ -1,0 +1,921 @@
+(function () {
+  const MOOD_ORDER = ['indicative', 'subjunctive', 'optative', 'imperative'];
+  const MOOD_LABELS = {
+    indicative: 'Οριστική', subjunctive: 'Υποτακτική', optative: 'Ευκτική', imperative: 'Προστακτική', infinitive: 'Απαρέμφατο', participle: 'Μετοχή'
+  };
+  const TENSE_ORDER = ['present', 'imperfect', 'future', 'future perfect', 'aorist', 'perfect', 'pluperfect'];
+  const TENSE_LABELS = {
+    present: 'Ενεστώτας', imperfect: 'Παρατατικός', future: 'Μέλλοντας', 'future perfect': 'Συντελεσμένος μέλλοντας', aorist: 'Αόριστος', perfect: 'Παρακείμενος', pluperfect: 'Υπερσυντέλικος'
+  };
+  const VOICE_ORDER = ['active', 'middle', 'passive', 'middle/passive'];
+  const VOICE_LABELS = { active: 'Ενεργητική', middle: 'Μέση', passive: 'Παθητική', 'middle/passive': 'Μέση / Παθητική' };
+  const PERSON_ROWS = [ ['sg','1sg','α΄ ενικό'], ['sg','2sg','β΄ ενικό'], ['sg','3sg','γ΄ ενικό'], ['pl','1pl','α΄ πληθυντικό'], ['pl','2pl','β΄ πληθυντικό'], ['pl','3pl','γ΄ πληθυντικό'] ];
+  const CASE_ORDER = ['nom', 'gen', 'dat', 'acc', 'voc'];
+  const CASE_LABELS = { nom: 'Ονομαστική', gen: 'Γενική', dat: 'Δοτική', acc: 'Αιτιατική', voc: 'Κλητική' };
+  const GENDER_ORDER = ['masc', 'fem', 'neut'];
+  const GENDER_LABELS = { masc: 'Αρσενικό', fem: 'Θηλυκό', neut: 'Ουδέτερο' };
+  const NUMBER_LABELS = { sg: 'εν.', pl: 'πλ.' };
+  const NUMBER_FULL_LABELS = { sg: 'ενικός', pl: 'πληθυντικός' };
+  const PERSON_LABELS = { '1sg':'α΄ ενικό', '2sg':'β΄ ενικό', '3sg':'γ΄ ενικό', '1pl':'α΄ πληθυντικό', '2pl':'β΄ πληθυντικό', '3pl':'γ΄ πληθυντικό' };
+  const MOOD_DESCRIPTOR_LABELS = {
+    indicative: 'οριστικής', subjunctive: 'υποτακτικής', optative: 'ευκτικής', imperative: 'προστακτικής', infinitive: 'απαρεμφάτου', participle: 'μετοχής'
+  };
+  const TENSE_DESCRIPTOR_LABELS = {
+    present: 'ενεστώτα', imperfect: 'παρατατικού', future: 'μέλλοντα', 'future perfect': 'συντελεσμένου μέλλοντα', aorist: 'αορίστου', perfect: 'παρακειμένου', pluperfect: 'υπερσυντελίκου'
+  };
+  const VOICE_DESCRIPTOR_LABELS = {
+    active: 'ενεργητικής φωνής', middle: 'μέσης φωνής', passive: 'παθητικής φωνής', 'middle/passive': 'μέσης / παθητικής φωνής'
+  };
+
+  const lexiconRoot = window.LEXICON_AUGMENT || {};
+  const baseVerbMeta = lexiconRoot.verbMeta || lexiconRoot || {};
+  const extraVerbMeta = Object.fromEntries(((lexiconRoot.extraVerbs || []).filter(entry => entry && entry.lemma)).map(entry => [entry.lemma, entry]));
+  const verbMeta = Object.assign({}, extraVerbMeta, baseVerbMeta);
+  const manualParadigms = window.MANUAL_PARADIGMS || {};
+  const generatedParadigms = window.GENERATED_PARADIGMS || {};
+  const strictAudit = (window.STRICT_AUDIT && window.STRICT_AUDIT.lemmas) || {};
+  const formIndex = window.FORM_INDEX || {};
+  const classroomTests = (window.CLASSROOM_TESTS && window.CLASSROOM_TESTS.tests) || [];
+
+  const lemmaSelect = document.getElementById('lemmaSelect');
+  const lemmaSearch = document.getElementById('lemmaSearch');
+  const prevLemmaBtn = document.getElementById('prevLemmaBtn');
+  const nextLemmaBtn = document.getElementById('nextLemmaBtn');
+  const lemmaPosition = document.getElementById('lemmaPosition');
+  const lemmaMeta = document.getElementById('lemmaMeta');
+  const finiteSection = document.getElementById('finiteSection');
+  const nonFiniteSection = document.getElementById('nonFiniteSection');
+
+  const analyzeInput = document.getElementById('analyzeInput');
+  const analyzeBtn = document.getElementById('analyzeBtn');
+  const analyzeStatus = document.getElementById('analyzeStatus');
+  const analyzeResults = document.getElementById('analyzeResults');
+
+  const newQuestionBtn = document.getElementById('newQuestionBtn');
+  const gameCard = document.getElementById('gameCard');
+  const boardGameArea = document.getElementById('boardGameArea');
+  const gameModeSelect = document.getElementById('gameModeSelect');
+  const teamCountSelect = document.getElementById('teamCountSelect');
+  const startClassroomGameBtn = document.getElementById('startClassroomGameBtn');
+
+  function escapeHtml(str) {
+    return String(str ?? '').replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+  }
+
+  function normalizeGreek(str) {
+    return String(str || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/ς/g, 'σ')
+      .replace(/[^\p{L}]/gu, '')
+      .toLowerCase();
+  }
+
+  function labelFor(entry) {
+    const parts = [];
+    if (entry.kind === 'finite') {
+      if (entry.tense) parts.push(TENSE_LABELS[entry.tense] || entry.tense);
+      if (entry.voice) parts.push(VOICE_LABELS[entry.voice] || entry.voice);
+      if (entry.mood) parts.push(MOOD_LABELS[entry.mood] || entry.mood);
+      if (entry.person) parts.push(PERSON_LABELS[entry.person] || entry.person);
+    } else if (entry.kind === 'infinitive') {
+      parts.push('Απαρέμφατο');
+      if (entry.tense) parts.push(TENSE_LABELS[entry.tense] || entry.tense);
+      if (entry.voice) parts.push(VOICE_LABELS[entry.voice] || entry.voice);
+    } else if (entry.kind === 'participle') {
+      parts.push('Μετοχή');
+      if (entry.tense) parts.push(TENSE_LABELS[entry.tense] || entry.tense);
+      if (entry.voice) parts.push(VOICE_LABELS[entry.voice] || entry.voice);
+      if (entry.gender) parts.push(GENDER_LABELS[entry.gender] || entry.gender);
+      if (entry.number) parts.push(NUMBER_FULL_LABELS[entry.number] || entry.number);
+      if (entry.case) parts.push(CASE_LABELS[entry.case] || entry.case);
+    }
+    return parts.join(' · ');
+  }
+
+  function getParadigmSource(lemma) {
+    if (manualParadigms[lemma]) return 'manual';
+    if (generatedParadigms[lemma]) return 'generated';
+    return 'missing';
+  }
+  function sourceRank(entry) {
+    const source = String(entry?.source || '').toLowerCase();
+    const priority = entry?.displayPriority;
+    if (typeof priority === 'number') return priority;
+    if (source.includes('stage4') || source.includes('manual') || source.includes('stage7')) return 10;
+    if (source.includes('patch')) return 20;
+    if (source.includes('generated')) return 40;
+    if (source.includes('kaikki')) return 60;
+    return 100;
+  }
+  function stripGreekDiacritics(str) {
+    return String(str || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ς/g, 'σ').toLowerCase();
+  }
+  function detectContractType(lemma) {
+    const bare = stripGreekDiacritics(lemma);
+    if (bare.endsWith('αω')) return 'ao';
+    if (bare.endsWith('εω')) return 'eo';
+    if (bare.endsWith('οω')) return 'oo';
+    if (bare.endsWith('ηω')) return 'eo';
+    if (bare.endsWith('ωω')) return 'oo';
+    return null;
+  }
+  function deriveContractedLemma(lemma) {
+    return detectContractType(lemma) ? `${lemma.slice(0, -2)}ῶ` : null;
+  }
+  function isLikelyGreekGloss(gloss) {
+    return !!gloss && !/[A-Za-z]/.test(gloss);
+  }
+  function isUncontractedFormForType(form, contractType) {
+    const bare = stripGreekDiacritics(form);
+    const seqs = { ao: ['αω','αε','αο','αη'], eo: ['εω','εε','εο','εη'], oo: ['οω','οε','οο','οη'] }[contractType] || [];
+    return seqs.some(seq => bare.includes(seq));
+  }
+  function filterContractedEntries(lemma, entries) {
+    const contractType = detectContractType(lemma);
+    if (!contractType) return entries;
+    const grouped = new Map();
+    for (const entry of entries) {
+      const key = [entry.kind || '', entry.tense || '', entry.voice || '', entry.mood || '', entry.person || '', entry.number || '', entry.gender || '', entry.case || ''].join('|');
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(entry);
+    }
+    const filtered = [];
+    for (const bucket of grouped.values()) {
+      const contracted = bucket.filter(entry => !isUncontractedFormForType(entry.form, contractType));
+      filtered.push(...(contracted.length ? contracted : bucket));
+    }
+    return filtered;
+  }
+  function getParadigmEntries(lemma) {
+    const entries = manualParadigms[lemma] || generatedParadigms[lemma] || [];
+    return filterContractedEntries(lemma, entries);
+  }
+  function getDisplayLemma(lemma) {
+    const meta = verbMeta[lemma] || {};
+    if (meta.displayLemma) return meta.displayLemma;
+    const contracted = deriveContractedLemma(lemma);
+    return contracted || lemma;
+  }
+  function normalizeGreekGlossText(gloss) {
+    return String(gloss || '')
+      .replace(/\s+/g, ' ')
+      .replace(/\s*·\s*/g, ' · ')
+      .replace(/\s*,\s*/g, ', ')
+      .replace(/\s*;\s*/g, '; ')
+      .trim();
+  }
+  function getSafeGreekGloss(lemma) {
+    const meta = verbMeta[lemma] || {};
+    const candidates = [meta.gloss_el, meta.gloss, meta.meaning_el, meta.meaning];
+    const gloss = normalizeGreekGlossText(candidates.find(isLikelyGreekGloss) || '');
+    return isLikelyGreekGloss(gloss) ? gloss : '';
+  }
+  const lemmaList = [...new Set([...Object.keys(manualParadigms), ...Object.keys(generatedParadigms), ...Object.keys(verbMeta)])].sort((a,b)=>(getDisplayLemma(a)).localeCompare(getDisplayLemma(b),'el'));
+  const lemmaIndexMap = new Map(lemmaList.map((lemma, index) => [lemma, index]));
+  const displayLemmaBuckets = new Map();
+  for (const lemma of lemmaList) {
+    const display = getDisplayLemma(lemma);
+    if (!displayLemmaBuckets.has(display)) displayLemmaBuckets.set(display, []);
+    displayLemmaBuckets.get(display).push(lemma);
+  }
+  function getOptionLabel(lemma) {
+    const meta = verbMeta[lemma] || {};
+    const display = getDisplayLemma(lemma);
+    const hint = String(meta.disambiguationHint || '').trim();
+    if (hint) return `${display} (${hint})`;
+    const bucket = displayLemmaBuckets.get(display) || [];
+    if (bucket.length <= 1) return display;
+    return `${display} [${lemma}]`;
+  }
+  function getPrincipalPartsText(lemma) {
+    const meta = verbMeta[lemma] || {};
+    return String(meta.principalParts || meta.principal_parts || '').trim();
+  }
+  function getLemmaSearchAliases(lemma) {
+    const aliases = (window.AGVL_SEARCH_ALIASES && window.AGVL_SEARCH_ALIASES[lemma]) || [];
+    return Array.isArray(aliases) ? aliases : [];
+  }
+  const lemmaSearchIndex = lemmaList.map(lemma => {
+    const parts = [lemma, getDisplayLemma(lemma), getOptionLabel(lemma), getSafeGreekGloss(lemma), getPrincipalPartsText(lemma), ...getLemmaSearchAliases(lemma)];
+    const haystack = parts.filter(Boolean).map(part => normalizeGreek(part)).join(' ');
+    return { lemma, haystack };
+  });
+  function findLemmaMatches(query) {
+    const q = normalizeGreek(query);
+    if (!q) return [];
+    const scored = [];
+    for (const entry of lemmaSearchIndex) {
+      if (!entry.haystack.includes(q)) continue;
+      const display = normalizeGreek(getDisplayLemma(entry.lemma));
+      const lemma = normalizeGreek(entry.lemma);
+      const parts = normalizeGreek(getPrincipalPartsText(entry.lemma));
+      const exactAliases = getLemmaSearchAliases(entry.lemma).map(item => normalizeGreek(item)).filter(Boolean);
+      let score = 0;
+      if (display === q || lemma === q) score += 400;
+      else if (display.startsWith(q) || lemma.startsWith(q)) score += 250;
+      else if (parts && parts.includes(q)) score += 120;
+      else score += 40;
+      if (exactAliases.includes(q)) score += 170;
+      if (q === 'ειμι') {
+        if (entry.lemma === 'εἰμί') score += 60;
+        else if (entry.lemma === 'εἶμι') score += 20;
+      }
+      scored.push({ lemma: entry.lemma, score });
+    }
+    return scored.sort((a,b) => b.score - a.score || getDisplayLemma(a.lemma).localeCompare(getDisplayLemma(b.lemma),'el')).map(item => item.lemma);
+  }
+  function updateLemmaPosition(lemma) {
+    if (!lemmaPosition) return;
+    const index = lemmaIndexMap.get(lemma);
+    if (typeof index !== 'number') {
+      lemmaPosition.textContent = '';
+      return;
+    }
+    lemmaPosition.textContent = `Λήμμα ${index + 1} από ${lemmaList.length}`;
+  }
+  function selectLemma(lemma, options = {}) {
+    if (!lemma || !lemmaIndexMap.has(lemma)) return;
+    lemmaSelect.value = lemma;
+    renderLemma(lemma);
+    if (options.activateTab !== false) activateTab('conjugationTab');
+  }
+  for (const lemma of lemmaList) {
+    const opt = document.createElement('option');
+    opt.value = lemma; opt.textContent = getOptionLabel(lemma); opt.dataset.coverage = getParadigmSource(lemma); lemmaSelect.appendChild(opt);
+  }
+  function normalizePerson(number, person) { if (number === 'pl' && person === '1sg') return '1pl'; if (number === 'pl' && person === '2sg') return '2pl'; if (number === 'pl' && person === '3sg') return '3pl'; return person; }
+  function dedupeForms(forms) { const seen = new Set(); return forms.filter(f => { const key = JSON.stringify(f); if (seen.has(key)) return false; seen.add(key); return true; }); }
+  function getFiniteForms(lemma) { return dedupeForms(getParadigmEntries(lemma).filter(x => x.kind === 'finite')); }
+  function getNonFiniteForms(lemma) { return dedupeForms(getParadigmEntries(lemma).filter(x => x.kind !== 'finite')); }
+  function collectCellForms(forms, number, person) {
+    const targetPerson = normalizePerson(number, person);
+    const hits = forms.filter(f => f.number === number && normalizePerson(f.number, f.person) === targetPerson).map(f => f.form);
+    return [...new Set(hits)];
+  }
+
+  function renderFinite(lemma) {
+    const finite = getFiniteForms(lemma); finiteSection.innerHTML = '';
+    for (const mood of MOOD_ORDER) {
+      const moodForms = finite.filter(f => f.mood === mood); if (!moodForms.length) continue;
+      const moodBlock = document.createElement('section'); moodBlock.className = 'mood-block'; moodBlock.innerHTML = `<h2 class="mood-title">${MOOD_LABELS[mood]}</h2>`;
+      for (const tense of TENSE_ORDER) {
+        const tenseForms = moodForms.filter(f => f.tense === tense); if (!tenseForms.length) continue;
+        const tenseBlock = document.createElement('div'); tenseBlock.className = 'tense-block'; tenseBlock.innerHTML = `<h3 class="tense-title">${TENSE_LABELS[tense]}</h3>`;
+        const voiceGrid = document.createElement('div'); voiceGrid.className = 'voice-grid';
+        for (const voice of VOICE_ORDER) {
+          const voiceForms = tenseForms.filter(f => f.voice === voice); if (!voiceForms.length) continue;
+          const voiceCard = document.createElement('div'); voiceCard.className = 'voice-card';
+          const rows = PERSON_ROWS.map(([number, person, label]) => {
+            const cellForms = collectCellForms(voiceForms, number, person);
+            return `<tr><th scope="row">${label}</th><td class="${cellForms.length ? '' : 'empty'}">${cellForms.length ? cellForms.join(' · ') : '—'}</td></tr>`;
+          }).join('');
+          voiceCard.innerHTML = `<h4>${VOICE_LABELS[voice] || voice}</h4><div class="table-wrap"><table class="data-table"><tbody>${rows}</tbody></table></div>`;
+          voiceGrid.appendChild(voiceCard);
+        }
+        tenseBlock.appendChild(voiceGrid); moodBlock.appendChild(tenseBlock);
+      }
+      finiteSection.appendChild(moodBlock);
+    }
+  }
+
+  function renderInfinitives(nonFinite) {
+    const infinitives = nonFinite.filter(f => f.kind === 'infinitive');
+    if (!infinitives.length) return '';
+    const grouped = {};
+    for (const f of infinitives) { const key = `${f.tense}|${f.voice}`; grouped[key] = grouped[key] || []; grouped[key].push(f.form); }
+    const tenses = TENSE_ORDER.filter(t => infinitives.some(f => f.tense === t));
+    const voices = VOICE_ORDER.filter(v => infinitives.some(f => f.voice === v));
+    const rows = tenses.map(tense => `<tr><th scope="row">${TENSE_LABELS[tense] || tense}</th>${voices.map(voice=>{
+      const key=`${tense}|${voice}`; const forms=[...(new Set(grouped[key]||[]))]; return `<td class="${forms.length?'':'empty'}">${forms.length?forms.join(' · '):'—'}</td>`;
+    }).join('')}</tr>`).join('');
+    return `
+      <div class="voice-card nonfinite-table-card">
+        <div class="table-wrap">
+          <table class="data-table matrix-table">
+            <thead><tr><th>Χρόνος</th>${voices.map(v=>`<th>${VOICE_LABELS[v] || v}</th>`).join('')}</tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>`;
+  }
+
+  function renderParticiples(nonFinite) {
+    const participles = nonFinite.filter(f => f.kind === 'participle');
+    if (!participles.length) return '';
+    const blocks = [];
+    const tenseVoiceKeys = [...new Set(participles.map(f => `${f.tense}|${f.voice}`))].sort((a,b)=> TENSE_ORDER.indexOf(a.split('|')[0]) - TENSE_ORDER.indexOf(b.split('|')[0]));
+    for (const key of tenseVoiceKeys) {
+      const [tense, voice] = key.split('|');
+      const forms = participles.filter(f => `${f.tense}|${f.voice}` === key);
+      const tables = ['sg','pl'].map(number => {
+        const body = CASE_ORDER.map(kase => {
+          const cells = GENDER_ORDER.map(gender => {
+            const hits = forms.filter(f => f.gender === gender && (f.number || 'sg') === number && (f.case || 'nom') === kase).map(f => f.form);
+            const uniq = [...new Set(hits)];
+            return `<td class="${uniq.length ? '' : 'empty'}">${uniq.length ? uniq.join(' · ') : '—'}</td>`;
+          }).join('');
+          return `<tr><th scope="row">${CASE_LABELS[kase]}</th>${cells}</tr>`;
+        }).join('');
+        return `<div class="table-wrap participle-number-table"><h5>${number === 'sg' ? 'Ενικός' : 'Πληθυντικός'}</h5><table class="data-table matrix-table"><thead><tr><th>Πτώση</th>${GENDER_ORDER.map(g=>`<th>${GENDER_LABELS[g]}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div>`;
+      }).join('');
+      blocks.push(`<div class="voice-card nonfinite-table-card"><h4>${TENSE_LABELS[tense]} · ${VOICE_LABELS[voice] || voice}</h4>${tables}</div>`);
+    }
+    return `<section class="mood-block"><h2 class="mood-title">Μετοχές</h2><div class="nonfinite-grid">${blocks.join('')}</div></section>`;
+  }
+
+  function renderNonFinite(lemma) {
+    const nonFinite = getNonFiniteForms(lemma); nonFiniteSection.innerHTML = '';
+    const infHtml = renderInfinitives(nonFinite);
+    if (infHtml) { const block = document.createElement('section'); block.className = 'mood-block'; block.innerHTML = `<h2 class="mood-title">Απαρέμφατα</h2><div class="nonfinite-grid">${infHtml}</div>`; nonFiniteSection.appendChild(block); }
+    const partHtml = renderParticiples(nonFinite); if (partHtml) nonFiniteSection.insertAdjacentHTML('beforeend', partHtml);
+  }
+
+  function updateLemmaMeta(lemma) {
+    const safeGloss = getSafeGreekGloss(lemma);
+    lemmaMeta.innerHTML = safeGloss ? `<span class="badge">σημασία: ${escapeHtml(safeGloss)}</span>` : '';
+  }
+  function renderLemma(lemma) {
+    updateLemmaPosition(lemma);
+    updateLemmaMeta(lemma);
+    renderFinite(lemma);
+    renderNonFinite(lemma);
+    if (!finiteSection.innerHTML.trim()) {
+      finiteSection.innerHTML = '<section class="card"><div class="empty-state">Δεν καταγράφονται διαθέσιμοι πεπερασμένοι τύποι για το συγκεκριμένο λήμμα στο τρέχον σύνολο δεδομένων.</div></section>';
+    }
+    if (!nonFiniteSection.innerHTML.trim()) {
+      nonFiniteSection.innerHTML = '<section class="card"><div class="empty-state">Δεν καταγράφονται διαθέσιμα απαρέμφατα ή μετοχές για το συγκεκριμένο λήμμα στο τρέχον σύνολο δεδομένων.</div></section>';
+    }
+  }
+
+  const kaikkiStage2 = {
+    bucketCount: 48,
+    basePath: 'data/kaikki_stage2',
+    loaded: new Set(),
+    pending: new Map(),
+    everActivated: false
+  };
+
+  function entrySignature(entry) {
+    return [entry.lemma || '', entry.form || '', entry.kind || '', entry.tense || '', entry.voice || '', entry.mood || '', entry.person || '', entry.gender || '', entry.case || '', entry.number || ''].join('|');
+  }
+  function analysisDisplaySignature(entry) {
+    return [entry.lemma || '', entry.form || '', labelFor(entry)].join('|');
+  }
+  function dedupeAnalysisHits(entries) {
+    const kept = new Map();
+    for (const entry of entries || []) {
+      const key = analysisDisplaySignature(entry);
+      const prev = kept.get(key);
+      if (!prev || sourceRank(entry) < sourceRank(prev)) kept.set(key, entry);
+    }
+    return [...kept.values()];
+  }
+
+
+  const fallbackRecognitionCache = new Map();
+  function expandAlternativeForms(form) {
+    const out = new Set();
+    const queue = [String(form || '').trim()];
+    while (queue.length) {
+      const current = queue.pop();
+      if (!current) continue;
+      if (/\(ν\)/.test(current)) {
+        queue.push(current.replace(/\(ν\)/g, ''));
+        queue.push(current.replace(/\(ν\)/g, 'ν'));
+        continue;
+      }
+      if (current.includes(' / ')) {
+        current.split(/\s*\/\s*/).forEach(part => queue.push(part));
+        continue;
+      }
+      out.add(current.replace(/\s+/g, ' ').trim());
+    }
+    return [...out];
+  }
+  function buildFallbackRecognitions(normalized) {
+    if (fallbackRecognitionCache.has(normalized)) return fallbackRecognitionCache.get(normalized);
+    const results = [];
+    for (const lemma of lemmaList) {
+      for (const entry of getParadigmEntries(lemma)) {
+        if (!entry || !entry.form) continue;
+        for (const variant of expandAlternativeForms(entry.form)) {
+          if (normalizeGreek(variant) !== normalized) continue;
+          const normalizedEntry = Object.assign({}, entry, {
+            form: variant,
+            source: entry.source || 'runtime-fallback',
+            displayPriority: Math.min(sourceRank(entry), 35)
+          });
+          results.push(normalizedEntry);
+        }
+      }
+    }
+    const deduped = dedupeAnalysisHits(results);
+    fallbackRecognitionCache.set(normalized, deduped);
+    return deduped;
+  }
+
+  function bucketForNormalizedKey(key) {
+    if (!key) return 0;
+    const cps = [key.codePointAt(0) || 0, key.codePointAt(1) || 0, key.codePointAt(2) || 0];
+    return ((cps[0] * 31) + (cps[1] * 17) + cps[2]) % kaikkiStage2.bucketCount;
+  }
+
+  function mergeShardIntoFormIndex(shard) {
+    if (!shard || typeof shard !== 'object') return;
+    for (const [key, arr] of Object.entries(shard)) {
+      if (!Array.isArray(arr) || !arr.length) continue;
+      const bucket = formIndex[key] = formIndex[key] || [];
+      const seen = new Set(bucket.map(entrySignature));
+      for (const item of arr) {
+        const normalizedItem = Object.assign({ displayPriority: 1200, source: 'kaikki-stage2' }, item);
+        const sig = entrySignature(normalizedItem);
+        if (seen.has(sig)) continue;
+        seen.add(sig);
+        bucket.push(normalizedItem);
+      }
+    }
+  }
+
+  async function ensureKaikkiBucketLoaded(normalizedKey) {
+    if (!normalizedKey) return { loaded: false, bucketId: null };
+    const bucketId = bucketForNormalizedKey(normalizedKey);
+    if (kaikkiStage2.loaded.has(bucketId)) return { loaded: false, bucketId };
+    if (kaikkiStage2.pending.has(bucketId)) {
+      await kaikkiStage2.pending.get(bucketId);
+      return { loaded: true, bucketId };
+    }
+    const file = `${kaikkiStage2.basePath}/form_index_bucket_${String(bucketId).padStart(2, '0')}.json`;
+    const promise = fetch(file)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(data => {
+        mergeShardIntoFormIndex(data);
+        kaikkiStage2.loaded.add(bucketId);
+        kaikkiStage2.everActivated = true;
+      })
+      .catch(err => {
+        console.warn('Kaikki stage-2 bucket load failed:', bucketId, err);
+      })
+      .finally(() => {
+        kaikkiStage2.pending.delete(bucketId);
+      });
+    kaikkiStage2.pending.set(bucketId, promise);
+    await promise;
+    return { loaded: kaikkiStage2.loaded.has(bucketId), bucketId };
+  }
+
+  async function analyzeForm(query) {
+    const raw = String(query || '').trim();
+    const normalized = normalizeGreek(raw);
+    if (!normalized) {
+      analyzeStatus.textContent = 'Δώσε έναν τύπο για αναγνώριση.';
+      analyzeResults.innerHTML = '<div class="empty-state">Δεν έχει δοθεί τύπος.</div>';
+      return;
+    }
+    analyzeStatus.textContent = `Αναζήτηση για: ${raw}`;
+    const stage2Info = await ensureKaikkiBucketLoaded(normalized);
+    let hits = dedupeAnalysisHits(dedupeForms((formIndex[normalized] || []).slice()));
+    let usedFallback = false;
+    if (!hits.length) {
+      hits = buildFallbackRecognitions(normalized);
+      usedFallback = !!hits.length;
+    }
+    hits = hits.sort((a, b) => {
+      const pa = sourceRank(a), pb = sourceRank(b);
+      if (pa !== pb) return pa - pb;
+      const lemmaDiff = getDisplayLemma(a.lemma || '').localeCompare(getDisplayLemma(b.lemma || ''), 'el');
+      if (lemmaDiff) return lemmaDiff;
+      return labelFor(a).localeCompare(labelFor(b), 'el');
+    });
+    const stage2Note = stage2Info.loaded ? ' · φορτώθηκε επιπλέον shard Kaikki stage-2' : (kaikkiStage2.everActivated ? ' · διαθέσιμη και επέκταση Kaikki stage-2' : '');
+    const fallbackNote = usedFallback ? ' · χρησιμοποιήθηκε εναλλακτική σάρωση παραδειγμάτων' : '';
+    analyzeStatus.textContent = `Αναζήτηση για: ${raw}${stage2Note}${fallbackNote}`;
+    if (!hits.length) {
+      analyzeResults.innerHTML = `<div class="empty-state">Δεν βρέθηκε αναγνώριση για τον τύπο <strong>${escapeHtml(raw)}</strong>.</div>`;
+      return;
+    }
+    const rows = hits.map(h => {
+      const gloss = getSafeGreekGloss(h.lemma || '');
+      const displayLemma = h.lemma ? getDisplayLemma(h.lemma) : '—';
+      const lemmaButton = h.lemma
+        ? `<button type="button" class="lemma-open-btn" data-lemma="${escapeHtml(h.lemma)}">${escapeHtml(displayLemma)}</button>`
+        : escapeHtml(displayLemma);
+      return `<tr>
+      <td>${escapeHtml(h.form || raw)}</td>
+      <td><div>${lemmaButton}</div>${gloss ? `<div class="table-subtle">${escapeHtml(gloss)}</div>` : ''}</td>
+      <td>${escapeHtml(labelFor(h))}</td>
+    </tr>`;
+    }).join('');
+    analyzeResults.innerHTML = `
+      <div class="result-count">Βρέθηκαν ${hits.length} αναλύσεις.</div>
+      <div class="table-wrap">
+        <table class="data-table analysis-table">
+          <thead><tr><th>Τύπος</th><th>Λήμμα · σημασία</th><th>Αναγνώριση</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+  }
+
+  const tabButtons = [...document.querySelectorAll('.tab-btn')];
+  const tabPanels = [...document.querySelectorAll('.tab-panel')];
+  function activateTab(id) {
+    tabButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === id));
+    tabPanels.forEach(panel => panel.classList.toggle('active', panel.id === id));
+  }
+  tabButtons.forEach(btn => btn.addEventListener('click', () => activateTab(btn.dataset.tab)));
+
+  const BOARD_LAYOUT = [
+    { label: 'Αφετηρία', note: 'Ξεκίνα εδώ.', type: 'start' },
+    { label: 'Κάρτα', note: 'Απάντησε σωστά.', type: 'normal' },
+    { label: 'Άλμα', note: 'Σωστή απάντηση: +2 θέσεις.', type: 'jump' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Αστέρι', note: 'Σωστή απάντηση: +1 πόντος.', type: 'star' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Παγίδα', note: 'Λάθος απάντηση: -2 θέσεις.', type: 'back' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Διπλό', note: 'Σωστή απάντηση: +2 πόντοι.', type: 'double' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Άλμα', note: 'Σωστή απάντηση: +2 θέσεις.', type: 'jump' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Αστέρι', note: 'Σωστή απάντηση: +1 πόντος.', type: 'star' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Παγίδα', note: 'Λάθος απάντηση: -2 θέσεις.', type: 'back' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Διπλό', note: 'Σωστή απάντηση: +2 πόντοι.', type: 'double' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Άλμα', note: 'Σωστή απάντηση: +2 θέσεις.', type: 'jump' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Αστέρι', note: 'Σωστή απάντηση: +1 πόντος.', type: 'star' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Παγίδα', note: 'Λάθος απάντηση: -2 θέσεις.', type: 'back' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Διπλό', note: 'Σωστή απάντηση: +2 πόντοι.', type: 'double' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Άλμα', note: 'Σωστή απάντηση: +2 θέσεις.', type: 'jump' },
+    { label: 'Κάρτα', note: 'Κανονική κάρτα.', type: 'normal' },
+    { label: 'Αστέρι', note: 'Σωστή απάντηση: +1 πόντος.', type: 'star' },
+    { label: 'Τερματισμός', note: 'Φτάσε πρώτος εδώ.', type: 'finish' }
+  ];
+  const TEAM_NAMES = ['Ομάδα Α', 'Ομάδα Β', 'Ομάδα Γ', 'Ομάδα Δ'];
+  const TEAM_CLASSES = ['team-a', 'team-b', 'team-c', 'team-d'];
+  let gameState = {
+    mode: 'classroom', score: 0, total: 0, current: null, answered: false,
+    started: false, teams: [], currentTeam: 0, lastRoll: null,
+    awaitingRoll: true, awaitingNext: false, pendingCellType: null, statusMessage: ''
+  };
+  function shuffled(arr) {
+    return [...arr].sort(() => Math.random() - 0.5);
+  }
+  function createTeams(count) {
+    return Array.from({ length: count }, (_, index) => ({
+      name: TEAM_NAMES[index],
+      className: TEAM_CLASSES[index],
+      position: 0,
+      score: 0
+    }));
+  }
+  function getCurrentTeam() {
+    return gameState.teams[gameState.currentTeam] || null;
+  }
+  function clampPosition(value) {
+    return Math.max(0, Math.min(BOARD_LAYOUT.length - 1, value));
+  }
+  function dedupeForms(entries) {
+    const map = new Map();
+    for (const entry of entries) {
+      const key = [entry.form, entry.kind || '', entry.tense || '', entry.voice || '', entry.mood || '', entry.person || '', entry.number || '', entry.gender || '', entry.case || ''].join('|');
+      if (!map.has(key)) map.set(key, entry);
+    }
+    return [...map.values()];
+  }
+  const gameLemmaPool = lemmaList.filter(lemma => {
+    const entries = dedupeForms(getParadigmEntries(lemma).filter(entry => entry.kind === 'finite' && entry.form));
+    return new Set(entries.map(entry => entry.form)).size >= 4;
+  });
+
+  function buildGamePrompt(entry) {
+    const parts = [];
+    if (entry.tense) parts.push(TENSE_DESCRIPTOR_LABELS[entry.tense] || entry.tense);
+    if (entry.mood) parts.push(MOOD_DESCRIPTOR_LABELS[entry.mood] || entry.mood);
+    if (entry.voice) parts.push(VOICE_DESCRIPTOR_LABELS[entry.voice] || entry.voice);
+    if (entry.person) parts.push(PERSON_LABELS[entry.person] || entry.person);
+    const gloss = getSafeGreekGloss(entry.lemma);
+    const glossPart = gloss ? ` (${gloss})` : '';
+    return `Βρες τον σωστό τύπο του ρήματος ${getDisplayLemma(entry.lemma)}${glossPart}: ${parts.join(', ')}.`;
+  }
+
+  function similarityScore(correct, candidate) {
+    let score = 0;
+    if (candidate.tense === correct.tense) score += 100;
+    if (candidate.voice === correct.voice) score += 100;
+    if (candidate.mood === correct.mood) score += 100;
+    if (candidate.number === correct.number) score += 25;
+    if (candidate.person === correct.person) score += 20;
+    if (candidate.form === correct.form) score -= 1000;
+    return score;
+  }
+
+  function pickPedagogicalDistractors(correct, entries) {
+    const uniqueByForm = new Map();
+    for (const entry of entries) {
+      if (!entry.form || entry.form === correct.form) continue;
+      const prev = uniqueByForm.get(entry.form);
+      if (!prev || similarityScore(correct, entry) > similarityScore(correct, prev)) uniqueByForm.set(entry.form, entry);
+    }
+    const ranked = [...uniqueByForm.values()].sort((a, b) => {
+      const diff = similarityScore(correct, b) - similarityScore(correct, a);
+      if (diff) return diff;
+      return labelFor(a).localeCompare(labelFor(b), 'el');
+    });
+    const primary = ranked.filter(entry => entry.tense === correct.tense && entry.voice === correct.voice && entry.mood === correct.mood);
+    const secondary = ranked.filter(entry => !(entry.tense === correct.tense && entry.voice === correct.voice && entry.mood === correct.mood));
+    return [...primary, ...secondary].slice(0, 3).map(entry => entry.form);
+  }
+
+  function renderBoardArea() {
+    if (!boardGameArea) return;
+    gameState.mode = gameModeSelect ? gameModeSelect.value : gameState.mode;
+    if (gameState.mode !== 'classroom') {
+      boardGameArea.innerHTML = `<div class="board-shell"><div class="board-status">Λειτουργία γρήγορου quiz. Η «Νέα κάρτα» εμφανίζει αμέσως νέα ερώτηση χωρίς ταμπλό ή ζάρι.</div></div>`;
+      return;
+    }
+    if (!gameState.started) {
+      boardGameArea.innerHTML = `<div class="board-shell"><div class="board-status">Επίλεξε αριθμό ομάδων και πάτησε «Νέα παρτίδα». Κάθε ομάδα ρίχνει το ζάρι, μετακινείται στο ταμπλό και απαντά μία μορφολογική κάρτα.</div></div>`;
+      return;
+    }
+    const currentTeam = getCurrentTeam();
+    const teamCards = gameState.teams.map((team, index) => `
+      <div class="team-card ${index === gameState.currentTeam ? 'active' : ''}">
+        <div class="team-name-row"><span class="team-token ${team.className}"></span><strong>${escapeHtml(team.name)}</strong></div>
+        <div>Θέση: <strong>${team.position + 1}/${BOARD_LAYOUT.length}</strong></div>
+        <div>Πόντοι: <strong>${team.score}</strong></div>
+      </div>`).join('');
+    const cells = BOARD_LAYOUT.map((cell, index) => {
+      const occupants = gameState.teams.filter(team => team.position === index).map(team => `<span class="board-occupant ${team.className}" title="${escapeHtml(team.name)}"></span>`).join('');
+      return `
+        <div class="board-cell ${cell.type === 'start' ? 'start' : ''} ${cell.type === 'finish' ? 'finish' : ''} ${cell.type && cell.type !== 'normal' && cell.type !== 'start' && cell.type !== 'finish' ? `special-${cell.type}` : ''}">
+          <div class="board-cell-number">${index + 1}</div>
+          <div class="board-cell-label">${escapeHtml(cell.label)}</div>
+          <div class="board-cell-note">${escapeHtml(cell.note)}</div>
+          <div class="board-occupants">${occupants}</div>
+        </div>`;
+    }).join('');
+    const statusMessage = gameState.statusMessage || 'Ρίξε το ζάρι για να κινηθεί η τρέχουσα ομάδα.';
+    boardGameArea.innerHTML = `
+      <div class="board-shell">
+        <div class="board-topline">
+          <div class="board-status"><strong>Σειρά:</strong> ${escapeHtml(currentTeam ? currentTeam.name : '')}<br><strong>Τελευταία ζαριά:</strong> ${gameState.lastRoll ?? '—'}<br>${escapeHtml(statusMessage)}</div>
+          <div class="board-controls">
+            <button id="rollDiceBtn" type="button" ${gameState.awaitingRoll ? '' : 'disabled'}>Ρίξε ζάρι</button>
+            <button id="nextTurnBtn" type="button" class="secondary-btn" ${gameState.awaitingNext ? '' : 'disabled'}>Επόμενη ομάδα</button>
+          </div>
+        </div>
+        <div class="team-strip">${teamCards}</div>
+        <div class="board-grid">${cells}</div>
+      </div>`;
+    const rollDiceBtn = document.getElementById('rollDiceBtn');
+    const nextTurnBtn = document.getElementById('nextTurnBtn');
+    if (rollDiceBtn) rollDiceBtn.addEventListener('click', onRollDice);
+    if (nextTurnBtn) nextTurnBtn.addEventListener('click', goToNextTeam);
+  }
+
+  function startClassroomGame() {
+    const count = Math.max(2, Math.min(4, Number(teamCountSelect ? teamCountSelect.value : 2) || 2));
+    gameState = {
+      mode: 'classroom', score: 0, total: 0, current: null, answered: false,
+      started: true, teams: createTeams(count), currentTeam: 0, lastRoll: null,
+      awaitingRoll: true, awaitingNext: false, pendingCellType: null,
+      statusMessage: 'Η παρτίδα ξεκίνησε. Ρίξε το ζάρι για την Ομάδα Α.'
+    };
+    gameCard.innerHTML = '<div class="game-panel-card">Ρίξε το ζάρι για να εμφανιστεί η πρώτη κάρτα.</div>';
+    renderBoardArea();
+  }
+
+  function buildQuestion(context = {}) {
+    if (!gameLemmaPool.length) {
+      gameCard.innerHTML = '<div class="empty-state">Δεν υπάρχουν διαθέσιμα δεδομένα παιχνιδιού.</div>';
+      return;
+    }
+    let selectedLemma = null;
+    let entries = [];
+    let correct = null;
+    let options = [];
+    for (let tries = 0; tries < 80; tries++) {
+      const candidateLemma = gameLemmaPool[Math.floor(Math.random() * gameLemmaPool.length)];
+      const candidateEntries = dedupeForms(getParadigmEntries(candidateLemma).filter(entry => entry.kind === 'finite' && entry.form));
+      if (new Set(candidateEntries.map(entry => entry.form)).size < 4) continue;
+      const candidateCorrect = candidateEntries[Math.floor(Math.random() * candidateEntries.length)];
+      const distractors = pickPedagogicalDistractors(candidateCorrect, candidateEntries);
+      const fallbackDistractors = shuffled(candidateEntries.filter(entry => entry.form !== candidateCorrect.form))
+        .map(entry => entry.form)
+        .filter((form, index, arr) => arr.indexOf(form) === index && !distractors.includes(form))
+        .slice(0, 6);
+      const optionSet = [...new Set([candidateCorrect.form, ...distractors, ...fallbackDistractors])].slice(0, 4);
+      if (optionSet.length < 4) continue;
+      selectedLemma = candidateLemma;
+      entries = candidateEntries;
+      correct = candidateCorrect;
+      options = shuffled(optionSet);
+      break;
+    }
+    if (!selectedLemma || entries.length < 4 || !correct || options.length < 4) {
+      gameCard.innerHTML = '<div class="empty-state">Δεν υπάρχουν επαρκή δεδομένα παιχνιδιού για το τρέχον σύνολο λημμάτων.</div>';
+      return;
+    }
+    gameState.current = {
+      lemma: selectedLemma,
+      prompt: buildGamePrompt(correct),
+      correctForm: correct.form,
+      correctLabel: labelFor(correct),
+      options,
+      context
+    };
+    gameState.answered = false;
+    renderQuestion();
+  }
+
+  function resolveBoardAnswer(isCorrect) {
+    const team = getCurrentTeam();
+    if (!team) return;
+    team.score += isCorrect ? 1 : 0;
+    gameState.total += 1;
+    if (isCorrect) gameState.score += 1;
+    const cellType = gameState.pendingCellType;
+    if (cellType === 'star' && isCorrect) {
+      team.score += 1;
+      gameState.statusMessage = `${team.name}: σωστή απάντηση και μπόνους +1 πόντος.`;
+    } else if (cellType === 'jump' && isCorrect) {
+      team.position = clampPosition(team.position + 2);
+      gameState.statusMessage = `${team.name}: σωστή απάντηση και άλμα +2 θέσεων.`;
+    } else if (cellType === 'back' && !isCorrect) {
+      team.position = clampPosition(team.position - 2);
+      gameState.statusMessage = `${team.name}: λάθος απάντηση και επιστροφή -2 θέσεων.`;
+    } else if (cellType === 'double' && isCorrect) {
+      team.score += 2;
+      gameState.statusMessage = `${team.name}: σωστή απάντηση και διπλό μπόνους +2 πόντων.`;
+    } else {
+      gameState.statusMessage = isCorrect ? `${team.name}: σωστή απάντηση.` : `${team.name}: λάθος απάντηση.`;
+    }
+    if (team.position >= BOARD_LAYOUT.length - 1) {
+      gameState.awaitingNext = false;
+      gameState.awaitingRoll = false;
+      gameState.statusMessage = `${team.name} τερμάτισε πρώτη.`;
+    } else {
+      gameState.awaitingNext = true;
+      gameState.awaitingRoll = false;
+    }
+  }
+
+  function renderQuestion(selected = null) {
+    if (!gameState.current) return;
+    const { lemma, prompt, correctForm, correctLabel, options } = gameState.current;
+    const buttons = options.map(opt => {
+      let cls = 'game-option';
+      if (selected) {
+        if (opt === correctForm) cls += ' correct';
+        else if (opt === selected) cls += ' wrong';
+      }
+      return `<button type="button" class="${cls}" data-option="${escapeHtml(opt)}" ${selected ? 'disabled' : ''}>${escapeHtml(opt)}</button>`;
+    }).join('');
+    const scoreLine = gameState.mode === 'quick'
+      ? `<div class="game-score">Σκορ: ${gameState.score}/${gameState.total}</div>`
+      : `<div class="game-score">Τρέχουσα ομάδα: ${escapeHtml(getCurrentTeam() ? getCurrentTeam().name : '')}</div>`;
+    const helperLine = gameState.mode === 'quick'
+      ? 'Όλες οι επιλογές ανήκουν στο ίδιο ρήμα.'
+      : 'Η ομάδα απαντά μία κάρτα μετά από κάθε ζαριά.';
+    const feedback = selected ? `<div class="game-feedback">${selected === correctForm ? 'Σωστό.' : `Λάθος. Σωστή απάντηση: ${escapeHtml(correctForm)}`}<div class="game-feedback-meta">${escapeHtml(correctLabel || '')}</div><div class="game-feedback-actions"><button type="button" class="secondary-btn game-open-lemma-btn" data-lemma="${escapeHtml(lemma)}">Άνοιγμα στην Κλίση</button></div></div>` : '';
+    gameCard.innerHTML = `
+      <div class="game-panel-card">
+        ${scoreLine}
+        <div class="game-form">${escapeHtml(prompt)}</div>
+        <div class="minor-note">${helperLine} <strong>${escapeHtml(getOptionLabel(lemma))}</strong></div>
+        <div class="game-options">${buttons}</div>
+        ${feedback}
+      </div>`;
+    gameCard.querySelectorAll('.game-option').forEach(btn => btn.addEventListener('click', () => {
+      if (gameState.answered) return;
+      gameState.answered = true;
+      if (gameState.mode === 'quick') {
+        gameState.total += 1;
+        if (btn.dataset.option === correctForm) gameState.score += 1;
+      } else {
+        resolveBoardAnswer(btn.dataset.option === correctForm);
+        renderBoardArea();
+      }
+      renderQuestion(btn.dataset.option);
+    }));
+    const openLemmaBtn = gameCard.querySelector('.game-open-lemma-btn');
+    if (openLemmaBtn) openLemmaBtn.addEventListener('click', () => selectLemma(openLemmaBtn.dataset.lemma));
+  }
+
+  function onRollDice() {
+    if (gameState.mode !== 'classroom' || !gameState.started || !gameState.awaitingRoll) return;
+    const team = getCurrentTeam();
+    if (!team) return;
+    const roll = Math.floor(Math.random() * 6) + 1;
+    gameState.lastRoll = roll;
+    team.position = clampPosition(team.position + roll);
+    gameState.pendingCellType = BOARD_LAYOUT[team.position]?.type || 'normal';
+    gameState.awaitingRoll = false;
+    gameState.awaitingNext = false;
+    gameState.statusMessage = `${team.name} έριξε ${roll} και πήγε στο τετράγωνο ${team.position + 1}.`; 
+    renderBoardArea();
+    buildQuestion({ teamIndex: gameState.currentTeam, cellType: gameState.pendingCellType });
+  }
+
+  function goToNextTeam() {
+    if (gameState.mode !== 'classroom' || !gameState.started || !gameState.awaitingNext) return;
+    const winner = gameState.teams.find(team => team.position >= BOARD_LAYOUT.length - 1);
+    if (winner) {
+      renderBoardArea();
+      return;
+    }
+    gameState.currentTeam = (gameState.currentTeam + 1) % gameState.teams.length;
+    gameState.awaitingRoll = true;
+    gameState.awaitingNext = false;
+    gameState.pendingCellType = null;
+    gameState.current = null;
+    gameState.answered = false;
+    gameState.statusMessage = `Σειρά έχει τώρα η ${getCurrentTeam().name}.`; 
+    gameCard.innerHTML = '<div class="game-panel-card">Ρίξε το ζάρι για την επόμενη ομάδα.</div>';
+    renderBoardArea();
+  }
+  analyzeResults.addEventListener('click', (event) => {
+    const btn = event.target.closest('.lemma-open-btn');
+    if (!btn) return;
+    selectLemma(btn.dataset.lemma);
+  });
+  lemmaSelect.addEventListener('change', () => renderLemma(lemmaSelect.value));
+  lemmaSearch.addEventListener('input', () => {
+    const raw = lemmaSearch.value.trim();
+    const matches = findLemmaMatches(raw);
+    if (!raw) {
+      lemmaSearch.dataset.state = '';
+      lemmaSearch.title = '';
+      return;
+    }
+    if (!matches.length) {
+      lemmaSearch.dataset.state = 'no-match';
+      lemmaSearch.title = 'Δεν βρέθηκε λήμμα.';
+      return;
+    }
+    lemmaSearch.dataset.state = 'matched';
+    lemmaSearch.title = matches.slice(0, 5).map(lemma => getOptionLabel(lemma)).join(' · ');
+    selectLemma(matches[0], { activateTab: false });
+  });
+  if (prevLemmaBtn) {
+    prevLemmaBtn.addEventListener('click', () => {
+      const current = lemmaIndexMap.get(lemmaSelect.value);
+      if (typeof current !== 'number' || current <= 0) return;
+      selectLemma(lemmaList[current - 1], { activateTab: false });
+    });
+  }
+  if (nextLemmaBtn) {
+    nextLemmaBtn.addEventListener('click', () => {
+      const current = lemmaIndexMap.get(lemmaSelect.value);
+      if (typeof current !== 'number' || current >= lemmaList.length - 1) return;
+      selectLemma(lemmaList[current + 1], { activateTab: false });
+    });
+  }
+  analyzeBtn.addEventListener('click', async () => { await analyzeForm(analyzeInput.value); });
+  analyzeInput.addEventListener('keydown', async (e) => { if (e.key === 'Enter') await analyzeForm(analyzeInput.value); });
+  newQuestionBtn.addEventListener('click', () => {
+    gameState.mode = gameModeSelect ? gameModeSelect.value : gameState.mode;
+    if (gameState.mode === 'quick') {
+      gameState.started = false;
+      gameState.awaitingRoll = false;
+      gameState.awaitingNext = false;
+      renderBoardArea();
+      buildQuestion();
+      return;
+    }
+    if (!gameState.started) {
+      startClassroomGame();
+      return;
+    }
+    buildQuestion({ teamIndex: gameState.currentTeam, cellType: gameState.pendingCellType || 'normal' });
+  });
+  if (startClassroomGameBtn) startClassroomGameBtn.addEventListener('click', startClassroomGame);
+  if (gameModeSelect) gameModeSelect.addEventListener('change', () => {
+    gameState.mode = gameModeSelect.value;
+    if (gameState.mode === 'quick') {
+      gameState.started = false;
+      gameState.awaitingRoll = false;
+      gameState.awaitingNext = false;
+      renderBoardArea();
+      buildQuestion();
+    } else {
+      renderBoardArea();
+      gameCard.innerHTML = '<div class="game-panel-card">Πάτησε «Νέα παρτίδα» για να ξεκινήσει το board game.</div>';
+    }
+  });
+
+  if (lemmaList.length) { selectLemma(lemmaList[0], { activateTab: false }); }
+  analyzeResults.innerHTML = '<div class="empty-state">Οι αναλύσεις θα εμφανιστούν εδώ.</div>';
+  analyzeStatus.textContent = 'Έτοιμο για αναγνώριση.';
+  renderBoardArea();
+  gameCard.innerHTML = '<div class="game-panel-card">Πάτησε «Νέα παρτίδα» για σχολικό παιχνίδι ή επίλεξε «Γρήγορο quiz».</div>';
+})();
