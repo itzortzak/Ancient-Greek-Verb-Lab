@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ancient Greek Verb Lab</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="topbar">
+<div>
+<h1>Ancient Greek Verb Lab</h1>
+<p>Αναγνώριση τύπων, κλίση λημμάτων και παιχνίδι εξάσκησης.</p>
+</div>
+</header>
+<main class="page">
+<nav aria-label="Κύριες λειτουργίες" class="tabs card">
+<button class="tab-btn active" data-tab="analyzeTab">Αναγνώριση</button>
+<button class="tab-btn" data-tab="conjugationTab">Κλίση</button>
+<button class="tab-btn" data-tab="gameTab">Παιχνίδι</button>
+<button class="tab-btn" data-tab="infoTab">Πληροφορίες</button>
+</nav>
+<section class="tab-panel active" id="analyzeTab">
+<section class="card">
+<h2 class="panel-title">Αναγνώριση</h2>
+<p class="panel-intro">Πληκτρολόγησε έναν ρηματικό τύπο. Η αναζήτηση γίνεται χωρίς διάκριση τόνων, πνευμάτων και τελικού σίγμα.</p>
+<div class="controls-row">
+<input id="analyzeInput" placeholder="π.χ. ἔλαβον, λύοιεν, λελυμένος" type="search"/>
+<button id="analyzeBtn" type="button">Αναγνώριση</button>
+</div>
+<div class="minor-note" id="analyzeStatus"></div>
+</section>
+<section class="card" id="analyzeResults"></section>
+</section>
+<section class="tab-panel" id="conjugationTab">
+<section class="controls card">
+<label for="lemmaSelect">Λήμμα</label>
+<div class="controls-row">
+<select id="lemmaSelect"></select>
+<input id="lemmaSearch" placeholder="Αναζήτηση λήμματος…" type="search"/>
+</div>
+<div class="nav-row">
+<div class="lemma-nav">
+<button class="secondary-btn" id="prevLemmaBtn" type="button">◀ Προηγούμενο</button>
+<button class="secondary-btn" id="nextLemmaBtn" type="button">Επόμενο ▶</button>
+</div>
+<div class="minor-note minor-note-inline" id="lemmaPosition"></div>
+</div>
+<div class="lemma-meta" id="lemmaMeta"></div>
+</section>
+<section id="finiteSection"></section>
+<section id="nonFiniteSection"></section>
+</section>
+<section class="tab-panel" id="gameTab">
+<section class="card">
+<div class="game-header">
+<div>
+<h2 class="panel-title">Παιχνίδι</h2>
+<p class="panel-intro">Γρήγορη εξάσκηση ή σχολικό board game με ομάδες, ζάρι, ταμπλό και μορφολογικές κάρτες.</p>
+</div>
+<div class="game-actions game-actions-extended">
+<label class="game-inline-control" for="gameModeSelect">Λειτουργία
+              <select id="gameModeSelect">
+<option value="classroom">Σχολικό board game</option>
+<option value="quick">Γρήγορο quiz</option>
+</select>
+</label>
+<label class="game-inline-control" for="teamCountSelect">Ομάδες
+              <select id="teamCountSelect">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</label>
+<button id="startClassroomGameBtn" type="button">Νέα παρτίδα</button>
+<button id="newQuestionBtn" type="button">Νέα κάρτα</button>
+</div>
+</div>
+<div id="boardGameArea"></div>
+<div id="gameCard"></div>
+</section>
+</section>
+<section class="tab-panel" id="infoTab">
+<section class="card info-card">
+<h2 class="panel-title">Πληροφορίες</h2>
+<div class="info-prose">
+<p>Το <strong>Ancient Greek Verb Lab</strong> είναι μια ψηφιακή εφαρμογή με καθαρά εκπαιδευτικό, διδακτικό και σχολικό προσανατολισμό. Σχεδιάστηκε για να υποστηρίζει τη διδασκαλία και τη μελέτη της Αρχαίας Ελληνικής στο σχολείο, αλλά και την ατομική εξάσκηση μαθητών, φοιτητών και εκπαιδευτικών. Ο βασικός της στόχος είναι να διευκολύνει την αναγνώριση ρηματικών τύπων, την παρακολούθηση της κλίσης των λημμάτων και την ενεργητική εμπέδωση της μορφολογίας μέσα από διαδραστική εξάσκηση.</p>
+<p>Η εκπαιδευτική αξία της εφαρμογής έγκειται στο ότι συνδυάζει τη συστηματική παρουσίαση της γραμματικής πληροφορίας με άμεση ανατροφοδότηση και πρακτική εφαρμογή. Η λειτουργία <strong>Αναγνώριση</strong> βοηθά τον μαθητή να συνδέει έναν συγκεκριμένο τύπο με το λήμμα και τα μορφολογικά χαρακτηριστικά του, η λειτουργία <strong>Κλίση</strong> προσφέρει συγκεντρωμένη εποπτεία των πεπερασμένων και μη πεπερασμένων τύπων, ενώ το <strong>Παιχνίδι</strong> ενισχύει τη μνημονική συγκράτηση, την αυτοαξιολόγηση και τη σταδιακή οικοδόμηση μορφολογικής ακρίβειας.</p>
+<p>Η εφαρμογή μπορεί να αξιοποιηθεί τόσο κατά τη διδασκαλία στην τάξη όσο και στο σπίτι, ως εργαλείο επανάληψης, διαφοροποιημένης διδασκαλίας και αυτόνομης μάθησης. Ιδίως σε σχολικό περιβάλλον, υποστηρίζει την εξοικείωση με τις βασικές κατηγορίες χρόνων, εγκλίσεων, φωνών, απαρεμφάτων και μετοχών, ενώ παράλληλα καλλιεργεί αναλυτική παρατήρηση, γλωσσική επίγνωση και μεγαλύτερη άνεση στην πρόσληψη αρχαιοελληνικών κειμένων.</p>
+</div>
+</section>
+<section class="card info-card">
+<h3 class="subtle-title">Γενική βιβλιογραφία</h3>
+<ul class="bibliography-list">
+<li>Chantraine, P. (1964) <em>Morphologie historique du grec</em>. 2nd edn. Paris: Klincksieck.</li>
+<li>Christidis, A.-F. (ed.) with the assistance of Arapopoulou, M. and Chriti, M. (2007) <em>A History of Ancient Greek: From the Beginnings to Late Antiquity</em>. Cambridge: Cambridge University Press.</li>
+<li>Goodwin, W.W. (1882) <em>Syntax of the Moods and Tenses of the Greek Verb</em>. Revised edn. London: Macmillan.</li>
+<li>Horrocks, G. (2010) <em>Greek: A History of the Language and Its Speakers</em>. 2nd edn. Chichester: Wiley-Blackwell.</li>
+<li>Kühner, R. and Gerth, B. (1898–1904) <em>Ausführliche Grammatik der griechischen Sprache. Satzlehre</em>. 3rd edn. Hannover: Hahnsche Buchhandlung. 2 vols.</li>
+<li>Οικονόμου, Μ.Χ. (2016) <em>Γραμματική της Αρχαίας Ελληνικής. Γυμνασίου–Λυκείου</em>. Αθήνα: Ινστιτούτο Τεχνολογίας Υπολογιστών και Εκδόσεων «Διόφαντος».</li>
+<li>Παπανικολάου, Γ. (2010) <em>Γραμματική της Αρχαίας ελληνικής γλώσσας: θεωρία και ασκήσεις</em>. Αθήνα: Εκδόσεις Πατάκη.</li>
+<li>Πετρίτσης, Σ.Α. (2015) <em>Ασκήσεις γραμματικής της Αρχαίας Ελληνικής</em>. Αθήνα: Εκδόσεις Πατάκη.</li>
+<li>Rijksbaron, A. (2007) <em>The Syntax and Semantics of the Verb in Classical Greek: An Introduction</em>. 3rd edn. Chicago: University of Chicago Press.</li>
+<li>Schwyzer, E. (1939) <em>Griechische Grammatik</em>. Vol. 1: <em>Allgemeiner Teil. Lautlehre. Wortbildung. Flexion</em>. München: C.H. Beck.</li>
+<li>Smyth, H.W. (1984) <em>Greek Grammar</em>. Revised by G.M. Messing. Cambridge, MA: Harvard University Press.</li>
+<li>Τζαρτζάνος, Α.Α. (1967) <em>Γραμματική της Αρχαίας Ελληνικής Γλώσσης</em>. Αθήναι: Οργανισμός Εκδόσεως Διδακτικών Βιβλίων.</li>
+<li>van Emde Boas, E., Rijksbaron, A., Huitink, L. and de Bakker, M. (2019) <em>The Cambridge Grammar of Classical Greek</em>. Cambridge: Cambridge University Press.</li>
+<li>Veitch, W. (1848) <em>Greek Verbs, Irregular and Defective: Their Forms, Meaning, and Quantity</em>. Edinburgh: Adam and Charles Black.</li>
+</ul>
+</section>
+</section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="data/bootstrap.bundle.js"></script>
+<script src="data/zzzz_finalConsolidatedPatch_v5.js"></script>
+<script src="data/agvl_prebase_stabilized_2026_04_17.js"></script>
+<script src="data/generatedParadigmsKaikkiStage3.js"></script>
+<script src="data/generatedParadigmsKaikkiStage5Backfill.js"></script>
+<script src="data/generatedParadigmsKaikkiStage6Remaining.js"></script>
+<script src="data/agvl_postbase_stabilized_2026_04_17.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>
