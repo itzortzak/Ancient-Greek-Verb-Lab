@@ -1,8 +1,0 @@
-Ancient Greek Verb Lab - release-ready package
-Date: 2026-04-17
-Contents kept intentionally minimal for upload/deployment:
-- index.html
-- style.css
-- viewer.js
-- active data bundles only
-- .nojekyll for GitHub Pages compatibility
