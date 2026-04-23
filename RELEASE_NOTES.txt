@@ -1,0 +1,38 @@
+Ancient Greek Verb Lab - GitHub-ready release
+Date: 2026-04-23
+
+Repository-root layout
+- index.html
+- style.css
+- viewer.js
+- data/
+- .nojekyll
+- README.md
+
+GitHub upload preparation
+- the large `generatedParadigmsKaikkiStage3` payload has been split into 4 sequential files
+- root layout is flattened for direct repository upload / Pages deployment
+
+Build lineage
+- 2026-04-17: stabilized base release
+- 2026-04-22: lazy-loaded Kalos finite import
+  * 11,516 lemmas
+  * 3,508,448 raw rows imported
+- 2026-04-22: exact overlap prune against the base runtime layer
+  * 107,497 exact overlaps removed from the packaged Kalos layer
+- 2026-04-22: tonal cleanup passes and final manual review completed
+  * final locked Kalos finite entries: 3,323,313
+- 2026-04-23: non-destructive quantity-mark display normalization added
+  * raw Kalos finite data unchanged
+  * 4,040 quantity-only display collisions collapsed in the UI
+  * residual empty Kalos-only lemma `χρή` hidden from the UI
+
+Static checks
+- viewer.js syntax check: PASS
+- index local references: PASS
+- manifest lemma count: 11,516
+- form-index normalization mismatches: 0
+
+Notes
+- This package is intended for direct commit/upload at repository root.
+- It is a static HTML/CSS/JS build.
