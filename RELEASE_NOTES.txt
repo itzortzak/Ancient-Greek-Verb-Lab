@@ -1,4 +1,4 @@
-Ancient Greek Verb Lab — School Corpus / Full Paradigms release candidate r3
+Ancient Greek Verb Lab — School Corpus / Full Paradigms release r3
 Date: 2026-07-20
 Branch: agent/school-corpus-full-paradigms
 Pull request: #1
@@ -56,5 +56,7 @@ DECLARED LIMITS
 - rare, dialectal, poetic and text-critically disputed forms require separate philological verification
 
 RELEASE STATE
-- draft pull request #1 has a green automated validation result
-- merge into main remains deferred pending explicit approval
+- pull request #1 has a green automated validation result
+- 11,530 unique school-corpus records from 7 sources have been verified
+- no automated release blocker remains
+- the release is approved for squash merge into main
