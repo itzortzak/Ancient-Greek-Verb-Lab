@@ -1,46 +1,60 @@
-Ancient Greek Verb Lab — School Corpus Release Candidate
+Ancient Greek Verb Lab — School Corpus / Full Paradigms release candidate r3
 Date: 2026-07-20
 Branch: agent/school-corpus-full-paradigms
+Pull request: #1
 
-Scope
-- reoriented the application around the attached Ancient Greek school textbooks for the first year of Lyceum
-- retained broad morphological form recognition and the supplementary Kalos finite layer
-- restored the pre-Kalos presentation model for full lemma paradigms
+USER INTERFACE
+- reorganized the application into Form Recognition, Full Conjugation, Practice/Classroom Game, and Information
+- retained broad form recognition and the supplementary Kalos finite fallback
+- restored the pre-Kalos presentation model for checked full paradigms
+- added school-book and lemma filters, dual controls, school-form highlighting, expand/collapse and print support
 
-Application
-- new accessible interface for Recognition, Full Conjugation, Practice and Information
-- school-book and lemma filters
-- lemma overview with meaning, principal parts, cautious etymological/morphological note and school occurrences
-- complete finite-form tables for all available persons, numbers, moods, tenses and voices
-- infinitive matrices and participle declension by gender, number and case
-- optional dual display, empty-row suppression, school-form highlighting, expand/collapse and print controls
-- improved individual practice and classroom game modes
-- question types: recognition, production, meaning and source textbook
-- selectable difficulty, source textbook, teams, score and streak tracking
+MORPHOLOGY AND LEXICON
+- presents checked finite forms by tense, voice, mood, person and number, including dual where available
+- presents infinitives and participles by tense and voice; participles are organized by gender, number and case
+- shows Greek meaning, principal parts and a conservative etymological or morphological note when supported by metadata
+- avoids filling missing cells with unverified analogical forms
 
-School corpus
-- 13,309 normalized school-corpus entries
-- 8 manifest records covering student books, workbooks and the parallel teacher volume
-- gzip/base64 packaging split into 2 deterministic parts
-- school pages are reported according to PDF pagination
-- full textbook prose and page images are not stored in the repository
+SCHOOL CORPUS
+- indexed 7 A΄ Lykeiou student books and workbooks
+- retained 11,530 unique normalized matching keys after deduplication
+- stores book-level bitmask metadata only; no continuous textbook passages or page images are reproduced
+- packages the corpus as 7 gzip+base64 shards: 01–04, 05a, 05b and 06
+- the split 05a/05b replaces one oversized shard that was corrupted during an earlier GitHub upload
 
-Runtime
-- robust loader now discovers the active corpus and viewer parts from the manifest
-- clear fatal-error reporting for missing, invalid or unsupported compressed assets
-- packed viewer split into 2 parts
-- obsolete experimental corpus shards removed
+APPLICATION PACKAGE
+- packages the school runtime as 4 gzip+base64 shards
+- verifies both the corpus and application source with SHA-256 before execution
+- retains two small compatibility bootstrap files required by the existing index script order
+- removes superseded viewer payloads and the corrupted oversized corpus payload
 
-Validation
-- Node-based static release validator added
-- GitHub Actions pull-request workflow added
-- checks cover file references, manifest consistency, packed payload extraction, gzip decompression, corpus count, Greek content, JavaScript syntax, required interface elements and temporary-file cleanup
+PRACTICE AND GAME
+- recognition, production, meaning and source-book questions
+- basic, advanced and complete difficulty levels
+- book filtering
+- classroom mode with 2–4 teams, board effects, dice, score and streak tracking
+- questions are restricted to school-related lemmas with usable paradigm coverage
 
-Existing stabilized layers retained
-- AGVL stabilized base release of 2026-04-17
-- Kalos finite import of 2026-04-22
-- non-destructive quantity-mark display normalization of 2026-04-23
+VALIDATION
+- manifest structure and all declared files: PASS
+- corpus base64 and gzip decoding: PASS
+- corpus SHA-256: 73f7e64250f2427c05d5c5704beb96dba9e55097136ea36dede5c3f48a211742
+- corpus JSON structure, masks and duplicate check: PASS
+- corpus entries: 11,530 unique records
+- application base64 and gzip decoding: PASS
+- application SHA-256: df0908e07c3cca4292c9bb5fc49456d97f99bbd39672367abaff58f15b396e29
+- decoded application source: 83,233 bytes; JavaScript syntax and expected UI markers: PASS
+- HTML ids and script references: PASS
+- CSS structure: PASS
+- obsolete and corrupted payload cleanup: PASS
+- GitHub Actions run 26: PASS
 
-Release state
-- candidate branch prepared for pull-request validation
-- merge into main is deferred until the automated validation succeeds
+DECLARED LIMITS
+- full-paradigm coverage depends on the checked manual and generated datasets already present in the repository
+- a blank cell means “not present in the current checked paradigm”, not necessarily “non-existent in Ancient Greek”
+- the compact corpus identifies the source book, not the exact PDF page
+- rare, dialectal, poetic and text-critically disputed forms require separate philological verification
+
+RELEASE STATE
+- draft pull request #1 has a green automated validation result
+- merge into main remains deferred pending explicit approval
