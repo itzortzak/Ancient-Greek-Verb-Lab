@@ -1,5 +1,5 @@
 window.SCHOOL_CORPUS = Object.assign(window.SCHOOL_CORPUS || {}, {
-  version: '2026-07-20-school-full-r2',
+  version: '2026-07-20-school-full-r3',
   schemaVersion: 2,
   scope: 'Αρχαιοελληνικοί τύποι από τα συνημμένα σχολικά εγχειρίδια της Α΄ Λυκείου',
   method: 'Εξαγωγή από τα αρχαιοελληνικά τμήματα των PDF, κανονικοποίηση Unicode και διασταύρωση κατά την εκτέλεση με τον μορφολογικό δείκτη της εφαρμογής.',
@@ -24,13 +24,14 @@ window.SCHOOL_CORPUS = Object.assign(window.SCHOOL_CORPUS || {}, {
   tokenCount: 11530,
   packedEncoding: 'gzip+base64',
   packedSchema: '[normalizedForm,bookBitmask]',
-  packedPartCount: 6,
+  packedPartCount: 7,
   packedPartFiles: [
     'data/school_corpus_compact_01.js',
     'data/school_corpus_compact_02.js',
     'data/school_corpus_compact_03.js',
     'data/school_corpus_compact_04.js',
-    'data/school_corpus_compact_05.js',
+    'data/school_corpus_compact_05a.js',
+    'data/school_corpus_compact_05b.js',
     'data/school_corpus_compact_06.js'
   ],
   appPartCount: 4,
