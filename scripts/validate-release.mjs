@@ -102,7 +102,7 @@ assert(Array.isArray(manifest.packedPartFiles) && manifest.packedPartFiles.lengt
   'Ασυμφωνία packedPartFiles και packedPartCount.');
 assert(Array.isArray(manifest.appPartFiles) && manifest.appPartFiles.length === manifest.appPartCount,
   'Ασυμφωνία appPartFiles και appPartCount.');
-assert(manifest.packedPartCount === 6, 'Η τελική έκδοση πρέπει να χρησιμοποιεί 6 compact corpus shards.');
+assert(manifest.packedPartCount === 7, 'Η τελική έκδοση πρέπει να χρησιμοποιεί 7 compact corpus shards.');
 assert(manifest.appPartCount === 4, 'Η τελική έκδοση πρέπει να χρησιμοποιεί 4 app bundle shards.');
 for (const file of [...manifest.packedPartFiles, ...manifest.appPartFiles]) {
   assert(exists(file), `Το manifest παραπέμπει σε ανύπαρκτο αρχείο: ${file}`);
@@ -219,6 +219,7 @@ const forbidden = [
   '.school-build-marker',
   'data/viewer_school_packed_01.js',
   'data/viewer_school_packed_02.js',
+  'data/school_corpus_compact_05.js',
   'data/school_corpus_packed_03.js',
   'data/school_corpus_packed_04.js',
   'data/school_corpus_packed_05.js',
