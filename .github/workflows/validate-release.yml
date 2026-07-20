@@ -1,0 +1,38 @@
+name: Validate school corpus release
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Validate static release
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/validate-release.mjs 2>&1 | tee validation.log
+
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agvl-validation
+          path: |
+            validation.log
+            validation-report.json
+          if-no-files-found: warn
+          retention-days: 14
