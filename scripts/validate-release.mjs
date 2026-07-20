@@ -40,9 +40,13 @@ function evaluateManifest() {
 function packedPayload(relativePath, globalName) {
   const source = read(relativePath);
   assert(source.includes(globalName), `${relativePath}: απουσιάζει το ${globalName}.`);
-  const matches = [...source.matchAll(/\.push\((['"])([\s\S]*?)\1\)\s*;?/g)];
-  assert(matches.length === 1, `${relativePath}: αναμένονταν ακριβώς ένα packed payload, βρέθηκαν ${matches.length}.`);
-  const payload = matches[0][2].replace(/\s+/g, '');
+  const sandbox = { window: {} };
+  vm.createContext(sandbox);
+  new vm.Script(source, { filename: relativePath }).runInContext(sandbox);
+  const parts = sandbox.window[globalName];
+  assert(Array.isArray(parts), `${relativePath}: το ${globalName} δεν είναι πίνακας.`);
+  assert(parts.length === 1, `${relativePath}: αναμενόταν ακριβώς ένα packed payload, βρέθηκαν ${parts.length}.`);
+  const payload = String(parts[0]).replace(/\s+/g, '');
   assert(/^[A-Za-z0-9+/=]+$/.test(payload), `${relativePath}: το packed payload περιέχει μη έγκυρους χαρακτήρες.`);
   return payload;
 }
