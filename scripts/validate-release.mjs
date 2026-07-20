@@ -1,16 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import crypto from 'node:crypto';
 import { gunzipSync } from 'node:zlib';
 
 const root = process.cwd();
 const report = {
   checkedAt: new Date().toISOString(),
-  manifest: null,
+  release: {},
   corpus: {},
-  viewer: {},
+  app: {},
   html: {},
-  warnings: [],
+  compatibility: {},
 };
 
 function absolute(relativePath) {
@@ -21,162 +22,215 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+function exists(relativePath) {
+  return fs.existsSync(absolute(relativePath));
+}
+
 function read(relativePath) {
-  const file = absolute(relativePath);
-  assert(fs.existsSync(file), `Λείπει το αρχείο: ${relativePath}`);
-  return fs.readFileSync(file, 'utf8');
+  assert(exists(relativePath), `Λείπει το αρχείο: ${relativePath}`);
+  return fs.readFileSync(absolute(relativePath), 'utf8');
 }
 
-function evaluateManifest() {
-  const source = read('data/school_corpus_manifest.js');
-  const sandbox = { window: {} };
+function sha256(buffer) {
+  return crypto.createHash('sha256').update(buffer).digest('hex');
+}
+
+function evaluateWindowFiles(files) {
+  const sandbox = { window: {}, console };
+  sandbox.window.window = sandbox.window;
   vm.createContext(sandbox);
-  new vm.Script(source, { filename: 'data/school_corpus_manifest.js' }).runInContext(sandbox);
-  const manifest = sandbox.window.SCHOOL_CORPUS;
-  assert(manifest && typeof manifest === 'object', 'Το school corpus manifest δεν δημιουργεί window.SCHOOL_CORPUS.');
-  return manifest;
-}
-
-function packedPayload(relativePath, globalName) {
-  const source = read(relativePath);
-  assert(source.includes(globalName), `${relativePath}: απουσιάζει το ${globalName}.`);
-  const sandbox = { window: {} };
-  vm.createContext(sandbox);
-  new vm.Script(source, { filename: relativePath }).runInContext(sandbox);
-  const parts = sandbox.window[globalName];
-  assert(Array.isArray(parts), `${relativePath}: το ${globalName} δεν είναι πίνακας.`);
-  assert(parts.length === 1, `${relativePath}: αναμενόταν ακριβώς ένα packed payload, βρέθηκαν ${parts.length}.`);
-  const payload = String(parts[0]).replace(/\s+/g, '');
-  assert(/^[A-Za-z0-9+/=]+$/.test(payload), `${relativePath}: το packed payload περιέχει μη έγκυρους χαρακτήρες.`);
-  return payload;
-}
-
-function inflate(files, globalName) {
-  const payload = files.map((file) => packedPayload(file, globalName)).join('');
-  assert(payload.length > 100, `${globalName}: το packed payload είναι υπερβολικά μικρό.`);
-  const buffer = Buffer.from(payload, 'base64');
-  assert(buffer.length > 64, `${globalName}: αποτυχία αποκωδικοποίησης base64.`);
-  return gunzipSync(buffer).toString('utf8');
-}
-
-function inferCorpusCount(data) {
-  if (Array.isArray(data)) return data.length;
-  if (!data || typeof data !== 'object') return null;
-  for (const key of ['tokens', 'entries', 'records', 'forms']) {
-    if (Array.isArray(data[key])) return data[key].length;
-    if (data[key] && typeof data[key] === 'object') return Object.keys(data[key]).length;
+  for (const file of files) {
+    new vm.Script(read(file), { filename: file }).runInContext(sandbox);
   }
-  return Object.keys(data).length;
+  return sandbox.window;
 }
 
-function parseCorpus(source) {
-  try {
-    return { kind: 'json', data: JSON.parse(source) };
-  } catch (jsonError) {
-    const sandbox = { window: {} };
-    vm.createContext(sandbox);
-    new vm.Script(source, { filename: 'school-corpus-unpacked.js' }).runInContext(sandbox);
-    const data = sandbox.window.SCHOOL_CORPUS_DATA
-      || sandbox.window.SCHOOL_CORPUS?.tokens
-      || sandbox.window.SCHOOL_CORPUS;
-    assert(data, `Το school corpus δεν είναι έγκυρο JSON ή αναγνωρίσιμο JavaScript: ${jsonError.message}`);
-    return { kind: 'javascript', data };
+function decodePacked(files, globalName, label) {
+  const windowObject = evaluateWindowFiles(files);
+  const parts = windowObject[globalName];
+  assert(Array.isArray(parts), `${label}: δεν δημιουργήθηκε πίνακας ${globalName}.`);
+  assert(parts.length === files.length,
+    `${label}: αναμένονταν ${files.length} τμήματα, φορτώθηκαν ${parts.length}.`);
+  assert(parts.every(part => typeof part === 'string' && part.length > 100),
+    `${label}: εντοπίστηκε κενό ή μη έγκυρο τμήμα.`);
+  const encoded = parts.join('');
+  assert(/^[A-Za-z0-9+/=]+$/.test(encoded), `${label}: μη έγκυρο base64.`);
+  const compressed = Buffer.from(encoded, 'base64');
+  assert(compressed.length > 64, `${label}: υπερβολικά μικρό συμπιεσμένο πακέτο.`);
+  const unpacked = gunzipSync(compressed);
+  assert(unpacked.length > 1000, `${label}: υπερβολικά μικρό αποσυμπιεσμένο πακέτο.`);
+  return { parts, encoded, compressed, unpacked };
+}
+
+function assertBalancedBraces(source, label) {
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+  let inComment = false;
+  for (let index = 0; index < source.length; index += 1) {
+    const char = source[index];
+    const next = source[index + 1];
+    if (inComment) {
+      if (char === '*' && next === '/') { inComment = false; index += 1; }
+      continue;
+    }
+    if (quote) {
+      if (escaped) escaped = false;
+      else if (char === '\\') escaped = true;
+      else if (char === quote) quote = null;
+      continue;
+    }
+    if (char === '/' && next === '*') { inComment = true; index += 1; continue; }
+    if (char === '"' || char === "'") { quote = char; continue; }
+    if (char === '{') depth += 1;
+    if (char === '}') depth -= 1;
+    assert(depth >= 0, `${label}: κλείνει αγκύλη χωρίς αντίστοιχο άνοιγμα.`);
   }
+  assert(depth === 0, `${label}: μη ισοζυγισμένες αγκύλες.`);
 }
 
-const manifest = evaluateManifest();
-report.manifest = {
+const manifestWindow = evaluateWindowFiles(['data/school_corpus_manifest.js']);
+const manifest = manifestWindow.SCHOOL_CORPUS;
+assert(manifest && typeof manifest === 'object', 'Το manifest δεν δημιουργεί window.SCHOOL_CORPUS.');
+assert(Array.isArray(manifest.books) && manifest.books.length === 7,
+  `Αναμένονταν 7 σχολικές πηγές, δηλώθηκαν ${manifest.books?.length ?? 0}.`);
+assert(Array.isArray(manifest.tokenBookOrder) && manifest.tokenBookOrder.length === manifest.books.length,
+  'Το tokenBookOrder δεν συμφωνεί με τον κατάλογο βιβλίων.');
+assert(Number.isInteger(manifest.tokenCount) && manifest.tokenCount > 10000,
+  'Μη έγκυρο tokenCount στο manifest.');
+assert(Array.isArray(manifest.packedPartFiles) && manifest.packedPartFiles.length === manifest.packedPartCount,
+  'Ασυμφωνία packedPartFiles και packedPartCount.');
+assert(Array.isArray(manifest.appPartFiles) && manifest.appPartFiles.length === manifest.appPartCount,
+  'Ασυμφωνία appPartFiles και appPartCount.');
+assert(manifest.packedPartCount === 6, 'Η τελική έκδοση πρέπει να χρησιμοποιεί 6 compact corpus shards.');
+assert(manifest.appPartCount === 4, 'Η τελική έκδοση πρέπει να χρησιμοποιεί 4 app bundle shards.');
+for (const file of [...manifest.packedPartFiles, ...manifest.appPartFiles]) {
+  assert(exists(file), `Το manifest παραπέμπει σε ανύπαρκτο αρχείο: ${file}`);
+}
+report.release = {
   version: manifest.version,
+  books: manifest.books.length,
   tokenCount: manifest.tokenCount,
-  packedPartCount: manifest.packedPartCount,
-  viewerPartCount: manifest.viewerPartCount,
+  corpusParts: manifest.packedPartCount,
+  appParts: manifest.appPartCount,
 };
 
-const corpusFiles = Array.isArray(manifest.packedPartFiles) && manifest.packedPartFiles.length
-  ? manifest.packedPartFiles
-  : Array.from({ length: Number(manifest.packedPartCount || 0) }, (_, index) =>
-      `data/school_corpus_packed_${String(index + 1).padStart(2, '0')}.js`);
-const viewerFiles = Array.isArray(manifest.viewerPartFiles) && manifest.viewerPartFiles.length
-  ? manifest.viewerPartFiles
-  : Array.from({ length: Number(manifest.viewerPartCount || 0) }, (_, index) =>
-      `data/viewer_school_packed_${String(index + 1).padStart(2, '0')}.js`);
-
-assert(corpusFiles.length > 0, 'Δεν δηλώθηκαν αρχεία school corpus.');
-assert(viewerFiles.length > 0, 'Δεν δηλώθηκαν αρχεία packed viewer.');
-if (manifest.packedPartCount != null) {
-  assert(corpusFiles.length === Number(manifest.packedPartCount), 'Ασυμφωνία packedPartCount και packedPartFiles.');
+const corpusPackage = decodePacked(
+  manifest.packedPartFiles,
+  'SCHOOL_CORPUS_PACKED_PARTS',
+  'Σχολικό σώμα'
+);
+const corpusDigest = sha256(corpusPackage.unpacked);
+assert(corpusDigest === manifest.corpusSha256,
+  `Αποτυχία SHA-256 σχολικού σώματος: ${corpusDigest}.`);
+const tokens = JSON.parse(corpusPackage.unpacked.toString('utf8'));
+assert(Array.isArray(tokens), 'Το αποσυμπιεσμένο σχολικό σώμα δεν είναι πίνακας JSON.');
+assert(tokens.length === manifest.tokenCount,
+  `Ασυμφωνία tokenCount: manifest=${manifest.tokenCount}, payload=${tokens.length}.`);
+const tokenKeys = new Set();
+const maxMask = (1 << manifest.tokenBookOrder.length) - 1;
+for (let index = 0; index < tokens.length; index += 1) {
+  const entry = tokens[index];
+  assert(Array.isArray(entry) && entry.length === 2, `Μη έγκυρη σχολική εγγραφή στη θέση ${index}.`);
+  const [form, mask] = entry;
+  assert(typeof form === 'string' && form.length > 0, `Κενός τύπος στη θέση ${index}.`);
+  assert(Number.isInteger(mask) && mask > 0 && mask <= maxMask,
+    `Μη έγκυρο bitmask στη θέση ${index}: ${mask}.`);
+  assert(!tokenKeys.has(form), `Διπλή κανονικοποιημένη εγγραφή: ${form}.`);
+  tokenKeys.add(form);
 }
-if (manifest.viewerPartCount != null) {
-  assert(viewerFiles.length === Number(manifest.viewerPartCount), 'Ασυμφωνία viewerPartCount και viewerPartFiles.');
-}
-
-const corpusSource = inflate(corpusFiles, 'SCHOOL_CORPUS_PACKED_PARTS');
-assert(corpusSource.length > 1000, 'Το αποσυμπιεσμένο school corpus είναι υπερβολικά μικρό.');
-assert(/[\u0370-\u03ff\u1f00-\u1fff]/u.test(corpusSource), 'Το school corpus δεν περιέχει ελληνικό κείμενο.');
-const corpusParsed = parseCorpus(corpusSource);
-const inferredCount = inferCorpusCount(corpusParsed.data);
-if (manifest.tokenCount != null && inferredCount != null) {
-  assert(inferredCount === Number(manifest.tokenCount),
-    `Ασυμφωνία πλήθους school corpus: manifest=${manifest.tokenCount}, πραγματικό=${inferredCount}.`);
-}
+assert(tokens.some(([form]) => /[\u0370-\u03ff\u1f00-\u1fff]/u.test(form)),
+  'Το σχολικό σώμα δεν περιέχει ελληνικούς χαρακτήρες.');
 report.corpus = {
-  files: corpusFiles,
-  compressedBytes: corpusFiles.reduce((sum, file) => sum + fs.statSync(absolute(file)).size, 0),
-  unpackedBytes: Buffer.byteLength(corpusSource, 'utf8'),
-  encoding: corpusParsed.kind,
-  inferredCount,
+  files: manifest.packedPartFiles,
+  compressedBytes: corpusPackage.compressed.length,
+  unpackedBytes: corpusPackage.unpacked.length,
+  entries: tokens.length,
+  uniqueEntries: tokenKeys.size,
+  sha256: corpusDigest,
 };
 
-const viewerSource = inflate(viewerFiles, 'AGVL_VIEWER_PACKED_PARTS');
-assert(viewerSource.length > 5000, 'Ο αποσυμπιεσμένος viewer είναι υπερβολικά μικρός.');
-new vm.Script(viewerSource, { filename: 'viewer.school.unpacked.js' });
-for (const marker of ['analyzeInput', 'lemmaSelect', 'gameCard', 'SCHOOL_CORPUS']) {
-  assert(viewerSource.includes(marker), `Ο packed viewer δεν περιέχει το αναμενόμενο marker: ${marker}`);
+const appPackage = decodePacked(manifest.appPartFiles, 'AGVL_APP_PACKED_PARTS', 'Εφαρμογή');
+const appDigest = sha256(appPackage.unpacked);
+assert(appDigest === manifest.appSourceSha256,
+  `Αποτυχία SHA-256 εφαρμογής: ${appDigest}.`);
+const appSource = appPackage.unpacked.toString('utf8');
+new vm.Script(appSource, { filename: 'agvl-school-app.js' });
+for (const marker of ['SCHOOL_CORPUS', 'analyzeInput', 'lemmaSelect', 'finiteSection', 'nonFiniteSection', 'gameCard']) {
+  assert(appSource.includes(marker), `Η εφαρμογή δεν περιέχει το αναμενόμενο marker: ${marker}`);
 }
-report.viewer = {
-  files: viewerFiles,
-  compressedBytes: viewerFiles.reduce((sum, file) => sum + fs.statSync(absolute(file)).size, 0),
-  unpackedBytes: Buffer.byteLength(viewerSource, 'utf8'),
+report.app = {
+  files: manifest.appPartFiles,
+  compressedBytes: appPackage.compressed.length,
+  unpackedBytes: appPackage.unpacked.length,
+  sha256: appDigest,
 };
 
-const indexSource = read('index.html');
-const viewerLoader = read('viewer.js');
-new vm.Script(viewerLoader, { filename: 'viewer.js' });
+const loader = read('viewer.js');
+new vm.Script(loader, { filename: 'viewer.js' });
+for (const marker of ['packedPartFiles', 'appPartFiles', 'corpusSha256', 'appSourceSha256', 'AGVL_APP_PACKED_PARTS']) {
+  assert(loader.includes(marker), `Το viewer.js δεν περιέχει το αναμενόμενο marker: ${marker}`);
+}
+
+const compatibilityOne = read('data/school_corpus_packed_01.js');
+const compatibilityTwo = read('data/school_corpus_packed_02.js');
+assert(compatibilityOne.includes('AGVL_SCHOOL_CORPUS_COMPAT'), 'Λείπει το compatibility bootstrap 01.');
+assert(compatibilityTwo.includes('AGVL_SCHOOL_CORPUS_COMPAT'), 'Λείπει το compatibility bootstrap 02.');
+assert(!compatibilityOne.includes('.push(') && !compatibilityTwo.includes('.push('),
+  'Τα compatibility αρχεία δεν πρέπει να περιέχουν παλαιό packed payload.');
+report.compatibility = {
+  bootstrapFiles: ['data/school_corpus_packed_01.js', 'data/school_corpus_packed_02.js'],
+};
+
+const html = read('index.html');
 const requiredIds = [
   'analyzeInput', 'analyzeBtn', 'analyzeStatus', 'analyzeResults',
   'bookFilter', 'lemmaSearch', 'lemmaSelect', 'lemmaOverview',
-  'finiteSection', 'nonFiniteSection', 'gameCard', 'corpusSummary',
+  'finiteSection', 'nonFiniteSection', 'gameCard', 'boardGameArea', 'corpusSummary'
 ];
 for (const id of requiredIds) {
-  assert(indexSource.includes(`id="${id}"`), `Το index.html δεν περιέχει το απαιτούμενο id: ${id}`);
+  assert(new RegExp(`id=["']${id}["']`).test(html), `Λείπει το απαιτούμενο στοιχείο #${id}.`);
 }
-const scriptSources = [...indexSource.matchAll(/<script\s+[^>]*src="([^"]+)"/g)].map((match) => match[1]);
-for (const src of scriptSources) {
-  if (/^(?:https?:)?\/\//.test(src)) continue;
-  const clean = src.split(/[?#]/, 1)[0];
-  assert(fs.existsSync(absolute(clean)), `Το index.html αναφέρεται σε ανύπαρκτο script: ${src}`);
+const scriptSources = [...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["'][^>]*><\/script>/gi)]
+  .map(match => match[1]);
+for (const source of scriptSources) {
+  if (/^(?:https?:)?\/\//i.test(source)) continue;
+  assert(exists(source.split(/[?#]/, 1)[0]), `Το index.html παραπέμπει σε ανύπαρκτο script: ${source}`);
 }
-assert(fs.existsSync(absolute('style.css')), 'Λείπει το style.css.');
-assert(fs.statSync(absolute('style.css')).size > 1000, 'Το style.css είναι υπερβολικά μικρό.');
+const manifestIndex = scriptSources.indexOf('data/school_corpus_manifest.js');
+const compatOneIndex = scriptSources.indexOf('data/school_corpus_packed_01.js');
+const compatTwoIndex = scriptSources.indexOf('data/school_corpus_packed_02.js');
+const loaderIndex = scriptSources.indexOf('viewer.js');
+assert(manifestIndex >= 0 && compatOneIndex > manifestIndex && compatTwoIndex > compatOneIndex && loaderIndex > compatTwoIndex,
+  'Λανθασμένη σειρά φόρτωσης manifest, compatibility bootstrap και viewer.js.');
+const style = read('style.css');
+assert(style.length > 10000, 'Το style.css είναι υπερβολικά μικρό.');
+assertBalancedBraces(style, 'style.css');
+for (const selector of ['.tabs', '.lemma-overview', '.game-shell', '.school-form']) {
+  assert(style.includes(selector), `Λείπει βασικός CSS selector: ${selector}`);
+}
 report.html = {
-  scriptCount: scriptSources.length,
+  scripts: scriptSources.length,
   requiredIds: requiredIds.length,
+  styleBytes: Buffer.byteLength(style, 'utf8'),
 };
 
 const forbidden = [
   '.school-build-marker',
-  'data/school_corpus_compact_01.js',
-  'data/school_corpus_compact_02.js',
-  'data/school_corpus_compact_03.js',
+  'data/viewer_school_packed_01.js',
+  'data/viewer_school_packed_02.js',
   'data/school_corpus_packed_03.js',
   'data/school_corpus_packed_04.js',
   'data/school_corpus_packed_05.js',
-  'data/school_corpus_v2_part01.js',
+  'data/school_corpus_v2_part01.js'
 ];
-for (const relativePath of forbidden) {
-  assert(!fs.existsSync(absolute(relativePath)), `Παρέμεινε προσωρινό αρχείο: ${relativePath}`);
-}
+const leftovers = forbidden.filter(exists);
+assert(leftovers.length === 0, `Παρέμειναν προσωρινά αρχεία:\n- ${leftovers.join('\n- ')}`);
 
 fs.writeFileSync(absolute('validation-report.json'), `${JSON.stringify(report, null, 2)}\n`);
 console.log('AGVL school-corpus validation: PASS');
-console.log(JSON.stringify(report, null, 2));
+console.log(`School entries: ${tokens.length.toLocaleString('el-GR')}`);
+console.log(`School sources: ${manifest.books.length}`);
+console.log(`Decoded app source: ${appSource.length.toLocaleString('el-GR')} characters`);
+console.log(`Corpus SHA-256: ${corpusDigest}`);
+console.log(`App SHA-256: ${appDigest}`);
