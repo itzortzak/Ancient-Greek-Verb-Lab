@@ -1,38 +1,46 @@
-Ancient Greek Verb Lab - GitHub-ready release
-Date: 2026-04-23
+Ancient Greek Verb Lab — School Corpus Release Candidate
+Date: 2026-07-20
+Branch: agent/school-corpus-full-paradigms
 
-Repository-root layout
-- index.html
-- style.css
-- viewer.js
-- data/
-- .nojekyll
-- README.md
+Scope
+- reoriented the application around the attached Ancient Greek school textbooks for the first year of Lyceum
+- retained broad morphological form recognition and the supplementary Kalos finite layer
+- restored the pre-Kalos presentation model for full lemma paradigms
 
-GitHub upload preparation
-- the large `generatedParadigmsKaikkiStage3` payload has been split into 4 sequential files
-- root layout is flattened for direct repository upload / Pages deployment
+Application
+- new accessible interface for Recognition, Full Conjugation, Practice and Information
+- school-book and lemma filters
+- lemma overview with meaning, principal parts, cautious etymological/morphological note and school occurrences
+- complete finite-form tables for all available persons, numbers, moods, tenses and voices
+- infinitive matrices and participle declension by gender, number and case
+- optional dual display, empty-row suppression, school-form highlighting, expand/collapse and print controls
+- improved individual practice and classroom game modes
+- question types: recognition, production, meaning and source textbook
+- selectable difficulty, source textbook, teams, score and streak tracking
 
-Build lineage
-- 2026-04-17: stabilized base release
-- 2026-04-22: lazy-loaded Kalos finite import
-  * 11,516 lemmas
-  * 3,508,448 raw rows imported
-- 2026-04-22: exact overlap prune against the base runtime layer
-  * 107,497 exact overlaps removed from the packaged Kalos layer
-- 2026-04-22: tonal cleanup passes and final manual review completed
-  * final locked Kalos finite entries: 3,323,313
-- 2026-04-23: non-destructive quantity-mark display normalization added
-  * raw Kalos finite data unchanged
-  * 4,040 quantity-only display collisions collapsed in the UI
-  * residual empty Kalos-only lemma `χρή` hidden from the UI
+School corpus
+- 13,309 normalized school-corpus entries
+- 8 manifest records covering student books, workbooks and the parallel teacher volume
+- gzip/base64 packaging split into 2 deterministic parts
+- school pages are reported according to PDF pagination
+- full textbook prose and page images are not stored in the repository
 
-Static checks
-- viewer.js syntax check: PASS
-- index local references: PASS
-- manifest lemma count: 11,516
-- form-index normalization mismatches: 0
+Runtime
+- robust loader now discovers the active corpus and viewer parts from the manifest
+- clear fatal-error reporting for missing, invalid or unsupported compressed assets
+- packed viewer split into 2 parts
+- obsolete experimental corpus shards removed
 
-Notes
-- This package is intended for direct commit/upload at repository root.
-- It is a static HTML/CSS/JS build.
+Validation
+- Node-based static release validator added
+- GitHub Actions pull-request workflow added
+- checks cover file references, manifest consistency, packed payload extraction, gzip decompression, corpus count, Greek content, JavaScript syntax, required interface elements and temporary-file cleanup
+
+Existing stabilized layers retained
+- AGVL stabilized base release of 2026-04-17
+- Kalos finite import of 2026-04-22
+- non-destructive quantity-mark display normalization of 2026-04-23
+
+Release state
+- candidate branch prepared for pull-request validation
+- merge into main is deferred until the automated validation succeeds
