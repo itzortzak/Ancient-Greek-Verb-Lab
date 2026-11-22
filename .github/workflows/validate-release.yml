@@ -2,6 +2,10 @@ name: Validate school corpus release
 
 on:
   pull_request:
+  push:
+    branches:
+      - main
+      - agent/school-corpus-full-paradigms
   workflow_dispatch:
 
 permissions:
