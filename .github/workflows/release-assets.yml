@@ -1,0 +1,70 @@
+name: Archive tagged Greek Verb Lab releases
+
+on:
+  push:
+    branches:
+      - agent/school-corpus-full-paradigms
+    tags:
+      - 'v*'
+    paths:
+      - '.github/workflows/release-assets.yml'
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing Git tag to package (for example v6)
+        required: true
+        default: v6
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out full tagged history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Determine tag and package its exact source
+        id: package
+        shell: bash
+        env:
+          MANUAL_TAG: ${{ inputs.release_tag }}
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            tag="${GITHUB_REF#refs/tags/}"
+          elif [[ -n "$MANUAL_TAG" ]]; then
+            tag="$MANUAL_TAG"
+          else
+            # One-time backfill for the previously assetless v6 release.
+            tag="v6"
+          fi
+          if [[ ! "$tag" =~ ^v[0-9]+(\.[0-9]+){0,2}$ ]]; then
+            echo "Invalid release tag: $tag" >&2
+            exit 1
+          fi
+          git rev-parse --verify -q "refs/tags/$tag^{commit}" >/dev/null
+          archive="Ancient_Greek_Verb_Lab_${tag}_source.zip"
+          git archive --format=zip --output="$archive" "refs/tags/$tag"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "archive=$archive" >> "$GITHUB_OUTPUT"
+      - name: Attach the archive to its original release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.package.outputs.tag }}
+          RELEASE_ARCHIVE: ${{ steps.package.outputs.archive }}
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            if gh release view "$RELEASE_TAG" --json assets --jq '.assets[].name' | grep -Fxq "$RELEASE_ARCHIVE"; then
+              echo "::notice::$RELEASE_TAG already has $RELEASE_ARCHIVE."
+            else
+              gh release upload "$RELEASE_TAG" "$RELEASE_ARCHIVE"
+            fi
+          else
+            gh release create "$RELEASE_TAG" "$RELEASE_ARCHIVE" --target "$RELEASE_TAG" --title "Ancient Greek Verb Lab $RELEASE_TAG" --notes "Source archive from the exact Git tag $RELEASE_TAG."
+          fi
