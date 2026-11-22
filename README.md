@@ -39,7 +39,7 @@
 - `data/school_corpus_packed_01.js`–`02.js`: μικρά compatibility bootstraps για την υφιστάμενη σειρά scripts του `index.html`· δεν περιέχουν πλέον corpus payload.
 - `scripts/validate-release.mjs`: έλεγχος manifest, base64, gzip, hashes, JSON, διπλοεγγραφών, JavaScript, HTML, CSS και προσωρινών αρχείων.
 
-Το σχολικό σώμα και ο κώδικας της εφαρμογής ελέγχονται κατά τη φόρτωση με SHA-256. Ο ίδιος έλεγχος εκτελείται στο GitHub Actions για κάθε pull request.
+Το σχολικό σώμα και ο κώδικας της εφαρμογής ελέγχονται κατά τη φόρτωση με SHA-256. Ο ίδιος έλεγχος εκτελείται στο GitHub Actions για κάθε pull request, για απευθείας αλλαγές στους κλάδους `main` και `agent/school-corpus-full-paradigms`, καθώς και χειροκίνητα. Το workflow `.github/workflows/release-assets.yml` διατηρεί ZIP του ακριβούς ιστορικού tag ως συνημμένο στο αντίστοιχο GitHub Release· το αρχείο της έκδοσης `v6` έχει συμπληρωθεί. Για νέες εκδόσεις μπορεί να ενεργοποιηθεί με push νέου tag `v*` ή χειροκίνητα με το υπάρχον tag.
 
 ## Τοπική εκτέλεση
 
